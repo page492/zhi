@@ -265,14 +265,11 @@ class User extends Front_Controller
             {
                 $token = $provider->access($code);
                 $oauth_user = $provider->get_user_info($token);
-                var_dump($oauth_user);
                 if (is_array($oauth_user))
                 {
                     $this->load->model('user_bind_model');
                     $bind_info = $this->user_bind_model->where('keyid', $oauth_user['via'] . '_' . $oauth_user['uid'])->find();
                     if (!$bind_info) {
-                        //绑定
-                        $this->load->model('user_bind_model');
                         $this->user_bind_model->add(array(
                             'uid' => $this->visitor->info['id'],
                             'type' => $oauth_user['via'],
@@ -307,17 +304,19 @@ class User extends Front_Controller
     /**
      * 检测用户名是否合法
      */
-    public function check_username()
+    public function check_unique($field = '')
     {
-
-    }
-
-    /**
-     * 检测邮箱是否合法
-     */
-    public function check_email()
-    {
-
+        $username = $this->input->post('param', TRUE);
+        $this->load->model('user_model');
+        if (!$this->user_model->is_unique($field, $username)) {
+            $this->ajax_return(array(
+                'status' => 'y',
+            ));
+        }
+        $this->ajax_return(array(
+            'status' => 'n',
+            'info' => '已经被使用',
+        ));
     }
 
 }

@@ -15,14 +15,14 @@
                         <div class="control">
                             <label class="label" for="username">用户名：</label>
                             <div class="focus">
-                                <input type="text" class="txt" id="username" name="username" datatype="*1-18" nullmsg="请填写用户名" />
+                                <input type="text" class="txt" id="username" name="username" datatype="*1-18" nullmsg="请填写用户名" ajaxurl="<?php echo site_url('user/check_unique/username');?>" />
                                 <span class="tips"></span>
                             </div>
                         </div>
                         <div class="control">
                             <label class="label" for="username">电子邮箱：</label>
                             <div class="focus">
-                                <input type="text" class="txt" id="email" name="email" datatype="e" nullmsg="请填写电子邮箱" />
+                                <input type="text" class="txt" id="email" name="email" datatype="e" nullmsg="请填写电子邮箱" ajaxurl="<?php echo site_url('user/check_unique/email');?>" />
                                 <span class="tips"></span>
                             </div>
                         </div>
