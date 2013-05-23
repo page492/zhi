@@ -1,0 +1,79 @@
+//
+// Bucket
+// --------------------------------------------------
+
+#bucket-page{
+    .main{ 
+        padding-top: 0;
+    }
+}
+
+.sub-nav{
+	width: @mainWidth;
+	height: 100px;
+    .center-block();
+    .clearfix(); 
+	position:relative;
+}
+.sub-nav .sub-tit{
+	font-size: 21px;
+	font-family: @yaHeiFontFamily;
+	margin: 20px 0 0;
+	color: @orange;
+}
+.sub-nav .sub-desc{
+	font-size:14px;
+	font-family: @yaHeiFontFamily;
+	margin: 0;
+	color:#666;
+	font-weight: 400;
+}
+.sub-cate{
+	position:absolute;
+	height: 30;
+	background: @white; 
+	top: 35px;
+	right: 0;
+	border-bottom: 1px solid #d6d6d6;
+	border-left: 1px solid #d6d6d6;
+}
+.sub-cate li{
+	float:left; 
+	padding:0 25px; 
+	font-size:15px; 
+	line-height:28px; 
+	font-family: @yaHeiFontFamily; 
+	border-top:1px solid #d6d6d6;
+	border-right:1px solid #d6d6d6; 
+	position:relative;
+}
+.sub-cate li a{
+	color: @grayDark;
+	&:hover{
+		color: @orange;
+		text-decoration: none;
+	}
+}
+.sub-cate li.select{
+	color: @white; 
+	background: #7abade;
+	border-top:1px solid #6fb5dd;
+	border-right:1px solid #6fb5dd;
+}
+.sub-cate li.select a{
+	color: @white ; 
+}
+.sub-cate li i{
+	position:absolute; 
+	top:28px; 
+	right:50%; 
+	width: 11px;
+	height: 6px;
+	margin-right:-5px;
+	background: url('@{iconSpritePath}') -114px -65px no-repeat; 
+	display: none; 
+	
+}
+.sub-cate li.select i{
+	display:block
+}

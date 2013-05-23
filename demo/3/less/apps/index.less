@@ -1,0 +1,129 @@
+//
+// Index
+// --------------------------------------------------
+
+.content{
+    .crumb{
+        margin: 10px;
+    }
+    .hot_post{
+        position: relative;
+        margin: 40px 10px 20px;
+        border: 1px solid #000;
+        .box-shadow(#f2f2f2 2px 3px 3px);
+        .hd{
+            position: absolute;
+            left: 10px;
+            top: -13px;
+            width: 184px;
+            height: 25px;
+            line-height: 25px;
+            margin-top: 0;
+            font-size: @fontSizeLarge;
+            font-family: @yaHeiFontFamily;
+            font-weight: bold;
+            color: @grayDark;
+            background: url('@{bgFridayPath}') no-repeat;
+            text-align: center;
+        }
+        .bd{
+            margin-top: 18px;
+            li{
+                float: left; width: 25%;
+                font-size: @fontSizeSmall;
+                background: url('@{iconDotPath}') no-repeat 8px 11px;
+                font-size: 12px;
+                font-family: Arial,"SimSun";
+                width: 190px;
+                float: left;
+                padding-left: 18px;
+                line-height: 25px;
+                a{
+                    color: #555;
+                }
+            }
+            .h a{color: #ff0000;}
+        }
+    }
+}
+
+.right-aside{
+    .aside-mod{
+        padding: 10px 20px;
+        font-size: @asideFontSize;
+        border-bottom: 1px solid #e5e5e5;
+
+        .hd{
+            color: @asideHdColor;
+            span{
+                background: @asideBackground;
+            }
+        }
+        .bd{
+            position: relative;
+            color: @asideBdColor;
+        }
+        .ft{
+            text-align: right;
+        }              
+    }
+    .share-tool{
+        padding-top: 10px; 
+        .hd{
+            text-align: center;
+            font-weight: normal;
+            background: none;
+        }
+        .bd{
+            padding-left: 15px;
+        }
+    }
+    .hot-sale{
+        .carousel{
+            width: 240px;
+            height: 260px;
+            margin-bottom: 0;
+
+            .carousel-inner{
+                li{
+                    a{position: relative;}
+                }
+                img{
+                    .square(240px);
+                }
+                div{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 5px;
+                    width: 230px;
+                    background: @black;
+                    .opacity(50);
+                    color: @white;
+                }
+            }
+            
+            .carousel-indicators{
+                padding: 0;
+                background: none;
+                span{
+                  .square(8px);
+                  margin: 0 4px; 
+                  .border-radius(8px);
+                  background: #999;
+                    &.active {
+                        background: @blueDark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    background: @contentBackground;
+
+    .feed-list{
+        margin-bottom: 20px;
+    }
+}

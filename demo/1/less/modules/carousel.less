@@ -1,0 +1,83 @@
+//
+// Carousel
+// --------------------------------------------------
+
+
+.carousel{
+  position:relative;
+  width: 100%;
+  height: 260px;
+  margin-bottom: @baseLineHeight;
+  overflow: hidden;
+
+    .carousel-inner{
+      position: absolute;
+      margin-bottom: 0;
+      li {
+        float: left;
+        overflow: hidden;
+        img{
+          display: block;
+          width: auto\9;
+          height: auto;
+          max-width: 100%;
+          line-height: 1;
+          vertical-align: middle;
+        }
+      }
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    width: 32px;
+    height: 50px;
+    margin-top: -20px;
+    font-size: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    background-image: url('@{iconSpritePath}');
+    background-position: -57px -94px;
+    background-repeat: no-repeat;
+    .opacity(0);
+
+    // Hover/focus state
+    &:hover,
+    &:focus {
+      .opacity(100);
+    }
+  }
+
+  .next {
+    left: auto;
+    right: 15px;
+    background-position: 0 -94px;
+  }
+
+  .carousel-indicators{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 6px 0; 
+    text-align: center;
+    background: @grayDark;
+    background: rgba(0,0,0,.5);
+
+    span{
+      display: inline-block; 
+      .size(35px, 10px);
+      margin: 0 6px; 
+      cursor: pointer;
+      background: @white;
+      overflow: hidden;
+      .ie7-inline-block();
+      
+      &.active {
+        background: @orange;
+      }
+    }
+  }
+}

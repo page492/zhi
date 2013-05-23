@@ -1,0 +1,214 @@
+//
+// Feeds
+// --------------------------------------------------
+
+.feed-item{
+    @w: @feedPicSize;
+
+    padding: 20px 0 30px;
+    border-bottom: @feedBorder;
+    
+    .item-tit{
+        margin-bottom: 15px;
+        line-height: 26px;
+        font-size: 18px;
+        font-family: @yaHeiFontFamily;
+        a{
+            color: @feedTitleColor;
+        }
+    }
+
+    .item-pic{
+        float: left;
+        width: @w;
+        margin-top: 5px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: @feedPicBorder;
+
+        .item-img{
+            .center-pic(@w);
+        }
+
+        &:hover{
+            border: @feedPicBorderHover;
+        }
+    }
+    
+    .item-like{
+        height: 29px;
+        border-top: @feedPicBorder;
+        font-size: @fontSizeSmall;
+        background: @white;
+
+        .worth, .collect{
+            float:left;
+            display: block;
+            width: @w/2 - 10px;
+            height: 24px;
+            padding-top: 5px;
+            text-decoration: none;
+            color: @gray;
+
+            i{
+                margin-right: 5px;
+            }
+
+            &:hover{
+                color: @orange;
+            }
+        }
+    }
+    .item-attr{
+         height: auto;
+         margin-bottom: 10px;
+         img{
+            display: block;
+        }
+    }
+    .excerpt{
+        height: 220px;
+        overflow: hidden;
+        img{
+            display: none;
+        }   
+    }
+    /*.total{
+        height: auto;
+        min-height: 220px;
+        img{
+            display: block;
+        }
+    }*/
+    
+    .item-price{
+        margin-left: 10px;
+        color: @feedPriceColor;
+    }
+    .item-info{
+        font-size: @fontSizeSmall;
+        color: @feedInfoColor;
+        line-height: 24px;
+        //border-bottom: @feedPicBorder;
+        a{
+            margin-right: 10px;
+        }
+        span{
+            margin-right: 10px;
+        }
+    }
+    .item-intro{
+        padding: 10px 0;
+        line-height: 28px;
+        color: @feedIntroColor;
+    }
+    .item-drawer{
+        clear: both;
+        width: 100%;
+        height: 30px;
+        text-align: right;
+        font-size: @fontSizeSmall;
+        a{
+            right: 10px;
+            display: inline-block;
+            .size(80px, 26px);
+            .border-radius(3px);
+            line-height: 26px;
+            text-align: center;
+            padding-right: 5px;
+
+            i{
+                margin-left: 5px;
+            }
+        }
+        .none{
+            display: none;
+        }
+    }
+    .item-bar{
+        clear: both;
+        margin-top: 10px;
+        height: 24px;
+        line-height: 24px;
+        padding-left: 5px; 
+        font-size: @fontSizeSmall;
+        color: @grayLight;
+        background: @feedBarBackground;
+
+        .times{
+            float: left;
+            margin-right: 15px;
+            i{
+                margin-right: 5px;
+            }
+        }
+
+        .shares{
+            float: left;
+            span{
+                float: left;
+            }
+        }
+    }
+
+    .item-buy{
+        float: right;
+        position: relative;
+
+        a i{margin-left: 5px;}
+        ul{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 24px;
+            z-index: 11;
+            width: 120px;
+            padding-top: 2px;
+            background: @white;
+            border-bottom: @feedBorder;
+
+            li{
+                height: 30px;
+                border: @feedBorder;
+                border-bottom: none;
+                text-align: center;
+                a{
+                    display: block;
+                    height: 25px;
+                    padding-top: 5px;
+                    background: @feedBarBackground;
+                }
+            }
+        }
+        &.open{
+            ul{display: block;}
+        } 
+    }
+
+}
+
+// Sign
+.item-sign{
+    .square(41px);
+    position: absolute;
+    right: 0;
+    _right: 10px;
+    top: 20px;
+    z-index: 5;
+    display: none;
+    background-image: url('@{iconSpritePath}');
+    background-repeat: no-repeat;
+}
+.sign-hot{
+    .item-sign{
+        display: block;
+        background-position: 0 -36px; 
+    }
+}
+.sign-new{
+    .item-sign{
+        display: block;
+        background-position: -48px -36px; 
+    }
+}

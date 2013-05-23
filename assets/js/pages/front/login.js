@@ -16,7 +16,7 @@ define(function (require) {
             dataType: 'json',
             success: function (result) {
                 if (result.status == '0') {
-                    $.hold.tip(result.error, 'alert');
+                    $.hold.tip(result.msg, 'alert');
                 } else {
                     window.location.href = HG.URL.PERSON;
                 }

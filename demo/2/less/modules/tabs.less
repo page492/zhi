@@ -1,0 +1,54 @@
+//
+// Tabs
+// --------------------------------------------------
+
+
+.tab-tit{
+  height: 38px;
+  border-bottom: 1px solid #ddd;
+}
+.tab-tit ul{
+  padding-left: 20px;
+}
+.tab-tit li {
+  float: left;
+  margin-bottom: -1px;
+  margin-right: 5px;
+}
+
+.tab-tit li a {
+  display: inline-block;
+  padding: 8px 15px;
+  line-height: @baseLineHeight;
+  border: @border;
+  color: @gray;
+  background: #eeeeee;
+  cursor: default;
+
+  &:hover,
+  &:focus {
+    border-top: 3px solid @pink;
+    border-color: @pink #e2e2e2 @white #e2e2e2;
+    background: @white;
+    text-decoration: none;
+  }
+}
+
+.tab-tit .active a{
+    border-top: 3px solid @pink;
+    border-color: @pink #e2e2e2 @white #e2e2e2;
+    background: @white;
+}
+
+
+.tab-content {
+  overflow: auto; 
+}
+
+.tab-content .tab-pane{
+  padding-top: 40px;
+  display: none;
+}
+.tab-content .active{
+  display: block;
+}

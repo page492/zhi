@@ -1,0 +1,167 @@
+//
+// Index
+// --------------------------------------------------
+
+.main{
+    padding-top: 20px;
+}
+
+.left-menu{
+    background: @menuBackground;
+    font-family: @yaHeiFontFamily;
+
+    .menu-hd{
+        height: 37px;
+        line-height: 37px;
+        a{
+            display: block;
+            padding: 0 20px;
+            text-align: center;
+            color: @white;
+            font-size: @baseFontSize;
+            font-weight: 700;
+            background: #ff4400;
+            
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .menu-bd{
+        border: 1px solid #f2f2f2;
+        border-top: none;
+    }
+}
+
+.right-aside{
+
+    .aside-mod{
+        padding: 10px;
+        font-size: @asideFontSize;
+
+        .hd{
+            color: @asideHdColor;
+
+        }
+        .bd{
+            position: relative;
+            color: @asideBdColor;
+        }
+        .ft{
+            text-align: right;
+        }              
+    }
+    .share-tool{
+        padding-top: 10px; 
+        .hd{
+            text-align: center;
+            font-weight: normal;
+            background: none;
+        }
+        .bd{
+            padding-left: 15px;
+        }
+    }
+
+    .login{
+        .local{
+            a{
+                height:30px;
+                line-height:30px;
+                margin: 10px 30px;
+                font-size: @fontSizeLarge;
+                &:hover{
+                    color: @white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .outside{
+            margin-left: 30px;
+
+            a{
+                display: inline;
+                padding-left: 3px;
+                
+                img{
+                    display: inline-block;
+                }
+            }
+        }
+        .hi{
+            margin: 10px 0;
+            .name{
+                font-size: 16px;
+                img{.square(40px);}
+            }
+            span{
+                padding: 0 5px;
+                color: @pinkDark;
+            }
+        }
+    }
+
+    .hot-sale{
+        padding: 10px;
+        .carousel{
+            width: 230px;
+            height: 250px;
+            .carousel-inner{
+                li{
+                    a{position: relative;}
+                }
+                img{
+                    .square(230px);
+                }
+                div{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 5px;
+                    width: 220px;
+                    max-height: 38px;
+                    background: @black;
+                    color: @white;
+                    overflow: hidden;
+                    .opacity(50);
+                }
+            }
+            .prev{
+                left: 0;
+            }
+            .next{
+                right: 0;
+            }
+            .carousel-indicators{
+                padding: 0;
+            }
+        }
+    }
+}
+
+.content{
+    .carousel{
+        float: left;
+        width: 500px;
+        height: 280px;
+        margin-bottom: 10px;
+    }
+
+    .hot-banner{
+        float: right;
+        width: 228px;
+        height: 278px;
+        overflow: hidden;
+        background: @white;
+        border: @border;
+        border-top-color: #eee;
+        border-bottom-color: #e5e5e5;
+    }
+
+    .feed-list{
+        clear: both;
+        margin-bottom: 20px;
+    }
+}
+

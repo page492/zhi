@@ -1,0 +1,142 @@
+//
+// Bucket
+// --------------------------------------------------
+
+#bucket-page{
+    // Model
+    .filter-mod, .recom-mod{
+		margin-bottom: 10px;
+        padding: 10px 20px;
+        background: @white;
+        border: @border;
+        border-top-color: #eee;
+        border-bottom-color: #e5e5e5;
+    }
+    .filter-mod{
+    	.filter-suggest{
+    		padding-top: 20px;
+    		border-top: @border;
+
+    		input{float: left;margin-left: 10px;}
+    		.search-text{width: 210px;}
+    	}
+    }
+    .recom-mod{
+        .hd{
+            border-bottom: 1px solid @pink;
+            line-height: 30px;
+            span{
+                font-size: @fontSizeLarge;
+                color: @pink;
+            }
+        }
+        .bd{
+            padding-top: 20px;
+            overflow: hidden;
+            .recom-list{
+                margin-bottom: 0;
+                li{
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+}
+
+
+.sub-nav, .cat-nav{
+	margin-bottom: 20px;
+}
+
+//Sub Nav
+.sub-nav{
+	position:relative;
+}
+.sub-nav .sub-tit{
+	font-size: 21px;
+	margin: 0;
+	color: @pink;
+}
+.sub-nav .sub-desc{
+	font-size:14px;
+	margin: 0;
+	color:#666;
+	font-weight: 400;
+}
+.sub-cate{
+	position:absolute;
+	top: 15px;
+	right: 0;
+	height: 30;
+	background: @white; 
+	border-bottom: 1px solid #e5e5e5;
+	border-left: 1px solid #e5e5e5;
+}
+.sub-cate li{
+	float:left; 
+	padding:0 25px; 
+	font-size:15px; 
+	line-height:28px; 
+	border-top:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5; 
+	position:relative;
+}
+.sub-cate li a{
+	color: @grayDark;
+	&:hover{
+		color: @pink;
+		text-decoration: none;
+	}
+}
+.sub-cate li.select{
+	color: @white; 
+	background: #7abade;
+	border-top:1px solid #6fb5dd;
+	border-right:1px solid #6fb5dd;
+}
+.sub-cate li.select a{
+	color: @white ; 
+}
+.sub-cate li i{
+	position:absolute; 
+	top:28px; 
+	right:50%; 
+	width: 11px;
+	height: 6px;
+	margin-right:-5px;
+	background: url('@{iconSpritePath}') -114px -65px no-repeat; 
+	display: none; 
+	
+}
+.sub-cate li.select i{
+	display:block
+}
+
+
+//Cat Nav
+.cat-nav{
+	.cat-name, .cat-item{
+		display: inline-block;
+		.ie7-inline-block();
+		margin-right: 8px;
+	}
+	.cat-name{
+		padding: 4px 0;
+	}
+	.cat-item{
+		padding: 3px 9px;
+		color: #888;
+		font-size: @fontSizeSmall;
+		border: @border;
+		background: #f7f7f7;
+		.border-radius(3px);
+
+		&:hover, &.cat-on{
+			padding: 4px 10px;
+			color: @white;
+			text-decoration: none;
+			border: none;
+			background: @blueDark;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+//
+// Top Line
+// --------------------------------------------------
+
+
+.top-line{
+    position: relative;
+    height: 30px;
+    padding: 10px 0;
+    font-size: @noticeFontSize;
+
+    .notice{
+        position: relative;
+        height: 30px;
+        overflow: hidden;
+        ul{
+            position: absolute;
+            left: 30px;
+            top: 0;
+            li{
+                line-height: 30px;
+                color: @noticeColor;
+
+                a{
+                    color: @noticeColor;
+                    &:hover{
+                        color: @orange;
+                    }
+                }
+            }
+        }
+        .icon-volume{
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+    }
+
+    .today{
+        position: absolute;
+        top: 15px;
+        right: 0;
+        font-family: Arial;
+        color: @gray;
+        em{
+            font-style: normal;
+            color: @orange;
+        }
+    }
+}

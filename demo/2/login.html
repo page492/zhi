@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>什么值得买</title>   
+    <meta name="description" content="" />
+    <meta name="author" content="cssoul.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/less" href="less/holdphp.less" />
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="user-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="login">
+                <!-- <a href=>注册</a>|<a href=>登录</a>|<a href=>我要爆料</a> -->
+                <a href=>注销</a>|<a href=>个人中心</a>|<a href=>我要爆料</a>
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>让您轻松构建高性能导购系统！</span>
+            </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="search.html" method="get">
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" placeholder="搜索 折扣商品" />
+                    <input class="search-btn" type="submit" value="" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li class="nav-on">
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li>
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li>
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <div class="uc-form clearfix">
+                <div class="fl">
+                    <h3 class="tit">用户登录</h3>
+                    <form class="form-mod" action="" method="post">
+                        <div class="control error">
+                            <label class="label" for="username">登录名：</label>
+                            <div class="focus">
+                                <input type="text" class="txt" id="username" tabindex="1" name="username" />
+                                <span class="tips">可输入手机号码、邮箱、用户名</span>
+                            </div>
+                        </div>
+                        <div class="control success">
+                            <label class="label" for="password">登录密码：</label>
+                            <div class="focus">
+                                <input type="password" class="txt" id="password" tabindex="2" name="password" />
+                                <span class="tips"></span>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <label class="label" for="verific">验证码：</label>
+                            <div class="focus">
+                                <input type="text" id="verific" tabindex="3" name="verific" size="8" />
+                                <img src="materials/yzm.png" class="verific-image" />
+                                <span>看不清楚？<a href="javascript:void(0);" class="verific-refresh">换一张</a></span>
+                            </div>
+                        </div>
+                        <p class="xieyi">
+                            <input type="checkbox" name="cache" value="1" />
+                            <span>两周内自动登录</span>
+                        </p>
+                        <p class="submit">
+                            <button class="btn btn-oran btn-max">登 录</button>
+                            <a class="" href="">忘记密码？</a>
+                        </p>
+                    </form>
+                    <div class="other-login">
+                        <h4 class="other-hd">使用合作账号登录</h4>
+                        <div class="other-bd clearfix">
+                            <a class="l-qq" href="" target="_blank" title="新浪微博登录"><img src="img/oauth/sina/login.png" alt="" /></a>
+                            <a class="l-sina" href="" target="_blank" title="QQ帐号登录"><img src="img/oauth/qq/login.png" alt="" /></a>
+                            <a class="l-tao" href="" target="_blank" title="淘宝帐号登录"><img src="img/oauth/taobao/login.png" alt="" /></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="fr">
+                    <h4 class="tit">注册</h4>
+                    <p class="no-key">还没有账号？</p>
+                    <p class="sub-btn"><a class="btn btn-green btn-max" href="register.html"><i></i>免费注册</a></p>
+                </div>
+            </div>
+        </div>
+    </div>   <!--Main End-->
+   
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
+
+    <script src="js/plugins/dialog.js"></script>
+    <script src="js/apps/holdphp.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=6620384" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+</body>
+</html>

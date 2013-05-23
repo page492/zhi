@@ -1,0 +1,189 @@
+//
+// List
+// --------------------------------------------------
+
+
+//Hot Banner
+.hot-banner-list {
+    li {
+        margin-top: -1px;
+        border-top: @border;
+        height: 93px;
+        vertical-align: top;
+        position: relative;
+        overflow: hidden;
+        a{
+            display: block;
+            padding-left: 15px;
+            .tit{
+                margin-top: 15px;
+                width: 120px;
+                overflow: hidden;
+                h4{
+                    margin: 0;
+                    height: 24px;
+                    vertical-align: top;
+                    font-size: 14px;
+                    color: @grayDark;
+                    padding-right: 5px;
+                    .text-overflow();
+                }
+                span{
+                    display: block;
+                    height: 40px;
+                    padding-right: 5px;
+                    line-height: 1.6;
+                    color: @gray;
+                }
+            }
+            .pic{
+                position: absolute;
+                top: 6px;
+                right: 15px;
+                .transition(right .2s ease-in-out);
+            }
+            &:hover{
+                .pic{
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// Recom List
+.recom-list {
+    width: 110%;
+    li{
+        float: left;
+        margin-right: 3.4%;
+        margin-bottom: 20px;
+        width: @recomPicSize + 2px;
+        height: 205px;
+        overflow: hidden;
+
+        .recom-pic{
+            display: block;
+            .square(@recomPicSize);
+            *height: @recomPicSize + 2px;
+            margin-bottom: 5px;
+            border: @recomPicBorder;
+
+            img{
+                .square(@recomPicSize);
+            }
+
+            &:hover{
+                border: @recomPicBorderHover;
+            }
+        }
+        .recom-name{
+            a{
+                line-height: 18px;
+                font-size: @fontSizeSmall;
+                color: @recomTitleColor;
+                &:hover{
+                    color: @pink;
+                }
+            }
+        }
+    }
+}
+
+
+//Mix List
+.mix-list {
+    li{
+        min-height: 40px;
+        _height: 40px;
+        padding: 10px 5px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: @fontSizeSmall;
+        .clearfix();
+
+        .pic, .txt{
+            float: left;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .pic{
+            width: 8%;
+            img{
+                .square(40px);
+                border: 1px solid #e6e6e6;
+            }
+        }
+        .txt{
+            width: 75%;
+        }
+        .handle{
+            float: right;
+            text-align: right;
+            line-height: 50px;
+            a{
+                color: @pink;
+            }
+        }
+        .gray{
+            color: @grayLight;
+        }
+        .light{
+            color: @pink;
+        }
+    }
+}
+
+//Text List
+.text-list {
+    li{
+        min-height: 24px;
+        _height: 24px;
+        padding: 10px 5px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: @fontSizeSmall;
+        .clearfix();
+
+        .txt{
+            float: left;
+            width: 80%;
+        }
+        .handle{
+            float: right;
+            text-align: right;
+            a{
+                color: @pink;
+            }
+        }
+        .gray{
+            color: @grayLight;
+        }
+    }
+}
+
+//Bind List
+.bind-list{
+    li{
+        clear: left;
+        min-height: 70px;
+        margin-bottom: 20px;
+        vertical-align: top;
+        img{
+            float: left;
+            .square(60px);
+            padding: 5px;
+            border: @border;
+        }
+        div{
+            margin-left: 90px;
+            color: @grayLight;
+            a{color: @grayDark;}
+        }
+    }
+    .ok{
+        div{
+            color: @green;
+            a{color: @grayLight;}
+        }
+    }
+}

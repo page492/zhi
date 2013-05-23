@@ -280,6 +280,19 @@ footer .f-botm span{color:#999999;margin:0 10px;}
 .d-nw,.d-ne,.d-sw,.d-se{width:5px;height:5px;}
 .d-nw,.d-n,.d-ne,.d-w,.d-e,.d-sw,.d-s,.d-se{background:rgba(0, 0, 0, 0.2);background:#000\9!important;filter:alpha(opacity=20);}
 @media screen and (min-width:0){.d-state-focus .d-dialog{box-shadow:0 0 2px rgba(0, 0, 0, 0.2);} .d-state-drag,.d-state-focus:active{box-shadow:none;} .d-state-focus{box-shadow:0 3px 8px rgba(0, 0, 0, 0.3);} .d-outer{-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);-o-transform:scale(0);transform:scale(0);-webkit-transition:-webkit-transform 0.3s ease-in-out;-moz-transition:-moz-transform 0.3s ease-in-out;-o-transition:-o-transform 0.3s ease-in-out;transition:transform 0.3s ease-in-out;} .d-state-visible{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);}}.main{padding-top:20px;}
+.d-state-noTitle{border:0 none;box-shadow:none;}
+.d-state-noTitle .d-titleBar{display:none;}
+.d-state-noTitle .d-nw,.d-state-noTitle .d-ne,.d-state-noTitle .d-sw,.d-state-noTitle .d-se {display:none;}
+.d-state-noTitle .d-dialog{box-shadow:none;}
+.d-state-noTitle .d-main{min-width:auto;}
+.d-state-noTitle .d-inner{background:none;}
+.d-tip{ height:54px; line-height:54px;}
+.d-tip div{float:left;height:54px;background-image:url(img/tip_layer.png);background-repeat:no-repeat;}
+.d-tip .d-tip-c{line-height:52px;padding:0 10px 0 5px;background-repeat:repeat-x;background-position:0 -161px;}
+.d-tip .d-tip-r{width:5px;background-position:0 0;}
+.d-tip .d-tip-success,.d-tip .d-tip-alert,.d-tip .d-tip-error{width:45px;background-position:-5px 0;}
+.d-tip .d-tip-alert{background-position:-6px -54px;}
+.d-tip .d-tip-error{background-position:-6px -108px;}
 .left-menu{background:#ffffff;font-family:"Microsoft YaHei","微软雅黑","黑体",Arial;}.left-menu .menu-hd{height:37px;line-height:37px;}.left-menu .menu-hd a{display:block;padding:0 20px;text-align:center;color:#ffffff;font-size:14px;font-weight:700;background:#ff4400;}.left-menu .menu-hd a:hover{text-decoration:none;}
 .left-menu .menu-bd{border:1px solid #f2f2f2;border-top:none;}
 .right-aside .aside-mod{padding:10px;font-size:12px;}.right-aside .aside-mod .hd{color:#333333;}

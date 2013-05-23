@@ -1,0 +1,101 @@
+//
+// Footer
+// --------------------------------------------------
+
+footer{
+    font-size: @footerFontSize;
+    background: @footerBackground;
+
+    .footer-wrap{
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        padding: 20px 0;
+        line-height: 26px;
+    }
+
+    .f-about{
+        border-bottom: 1px solid #2a2a2a;
+        padding-bottom: 25px;
+    }
+    .hold-logo{
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        width: 200px;
+        margin-left: -100px;
+    }
+
+    li{
+        float: left;
+        margin-right: 75px;
+        height: 100px;
+        width: 9%;
+
+        .tit{
+            font-weight: bold;
+            color: #ccc;
+            margin: 0 0 5px;
+        }
+        a{
+            color: @footerColor;
+            &:hover{
+                color: @footerColor;
+            }
+        }
+
+        &.about-us{
+            padding-left: 385px;
+
+            p{margin-top: 5px;}
+            p.tit{margin-top: 0;}
+            a{
+                display: block;
+                background: url('@{iconWeiboPath}') no-repeat;
+                padding-left: 25px;
+
+                &.sina{background-position: 0 3px;}
+                &.tenx{background-position: 0 -25px;}
+                &.sohu{background-position: 0 -54px;}
+            }
+        }
+        &.weix{
+            margin-right: 0;
+            img{
+                .square(80px);
+            }
+        }
+    }
+
+    .f-link{
+        padding: 5px 0;
+        border-top: 1px solid #434343;
+        border-bottom: 1px solid #2A2A2A;
+        color: @footerColor;
+
+        p{
+            margin-bottom: 0;
+        }
+        a{
+            color: @footerColor;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    .f-botm{
+        height: 20px;
+        color: @footerColor;
+        padding-top: 15px;
+        border-top: 1px solid #434343;
+
+        a{
+            color: @footerColor;
+        }
+
+        span{
+            color: @grayLight;
+            margin: 0 10px;
+        }
+    }
+}

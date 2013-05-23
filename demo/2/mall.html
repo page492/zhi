@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>什么值得买</title>   
+    <meta name="description" content="" />
+    <meta name="author" content="cssoul.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="holdphp.css" />
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="mall-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="login">
+                <!-- <a href=>注册</a>|<a href=>登录</a>|<a href=>我要爆料</a> -->
+                <a href=>注销</a>|<a href=>个人中心</a>|<a href=>我要爆料</a>
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>让您轻松构建高性能导购系统！</span>
+            </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="search.html" method="get">
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" placeholder="搜索 折扣商品" />
+                    <input class="search-btn" type="submit" value="" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li>
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li>
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li class="nav-on">
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <nav class="mall-nav">
+                <h3 class="nav-tit fl">商家导航</h3>
+                <div class="nav-cat fr">
+                    <a href="" title="">综合商城</a><span>|</span>
+                    <a href="" title="">数码家电</a><span>|</span>
+                    <a href="" title="">名品团购</a><span>|</span>
+                    <a href="" title="">服装鞋包</a><span>|</span>
+                    <a href="" title="">美容化妆</a><span>|</span>
+                    <a href="" title="">图书音像</a><span>|</span>
+                    <a href="" title="">食品酒饮</a><span>|</span>
+                    <a href="" title="">母婴保健</a><span>|</span>
+                    <a href="" title="">其他商城</a>
+                </div>
+            </nav>
+
+            <section class="mall-list" id="J_Mall">
+                <div class="mall-item">
+                    <h5 class="item-hd"><img src="materials/icons/mall/cat-1.png" alt="图片" /><span>综合商城</span></h5>
+                    <ul class="item-bd clearfix">
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/360buy.png" alt="图片" /></a>
+                                <a class="item-name" href="">京东商城</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/tmall.png" alt="图片" /></a>
+                                <a class="item-name" href="">天猫</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/amazon.png" alt="图片" /></a>
+                                <a class="item-name" href="">亚马逊</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/suning.png" alt="图片" /></a>
+                                <a class="item-name" href="">苏宁易购</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/51buy.png" alt="图片" /></a>
+                                <a class="item-name" href="">易迅网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/newegg.png" alt="图片" /></a>
+                                <a class="item-name" href="">新蛋中国</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/amazon-1.png" alt="图片" /></a>
+                                <a class="item-name" href="">亚马逊美国</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/yihaodian.png" alt="图片" /></a>
+                                <a class="item-name" href="">1号店</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/amazon-1.png" alt="图片" /></a>
+                                <a class="item-name" href="">当当网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/coo8.png" alt="图片" /></a>
+                                <a class="item-name" href="">库巴网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/homevv.png" alt="图片" /></a>
+                                <a class="item-name" href="">为为网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/zh/taobao.png" alt="图片" /></a>
+                                <a class="item-name" href="">淘宝网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mall-item">
+                    <h5 class="item-hd"><img src="materials/icons/mall/cat-2.png" alt="图片" /><span>数码家电</span></h5>
+                    <ul class="item-bd clearfix">
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/360buy.png" alt="图片" /></a>
+                                <a class="item-name" href="">京东商城</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/amazon.png" alt="图片" /></a>
+                                <a class="item-name" href="">亚马逊</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/51buy.png" alt="图片" /></a>
+                                <a class="item-name" href="">易迅网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/suning.png" alt="图片" /></a>
+                                <a class="item-name" href="">苏宁易购</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/newegg.png" alt="图片" /></a>
+                                <a class="item-name" href="">新蛋中国</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/gome.png" alt="图片" /></a>
+                                <a class="item-name" href="">国美在线</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/sm/tao3c.png" alt="图片" /></a>
+                                <a class="item-name" href="">高鸿在线</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mall-item">
+                    <h5 class="item-hd"><img src="materials/icons/mall/cat-3.png" alt="图片" /><span>名品团购</span></h5>
+                    <ul class="item-bd clearfix">
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/mp/vipshop.png" alt="图片" /></a>
+                                <a class="item-name" href="">唯品会</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/mp/ihush.png" alt="图片" /></a>
+                                <a class="item-name" href="">俏物悄语</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/mp/xiu.png" alt="图片" /></a>
+                                <a class="item-name" href="">走秀网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/mp/nuomi.png" alt="图片" /></a>
+                                <a class="item-name" href="">糯米网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/mp/meituan.png" alt="图片" /></a>
+                                <a class="item-name" href="">美团网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/mp/yougou.png" alt="图片" /></a>
+                                <a class="item-name" href="">优购网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mall-item mall-other">
+                    <h5 class="item-hd"><img src="materials/icons/mall/cat-4.png" alt="图片" /><span>名品团购</span></h5>
+                    <ul class="item-bd clearfix">
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/qt/keede.png" alt="图片" /></a>
+                                <a class="item-name" href="">可得眼镜网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/qt/quwan.png" alt="图片" /></a>
+                                <a class="item-name" href="">趣玩网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-pic">
+                                <a class="item-logo" href=""><img src="materials/mall/qt/sigo.png" alt="图片" /></a>
+                                <a class="item-name" href="">视客眼镜网</a>
+                            </div>
+                            <div class="item-bar">
+                                <a class="detail" href="mall_1.html"><i class="icon-detail"></i>商家详情</a>
+                                <a class="shopping" href=""><i class="icon-shopping"></i>直达商城</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </div>   <!--Main End-->
+   
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
+
+    <script src="js/plugins/dialog.js"></script>
+    <script src="js/apps/holdphp.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=6620384" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+</body>
+</html>

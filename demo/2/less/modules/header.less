@@ -1,0 +1,143 @@
+//
+// Header
+// --------------------------------------------------
+
+header {
+    @a: @headerHeight;
+    @b: @headerBarHeight;
+    @c: @navHeight;
+
+    height: @a;
+    background: @headerBackground url('@{bgHeaderPath}') 0 0 repeat-x;
+
+    .hd-bar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: @fontSizeSmall;
+        color: #ff8e8e;
+        height: 23px; line-height: 23px;
+        
+        a{
+            padding: 0 5px;
+            color: @white;
+            &:hover{color: #ffe0e0;text-decoration: none;}
+        }
+        .login{
+            float: right;
+            background: #e13e39;
+            padding: 0 5px;
+            .border-radius(0 0 3px 3px);
+        }
+    }
+
+    .hd-wrap{
+        padding-top: @b;
+        height: @a - @b;
+        .logo {
+            float: left;
+            .size(200px, 60px);
+            margin: 0;
+            a{
+                .size(200px, 60px);
+            }
+            span{
+                display: none;
+            }
+        }
+        .search{
+            float: right;
+            margin-top: 22px;
+            .size(260px, 40px);
+
+            .search-bd {
+                position: relative;
+                height: 32px;
+                overflow: hidden;
+                border: 1px solid #d73c36;
+                font-size: @searchFontSize;
+                background: #fffeee;
+
+                .search-text{
+                    width: 202px;
+                    height: 16px;
+                    border: 0;
+                    line-height: 17px;
+                    _line-height: 14px;
+                    padding: 8px;
+                    outline: none;
+                    background: #fffeee;
+                }
+                .search-btn{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 32px;
+                    border: none;
+                    .border-radius(0);
+                    background: #e13e39 url('@{iconSpritePath}') 10px 5px no-repeat;
+                }
+            }
+            .active{
+                .search-text{
+                    background: @white;
+                }
+            }
+        }       
+    }
+
+    .hd-nav{
+        @h: @c;
+        
+        margin-top: -60px;
+        height: @c;
+        font-size: 16px;
+        font-family: @yaHeiFontFamily;
+        background: @navBackground;
+
+        .nav-bd{
+            height: @c;
+            _overflow: hidden;
+
+            ul{
+                padding-left: 300px;
+                .clearfix();
+                li{
+                    float: left;
+                    display: inline;
+                    margin-right: 20px;
+                    a{
+                        display: inline-block;
+                        height: @h;
+                        color: @navColor;
+                        text-decoration: none;
+                        cursor: pointer;
+                        .transition(all .5s ease-in-out);
+                        
+                        span{
+                            display: inline-block;
+                            height: @h;
+                            padding: 0 10px;
+                            line-height: @c;
+                            vertical-align: top;
+                            text-align: center;
+                        }
+
+                        &:hover{
+                            .border-radius(2px);
+                            background: #de3d38;
+                        }
+                    }
+
+                    &.nav-on a{
+                        .border-radius(2px);
+                        color: #ff446c;
+                        background: @navOnBackground;
+                    }
+                }
+            }
+        }
+    }
+}

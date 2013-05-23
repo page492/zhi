@@ -89,24 +89,6 @@ class HP_Controller extends CI_Controller
     }
 
     /**
-     * 消息处理
-     */
-    protected function show_message($message, $status=1)
-    {
-        if ($this->input->is_ajax_request()) {
-            $this->ajax_return(array(
-                'status' => $status,
-                'msg' => $message,
-            ));
-        } else {
-            $this->data['message'] = $message;
-            $this->data['icon'] = $status ? 'success' : 'error';
-            $this->load->view('admin/common/message', $this->data);
-            return FALSE;
-        }
-    }
-
-    /**
      * 字符串提取关键词
      */
     public function ajax_gettags()

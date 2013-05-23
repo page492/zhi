@@ -89,13 +89,15 @@ class Front_Controller extends HP_Controller
         $default_config['base_url'] = site_url($this->uri->uri_string().'?');
         $default_config['total_rows'] = $total_rows;
         $default_config['per_page'] = 1;
-        $default_config['num_links'] = 3;
+        $default_config['num_links'] = 10;
         $default_config['use_page_numbers'] = TRUE;
         $default_config['first_tag_open'] = $default_config['last_tag_open'] = $default_config['next_tag_open'] = $default_config['prev_tag_open'] = $default_config['num_tag_open'] = ' ';
         $default_config['first_tag_close'] = $default_config['last_tag_close'] = $default_config['next_tag_close'] = $default_config['prev_tag_close'] = $default_config['num_tag_close'] = ' ';
         $default_config['cur_tag_open'] = '<span class="current">';
         $default_config['cur_tag_close'] = '</span>';
-        $default_config['first_link'] = '首页';
+        $default_config['first_link'] = '1';
+        $default_config['first_tag_close'] = '<span class="separator">...</span>';
+        $default_config['last_tag_open'] = '<span class="separator">...</span>';
         $default_config['last_link'] = '尾页';
         $default_config['prev_link'] = '上一页';
         $default_config['next_link'] = '下一页';
@@ -103,12 +105,32 @@ class Front_Controller extends HP_Controller
         $default_config['query_string_segment'] = 'page';
         $config = array_merge($default_config, $config);
         $this->pagination->initialize($config);
-        $links = $this->pagination->create_links();
+        $links = $this->pagination->create_links_hold();
         $cur_page = $this->pagination->cur_page ? $this->pagination->cur_page : 1;
         $limit_offset = ($cur_page - 1) * $config['per_page'];
         return array(
             'links' => $links,
             'limit' => array('value' => $config['per_page'], 'offset' => $limit_offset),
         );
+    }
+
+    /**
+     * 消息处理
+     */
+    protected function show_message($message, $status=1, $target_url = '')
+    {
+        if ($this->input->is_ajax_request()) {
+            $this->ajax_return(array(
+                'status' => $status,
+                'msg' => $message,
+                'target_url' => $target_url,
+            ));
+        } else {
+            $this->data['message'] = $message;
+            $this->data['icon'] = $status ? 'ok' : 'error';
+            $this->data['target_url'] = $target_url ? $target_url : $_SERVER["HTTP_REFERER"];
+            $this->load->view('common/message', $this->data);
+            return FALSE;
+        }
     }
 }

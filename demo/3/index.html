@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>什么值得买</title>   
+    <meta name="description" content="" />
+    <meta name="author" content="cssoul.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="holdphp.css" />
+    
+    <!-- <link rel="stylesheet" type="text/less" href="less/holdphp.less" /> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="home-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="top-logo"><a href="" title>什么值得买</a></div>
+                <div class="ucenter">
+                    <a class="btn-reg" href="register.html">注册</a>
+                    <div class="login" id="J_Login">
+                        <a class="btn-login" href="javascript:void(0);">登录</a>
+                        <ul class="outside">
+                            <li><a href=""><img src="img/oauth/zhi/icon.png">网站登录</a></li>
+                            <li class="dsf">第三方登录</li>
+                            <li class="weibo"><a href=""><img src="img/oauth/sina/icon.png">微博登陆</a></li>
+                            <li class="tenx"><a href="" ><img src="img/oauth/qq/icon.png">QQ登录</a></li>
+                            <li class="taobao"><a href=""><img src="img/oauth/taobao/icon.png">淘宝登录</a></li>
+                        </ul>
+                    </div>
+                    <script>
+                        $(function () {
+                            $('#J_Login').dropdown({inner: '.outside'});
+                        });
+                    </script>
+                    <!-- <div class="hi">
+                        黑幕困兽... 欢迎您！<span>|</span>
+                        <a href="">个人中心</a><span>|</span>
+                        <a href="">注销</a>
+                    </div> -->
+                </div>
+
+                <div class="quick-menu">
+                    <ul>
+                        <li><a href="cuxiao.html">发现频道</a></li><span>|</span>
+                        <li><a href="detail.html">商家导航</a></li><span>|</span>
+                        <li><a href="">海淘助手</a></li><span>|</span>
+                        <li><a href="baoliao.html">我要爆料</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>高性价比产品网购推荐，值得您经常来看看</span>
+            </h1>
+            <div class="notice">
+                <ul id="J_Notice">
+                    <li>爆料、投稿、交流、纠错，欢迎通过<a href="">我要爆料</a>页面进行提交。</li>
+                    <li>什么值得买微信公众平台 <a href="">开放测试</a></li>
+                    <li>想第一时间获取<a href="">优惠信息</a>？5种实时推送方法来帮您！</li>
+                </ul>
+                <i class="icon-volume"></i>
+            </div>
+            <script>
+                $(function () {
+                    $('#J_Notice').holdScroll();
+                });
+            </script>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd" id="J_Nav">
+                <ul>
+                    <li class="nav-item nav-on">
+                        <a class="nav-main" href="index.html"><i class="caret-sy"></i>首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-main" href="javascript:void(0);"><i class="caret-cx"></i>促销活动</a>
+                        <ul class="nav-sub">
+                            <li><a href="cuxiao.html">网友投稿</a></li>
+                            <li><a href="">神价格</a></li>
+                            <li><a href="">手慢无</a></li>
+                            <li><a href="">白菜党</a></li>
+                            <li><a href="">蚊子肉</a></li>
+                            <li><a href="">高端秀</a></li>
+                            <li><a href="">八哥价</a></li>
+                            <li><a href="">奇葩物</a></li>
+                            <li><a href="">怀旧族</a></li>
+                            <li><a href="">奇葩物</a></li>
+                            <li><a href="">折腾狂</a></li>
+                            <li><a href="">免费得</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-main" href="javascript:void(0);"><i class="caret-fx"></i>发现频道</a>
+                        <ul class="nav-sub">
+                            <li><a href="detail.html">新特荐</a></li>
+                            <li><a href="">超值购</a></li>
+                            <li><a href="">限时抢</a></li>
+                            <li><a href="">品牌惠</a></li>
+                            <li><a href="">活动汇</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-main" href="mall.html"><i class="caret-sj"></i>商家导航</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-main" href=""><i class="caret-qt"></i>其他</a>
+                    </li>
+                </ul>
+                <script>
+                    $(function () {
+                        $('#J_Nav .nav-item').dropdown({inner: '.nav-sub'});
+                    });
+                </script>
+
+                <div class="search">
+                    <div class="search-bd" id="J_Search">
+                    <form action="" method="get">
+                        <label for="mq">搜索 折扣商品</label>
+                        <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" />
+                        <input class="search-btn" type="submit" value="" />
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="left-menu" id="J_Menu">
+        <div class="menu-hd"><a href="">推荐类别</a></div>
+        <div class="menu-bd">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-1.png" /><span>潮流女装</span><i class="icon-play"></i></a></p>
+                    <ul class="sub-menu" style="visibility: hidden;">
+                        <li class="sub-item"><span>·</span><a href="">办公设备</a></li>
+                        <li class="sub-item"><span>·</span><a href="">外设产品</a></li>
+                        <li class="sub-item"><span>·</span><a href="">大家电</a></li>
+                        <li class="sub-item"><span>·</span><a href="">小家电</a></li>
+                    </ul>
+                    <b class="caret"></b>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-2.png" /><span>品质男装</span><i class="icon-play"></i></a></p>
+                    <ul class="sub-menu" style="visibility: hidden;">
+                        <li class="sub-item"><span>·</span><a href="">办公设备</a></li>
+                        <li class="sub-item"><span>·</span><a href="">外设产品</a></li>
+                        <li class="sub-item"><span>·</span><a href="">大家电</a></li>
+                        <li class="sub-item"><span>·</span><a href="">小家电</a></li>
+                    </ul>
+                    <b class="caret"></b>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-3.png" /><span>家居生活</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-4.png" /><span>食品保健</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-5.png" /><span>图书音像</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-6.png" /><span>服饰鞋包</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-7.png" /><span>母婴玩具</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-8.png" /><span>钟表首饰</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-9.png" /><span>运动户外</span></a></p>
+                </li>
+                <li class="menu-item no-border">
+                    <p><a href=""><img src="materials/icons/menu/cat-10.png" /><span>杂七杂八</span></a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-ft">
+            <a href="">海淘资讯</a>
+        </div>
+    </div>  <!--Menu End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <div class="content">
+                <section class="hot_post">
+                    <h5 class="hd"><span>热门活动</span></h5>
+                    <div class="bd">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="" target="_blank">蚊子肉：小手一抖，5元到手</a>
+                            </li>
+                            <li class="h">
+                                <a href="" target="_blank">加入什么值得买</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">亚马逊中国服饰低至6折</a>
+                            </li>
+                            <li class="h">
+                                <a href="" target="_blank">苏宁易购 0元购重振雄风</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">STP订阅邮件额外7折</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">新春开学季！数码全场5折起！</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="feed-list" id="J_Feeds">
+                    <!-- <article class="feed-item sign-new">
+                        <h3 class="item-tit">
+                            <i class="item-sign"></i><a href="">DELTA 台达 NX400 台式机电源（400W，主动式，铜牌）<span class="item-price">249元包邮</span></a>
+                        </h3>
+                    </article> -->
+
+                    <article class="feed-item sign-hot">
+                        <h3 class="item-tit">
+                            <i class="item-sign"></i><a href="">Yorker 约客 速溶白咖啡 600g  <span class="item-price">49元（买一赠一，限北上广深，还可用券）</span></a>
+                        </h3>
+                    </article>
+
+                    <article class="feed-item">
+                        <h3 class="item-tit">
+                            <a href="">Panasonic 松下 DMC-GX1 微单套机（14-42mm电动变焦饼干头）<span class="item-price">33800日元（约2250元人民币）可改英文菜单！</span></a>
+                        </h3>
+                        <div class="right-box">
+                            <div class="item-pic">
+                                <div class="item-like">
+                                    <a href="" class="collect"><i class="icon-star"></i>10</a>
+                                    <a href="" class="comment"><i class="icon-comment"></i>999</a>
+                                </div>
+                                <a href="" class="item-img"><img src="materials/apps/home/feeds-1.jpg" alt="图片" /></a>
+                                <div class="item-buy">
+                                    <a href="javascript:void(0);">点击直接购买<i class="icon-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="">天猫 DT235</a></li>
+                                        <li><a href="">京东 DT235</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-attr excerpt">
+                            <div class="item-info">
+                                <span class="item-cate">分类: <a href="">户外运动</a></span> 
+                                <span class="item-origin">商城: MYHABIT</span>
+                                <span class="item-referee">推荐人: 黑幕困兽</span>
+                            </div>
+                            <div class="item-intro">
+                                &nbsp;&nbsp;&nbsp;&nbsp;冠希1带上了电动变焦饼干再度来临！在微单领域，松下的GF系列朝着<span style="color: #BC0202;">傻瓜化、女性化</span>大步迈进，用户迫切期待一款像GF1那么爷们的专业微单，于是GX1来了。其主打更专业的操作手感以及功能，同时配备现时M4/3系统最高像素的传感器——1600万像素LiveMOS，配合可0.09秒高速对焦的AF自动对焦系统，实力得到显著提升。
+                                <p style=" margin: 20px 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;GX1的连拍速度也提升至4.2张/秒。视频方面，1080P自然不在话下，拍摄的同时还可以进行全时AF和AF追踪功能操作。另外，GX1恢复了热靴功能，可以支持电子EVF及外闪。1010mAh锂电池，可连续拍摄照片约320张。需要注意的是，这次附带的镜头是电动的14-42mm变焦饼干头，比上次推荐过的同型号产品镜头更牛，价格还要更便宜。来自什么值得买网友“tokyoo”的推荐理由：</p>
+                                <p style=" margin: 20px 0px 0px;">
+                                    <img src="materials/apps/home/feeds-1-1.jpg" />
+                                </p>
+                                <p style="margin: 20px 0px 0px;"><a href="" target="_blank">日本亚马逊</a>特价至33800日元，发货重量按0.9kg计算，折合人民币约2250元到手（未包含关税），具体购买方法可参考<a href="" target="_blank">日本海淘教程</a>。国内B2C网站的报价大约在4000元左右，如京东商城。</p>
+                            </div>
+                        </div>
+                        <div class="item-drawer">
+                            <a href="" class="down">展开全文<i class="icon-chevron-down"></i></a>
+                            <a href="" class="up none">向上收起<i class="icon-chevron-up"></i></a>
+                        </div>
+                        <div class="item-bar">
+                            <div class="times"><i class="icon-time"></i>16分钟前</div>
+                            <div class="worth"><a href=""><i class="icon-heart"></i></a>有<span> 55 </span>位网友认为值得买！</div>
+                            <div class="shares">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <span>分享到：</span>
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <a class="bds_tqq"></a>
+                                    <a class="bds_tsohu"></a>
+                                    <a class="bds_bdhome"></a>
+                                    <a class="bds_douban"></a>
+                                </div>
+                                <!-- Baidu Button END -->
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-item">
+                        <h3 class="item-tit">
+                            <a href="">促销活动：1号店 德芙巧克力  <span class="item-price">买一送一（华北有货，叠加用券，低至34.7元/斤）</span></a>
+                        </h3>
+                        <div class="right-box">
+                            <div class="item-pic">
+                                <div class="item-like">
+                                    <a href="" class="collect"><i class="icon-star"></i>10</a>
+                                    <a href="" class="comment"><i class="icon-comment"></i>999</a>
+                                </div>
+                                <a href="" class="item-img"><img src="materials/apps/home/feeds-2.jpg" alt="图片" /></a>
+                                <div class="item-buy">
+                                    <a href="">点击直接购买<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-attr excerpt">
+                            <div class="item-info">
+                                <span class="item-cate">分类：<a href="">国内促销</a><a href="">日常食品</a></span> 
+                                <span class="item-origin">商城: TMALL</span>
+                                <span class="item-referee">推荐人：lostshane</span> 
+                            </div>
+                            <div class="item-intro">
+                                &nbsp;&nbsp;&nbsp;&nbsp;来自什么值得买网友“北极雪99”的推荐理由：“德芙部分<span style="color: #BC0202;">商品买一送一</span>，不同地域价格不同，比如华北地区的德芙巧克力拼盘290.5g/碗，原价45元，买两个送两个，再买上德芙牛奶巧克力分享装90g/袋，原价13.3元，买一个送一，用一个支付宝金账户联合登陆1号店<span style="color: #BC0202;">赠送的100-10券</span>，相当于103.3-10=93.3元买了1342克德芙。平均34.76一斤。聚划算无比~；同样是华北，这款294g的碗装巧克力，原价34.2元，同样参加买一赠一，也比较划算。”
+                                <p style=" margin: 20px 0px 0px;">
+                                    <img src="materials/apps/home/feeds-2-1.jpg" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-drawer">
+                            <a href="" class="down">展开全文<i class="icon-chevron-down"></i></a>
+                            <a href="" class="up none">向上收起<i class="icon-chevron-up"></i></a>
+                        </div>
+                        <div class="item-bar">
+                            <div class="times"><i class="icon-time"></i>1小时前</div>
+                            <div class="worth"><a href=""><i class="icon-heart"></i></a>有<span> 999 </span>位网友认为值得买！</div>
+                            <div class="shares">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <span>分享到：</span>
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <a class="bds_tqq"></a>
+                                    <a class="bds_tsohu"></a>
+                                    <a class="bds_bdhome"></a>
+                                    <a class="bds_douban"></a>
+                                </div>
+                                <!-- Baidu Button END -->
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-item">
+                        <h3 class="item-tit">
+                            <a href="">神价格：Victorinox 维氏 SwissChamp 瑞士冠军 瑞士军刀  <span class="item-price">237元包邮（337元可凑单减100）</span></a>
+                        </h3>
+                        <div class="right-box">
+                            <div class="item-pic">
+                                <div class="item-like">
+                                    <a href="" class="collect"><i class="icon-star"></i>10</a>
+                                    <a href="" class="comment"><i class="icon-comment"></i>999</a>
+                                </div>
+                                <a href="" class="item-img"><img src="materials/apps/home/feeds-3.jpg" alt="图片" /></a>
+                                <div class="item-buy">
+                                    <a href="">点击直接购买<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-attr excerpt">
+                            <div class="item-info">
+                                <span class="item-cate">分类：<a href="">国内促销</a><a href="">实用工具</a></span> 
+                                <span class="item-origin">商城: 京东商城</span>
+                                <span class="item-referee">推荐人：放了那位大婶</span> 
+                            </div>
+                            <div class="item-intro">
+                                &nbsp;&nbsp;&nbsp;&nbsp;京东这次婚庆礼品满359-100元活动着实给力，不少瑞士军刀满减后都不错，目前这款<span style="color: #BC0202;">瑞士冠军1.6795报价337元</span>，可与35元的777指甲钳套装NTS-103凑单（指甲剪售罄，可与这个打火机凑单），实付272元，要知道这货299元已经算难得，现在237元，这个价神了，比海淘都划算，这价还不推，小编不活了！
+                                <p style=" margin: 20px 0px 0px;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Victorinox维氏的品牌不再赘述，正宗军刀品牌。SwissChamp瑞士冠军是瑞士军刀中的旗舰型号，9.1厘米长，3.3厘米厚（7层），2.6厘米宽，小巧而精致，被当作瑞士军刀的代表制作，被包括纽约现代艺术博物馆、慕尼黑应用艺术博物馆作为“世界经典设计”收藏。功能方面，可以说是日常使用的全能型军刀，<a href="">高达33种功能</a>，分别包括：
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-drawer">
+                            <a href="" class="down">展开全文<i class="icon-chevron-down"></i></a>
+                            <a href="" class="up none">向上收起<i class="icon-chevron-up"></i></a>
+                        </div>
+                        <div class="item-bar">
+                            <div class="times"><i class="icon-time"></i>2天前</div>
+                            <div class="worth"><a href=""><i class="icon-heart"></i></a>有<span> 58 </span>位网友认为值得买！</div>
+                            <div class="shares">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <span>分享到：</span>
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <a class="bds_tqq"></a>
+                                    <a class="bds_tsohu"></a>
+                                    <a class="bds_bdhome"></a>
+                                    <a class="bds_douban"></a>
+                                </div>
+                                <!-- Baidu Button END -->
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-item">
+                        <h3 class="item-tit">
+                            <a href="">Kindle PaperWhite 皮套（MoKo Cover Case）    <span class="item-price">$6.99</span></a>
+                        </h3>
+                        <div class="right-box">
+                            <div class="item-pic">
+                                <div class="item-like">
+                                    <a href="" class="collect"><i class="icon-star"></i>10</a>
+                                    <a href="" class="comment"><i class="icon-comment"></i>999</a>
+                                </div>
+                                <a href="" class="item-img"><img src="materials/apps/home/feeds-4.jpg" alt="图片" /></a>
+                                <div class="item-buy">
+                                    <a href="">点击直接购买<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-attr excerpt">
+                            <div class="item-info">
+                                <span class="item-cate">分类：<a href="">国内促销</a><a href="">实用工具</a></span> 
+                                <span class="item-origin">商城: 京东商城</span>
+                                <span class="item-referee">推荐人：放了那位大婶</span> 
+                            </div>
+                            <div class="item-intro">
+                                &nbsp;&nbsp;&nbsp;&nbsp;什么值得买网友“aethers99”的推荐理由“这皮套我1月份拍的，当时只有黑色做活动是5.99刀，原价是25.99刀。<a href="">现在是做活动6.99</a>，质量真心不错，多种颜色可选，比某宝上买还是要划算，而且质量可靠~ ”
+                                <p style=" margin: 20px 0px 0px;">
+                                    <img src="materials/apps/home/feeds-4-1.jpg" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-drawer">
+                            <a href="" class="down">展开全文<i class="icon-chevron-down"></i></a>
+                            <a href="" class="up none">向上收起<i class="icon-chevron-up"></i></a>
+                        </div>
+                        <div class="item-bar">
+                            <div class="times"><i class="icon-time"></i>2天前</div>
+                            <div class="worth"><a href=""><i class="icon-heart"></i></a>有<span> 58 </span>位网友认为值得买！</div>
+                            <div class="shares">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <span>分享到：</span>
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <a class="bds_tqq"></a>
+                                    <a class="bds_tsohu"></a>
+                                    <a class="bds_bdhome"></a>
+                                    <a class="bds_douban"></a>
+                                </div>
+                                <!-- Baidu Button END -->
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <script>
+                    $(function () {
+                        $('#J_Feeds .item-buy').dropdown({inner: 'ul'});
+                    });
+                </script>
+
+                <section class="pagination">
+                    <a href="">上一页</a>
+                    <a href="">1</a>
+                    <span class="separator">...</span>
+                    <a href="">11</a>
+                    <a href="">12</a>
+                    <a href="">13</a>
+                    <span class="current">14</span>
+                    <a href="">15</a>
+                    <a href="">下一页</a>
+                </section>
+
+            </div>
+
+            <div class="right-aside" id="J_Aside">
+                <section class="share-tool aside-mod">
+                    <h5 class="hd">一键分享，让更多朋友关注！</h5>
+                    <div class="bd clearfix">
+                        <!-- Baidu Button BEGIN -->
+                        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+                            <a class="bds_tsina"></a>
+                            <a class="bds_douban"></a>
+                            <a class="bds_mogujie"></a>
+                            <a class="bds_taobao"></a>
+                            <span class="bds_more"></span>
+                        </div>
+                        <!-- Baidu Button END -->
+                    </div>
+                </section>
+
+                <section class="hot-sale aside-mod">
+                    <h5 class="hd"><span>热门宝贝</span></h5>
+                    <div class="bd carousel" id="J_HotSale">
+                        <ul class="carousel-inner">
+                            <li>
+                                <a href="">
+                                    <img src="materials/apps/pic-9.jpg" alt="图片">
+                                    <div>出去吓人吧！Soviet Russian Civilian Gas Mask</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="materials/apps/pic-4.jpg" alt="图片">
+                                    <div>出去吓人吧！Soviet Russian Civilian Gas Mask</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="materials/apps/pic-7.jpg" alt="图片">
+                                    <div>出去吓人吧！Soviet Russian Civilian Gas Mask</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="carousel-control prev" href="#">‹</a>
+                        <a class="carousel-control next" href="#">›</a>
+                        <div class="carousel-indicators">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <script>
+                        $(function () {
+                            $('#J_HotSale').carousel({interval: 10000});
+                        });
+                    </script>
+                </section>
+
+                <section class="hot-tags aside-mod">
+                    <h5 class="hd"><span>热门搜索</span></h5>
+                    <div class="bd">
+                        <ul class="tag-list clearfix">
+                            <li><a href="" class="">京东商城</a></li>
+                            <li><a href="" class="">活动大促</a></li>
+                            <li><a href="" class="">洗发水</a></li>
+                            <li><a href="" class="">家居</a></li>
+                            <li><a href="" class="">进口食品</a></li>
+                            <li><a href="" class="">食用油</a></li>
+                            <li><a href="" class="">1号店</a></li>
+                            <li><a href="" class="">佳洁士</a></li>
+                            <li><a href="" class="">年货</a></li>
+                            <li><a href="" class="">纸巾</a></li>
+                            <li><a href="" class="">智趣小行星</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="hot-goods aside-mod">
+                    <h5 class="hd"><span>推荐宝贝</span></h5>
+                    <div class="bd" id="J_ShowPic">
+                        <ul class="pic-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-1.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-2.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-3.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-4.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-5.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-6.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-7.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-8.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    查看更多 ...
+                                </a>
+                            </li>
+                        </ul>
+                        <div class='pic-pop none'></div>    <!--展示大图-->
+                    </div>
+
+                    <script>
+                        $(function () {
+                            $('#J_ShowPic').popPic();
+                        });
+                    </script>
+                </section>
+
+                <section class="hot_seller aside-mod">
+                    <h5 class="hd"><span>热门商家</span></h5>
+                    <div class="bd">
+                        <ul class="logo-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/tmall.png" width="60" height="30" alt="天猫" />
+                                </a>
+                                <p class="info"><a href="">天猫商城</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/taobao.png" width="60" height="30" alt="淘宝网" />
+                                </a>
+                                <p class="info"><a href="">淘宝网</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/yihaodian.png" width="60" height="30" alt="1号店铺" />
+                                </a>
+                                <p class="info"><a href="">1号店铺</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/vipshop.png" width="60" height="30" alt="唯品会" />
+                                </a>
+                                <p class="info"><a href="">唯品会</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/lefeng.png" width="60" height="30" alt="乐蜂网" />
+                                </a>
+                                <p class="info"><a href="">乐蜂网</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/jumei.png" width="60" height="30" alt="聚美网" />
+                                </a>
+                                <p class="info"><a href="">聚美网</a></p>
+                            </li>                                   
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="banner aside-mod">
+                    <a target="_blank" href=""><img src="materials/apps/add.jpg" width="250" /></a>
+                </section>
+            </div>
+        </div>
+    </div>   <!--Main End-->
+   
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-link clearfix">
+                <p class="fl">
+                    <span>友情链接：</span>
+                    <a href="http://www.admin5.com/" target="_blank">站长网</a>
+                    <a href="http://www.nipic.com/" target="_blank">昵图素材网</a>
+                    <a href="http://www.meilishuo.com/" target="_blank">美丽说</a>
+                    <a href="http://www.liebiao.com/" target="_blank">列表网</a>
+                    <a href="http://www.19lou.com/" target="_blank">19楼</a>
+                    <a href="http://www.55.la/" target="_blank">我拉网</a>
+                    <a href="http://china.findlaw.cn/" target="_blank">法律咨询</a>
+                    <a href="http://www.17u.cn/" target="_blank">同程旅游网</a>
+                    <a href="http://bj.58.com/" target="_blank">北京分类信息</a>
+                </p>
+                <p class="fr">
+                    <a href="" target="_blank">更多&gt;&gt;</a>
+                </p>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
+    
+    <script src="js/plugins/carousel.js"></script>
+    <script src="js/plugins/holdscroll.js"></script>
+    <script src="js/plugins/poppic.js"></script>
+    <script src="js/plugins/dialog.js"></script>
+    <script src="js/plugins/dropdown.js"></script>
+    <script src="js/apps/holdphp.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=6620384" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+</body>
+</html>

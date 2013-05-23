@@ -1,0 +1,130 @@
+//
+// Dialog
+// --------------------------------------------------
+
+
+.d-outer {
+	text-align: left;
+	outline: none 0;
+}
+.d-border, .d-dialog {
+	width: auto;
+	border: 0 none; 
+	margin: 0; 
+	border-collapse: collapse; 
+}
+.d-header{ 
+	font-family: @yaHeiFontFamily;
+}
+.d-titleBar {
+	position: relative;
+	height: 100%; 
+	border-bottom: 1px solid #e6e6e6; 
+	background-color: #f7f7f7;
+}
+
+.d-title {
+	height: 30px;
+	line-height: 28px;
+	padding: 0 48px 0 10px;
+	cursor: default;
+	.text-overflow();
+}
+.d-state-drag .d-title { cursor:move; }
+.d-state-noTitle .d-title { display:none; }
+.d-close {
+	display: block;
+	position: absolute;
+	top: 5px;right: 8px;
+	text-decoration: none!important; 
+	font-size: 21px;
+	font-weight: 700;
+	color: @gray;
+	outline: none; 
+	_cursor: pointer;
+
+	&:hover,&:active {
+		color: @pink;
+	}
+}
+
+.d-main {
+	text-align:center;
+	vertical-align:top;
+	min-width: 12em;
+}
+.d-content {
+	display: inline-block;
+	.ie7-inline-block();
+	text-align: left;
+	border: 0 none;
+	color: @gray;
+}
+.d-content.d-state-full {
+	display:block;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0!important;
+}
+.d-loading {
+	width: 120px;
+	margin: 10px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url('@{loadingPath}') no-repeat center center; 
+}
+.d-buttons {
+	padding:5px 8px;
+	text-align:right;
+	white-space:nowrap;
+}
+.d-button {
+    .btn();
+    .btn-oran();
+    display: inline; 
+}
+.d-button[disabled] {
+	.btn();
+	cursor:default;
+	.opacity(70);
+}
+.d-state-highlight:hover {
+	background: #ff4400;
+}
+
+.d-mask { 
+	background: @black;
+	.opacity(30);
+}
+.d-inner {
+	background: @white;
+}
+.d-nw, .d-n, .d-ne, .d-w, .d-c, .d-e, .d-sw, .d-s, .d-se, .d-header, .d-main, .d-footer { 
+	padding:0; 
+}
+.d-nw, .d-ne, .d-sw, .d-se {
+	.square(5px);
+}
+.d-nw, .d-n, .d-ne, .d-w, .d-e, .d-sw, .d-s, .d-se {
+	background:rgba(0, 0, 0, .2); 
+	background:#000\9!important; 
+	filter:alpha(opacity=20);
+}
+
+@media screen and (min-width:0) {/* css3 */
+	.d-state-focus .d-dialog { box-shadow: 0 0 2px rgba(0, 0, 0, .2); }
+	.d-state-drag, .d-state-focus:active  { box-shadow:none; }
+	.d-state-focus { box-shadow:0 3px 8px rgba(0, 0, 0, .3);  }
+	.d-outer {
+		.scale(0);
+		-webkit-transition: -webkit-transform .3s ease-in-out;
+		-moz-transition:  -moz-transform .3s ease-in-out;
+        -o-transition:  -o-transform .3s ease-in-out;
+		transition: transform .3s ease-in-out;
+	}
+	.d-state-visible { 
+		.scale(1);
+	}
+}
+

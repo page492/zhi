@@ -1,0 +1,205 @@
+//
+// Header
+// --------------------------------------------------
+
+header {
+    @a: @headerHeight;
+    @b: @headerBarHeight;
+    @c: @navHeight;
+
+    background: @headerBackground;
+
+    .hd-bar{
+        height: @b;
+        font-size: @fontSizeSmall;
+        border-bottom: 1px solid #ebebeb;
+        background: @headerBarBackground url('@{bgHeaderPath}') 0 0 repeat-x;
+        overflow: hidden;
+        .quick-menu{
+            float: left;
+            width: 30%;
+            color: @grayLight;
+            li{
+                display: inline;
+                line-height: @b;
+                a{
+                    color: @headerBarColor;
+                    padding: 0 8px;
+                }
+            }
+        }
+
+        .login{
+            float: right;
+            display: inline;
+
+            .local, .outside{
+                float: left;
+                display: inline;
+                line-height: @b;
+            }
+            .local{
+                .btn-login{
+                    margin-left: 6px;
+                }
+            }
+            .outside{
+                margin-left: 10px;
+                _margin-top: 6px;
+
+                a{
+                    display: inline-block;
+                    .ie7-inline-block();
+                    width: 75px;
+                    padding-left: 8px;
+                    color: @headerBarColor;
+                    
+                    img{
+                        display: inline-block;
+                        .square(16px);
+                        margin-right: 3px;
+                        color: @headerBarColor;
+                    }
+                    &.tenx{
+                        width: 65px;
+                    }
+                }
+            }
+            .hi{
+                color: @grayLight;
+                line-height: @b;
+                span, a{
+                    padding: 0 3px;
+                }
+            }
+        }
+
+    }
+
+    .hd-wrap{
+        position: relative;
+        height: @a - @b - @c;
+        .logo {
+            .size(450px, 60px);
+            margin: 0;
+            padding-top: 10px;
+            a{
+                .size(200px, 60px);
+            }
+            span{
+                font-size: @logoFontSize;
+                color: @logoFontColor;
+                font-weight: 400;
+            }
+        }
+        .search{
+            position: absolute;
+            top: 25px;
+            right: 10px;
+            .size(300px, 40px);
+
+            .search-bd {
+                position: relative;
+                height: 32px;
+                overflow: hidden;
+                border: 1px solid #d0d2d4;
+                font-size: @searchFontSize;
+
+                label{
+                    position: absolute;
+                    z-index: 3;
+                    top: 5px;
+                    left: 12px;
+                    zoom: 1;
+                    color: @searchFontColor;
+                    cursor: auto;
+                }
+
+                .search-text{
+                    width: 240px;
+                    height: 16px;
+                    border: 0;
+                    line-height: 17px;
+                    _line-height: 13px;
+                    padding: 8px;
+                    outline: none;
+                }
+                .search-btn{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 30px;
+                    border: none;
+                    background: url('@{iconSpritePath}') 10px 5px no-repeat;
+                }
+
+                &.active{
+                    border: 1px solid @orange;
+                    .search-btn{
+                        background-position: -59px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hd-nav{
+        @h: @c - 1px;
+
+        height: @c;
+        font-size: 15px;
+        font-family: @yaHeiFontFamily;
+        background: @navBackground;
+
+        .nav-bd{
+            height: @c;
+            _overflow: hidden;
+
+            ul{
+                zoom: 1;
+                li{
+                    float: left;
+                    display: inline;
+                    a{
+                        display: inline-block;
+                        height: @h;
+                        padding: 1px 1px 0;
+                        color: @navColor;
+                        text-decoration: none;
+                        cursor: pointer;
+                        .transition(all .5s ease-in-out);
+                        
+                        span{
+                            display: inline-block;
+                            height: @h;
+                            padding: 0 20px;
+                            line-height: @c;
+                            vertical-align: top;
+                            text-align: center;
+                        }
+
+                        &:hover{
+                            background: #bb3500;
+                        }
+                    }
+
+                    &.nav-on a{
+                        background: @navOnBackground;
+
+                        span{
+                            height: 44px;
+                            background-image: url('@{bgHeaderPath}');
+                            background-position: 50% -41px;
+                            background-repeat: no-repeat;
+                            _background: #434343;
+                        }
+                        &:hover{
+                            _background: #434343;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

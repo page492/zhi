@@ -1,0 +1,36 @@
+//
+// pagination
+// --------------------------------------------------
+
+
+.pagination{
+    height: 32px;
+    padding: 20px 0 30px;
+    text-align: center;
+
+    a, span{
+        display: inline-block;
+        .ie7-inline-block();
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+        padding: 0 9px;
+        color: #5183c0;
+        font-size: @fontSizeSmall;
+        border: @border; 
+        background-color: @white;       
+    }
+
+    span.current, a:hover{
+        height: 32px;
+        padding: 0 10px;
+        text-decoration: none;
+        color: @white;
+        border: none;
+        background-color: #5183c0;
+    }
+
+    span.separator{
+        color: @grayLight;
+    }
+}

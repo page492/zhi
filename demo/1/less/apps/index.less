@@ -1,0 +1,138 @@
+//
+// Index
+// --------------------------------------------------
+
+.main{
+    padding-top: 20px;
+
+    .inner-wrap{
+        border-top: 1px solid @hrBorder;
+    }
+}
+
+.left-menu{
+    background: @menuBackground;
+
+    .menu-hd{
+        height: 37px;
+        line-height: 37px;
+        margin-bottom: 5px;
+        a{
+            display: block;
+            padding: 0 20px;
+            color: @grayDark;
+            font-size: @baseFontSize;
+            font-weight: 700;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .set{
+        a{
+            background: #7abade;
+            color: @white;
+        }
+    } 
+}
+
+.right-aside{
+    background: @asideBackground;
+
+    .aside-mod{
+        padding: 0 10px 10px;
+        font-size: @asideFontSize;
+
+        .hd{
+            color: @asideHdColor;
+            background: url('@{asideLinePath}') 0 10px repeat-x;
+            span{
+                background: @asideBackground;
+            }
+        }
+        .bd{
+            position: relative;
+            color: @asideBdColor;
+        }
+        .ft{
+            text-align: right;
+        }              
+    }
+    .share-tool{
+        padding-top: 10px; 
+        .hd{
+            text-align: center;
+            font-weight: normal;
+            background: none;
+        }
+        .bd{
+            padding-left: 15px;
+        }
+    }
+    .hot-sale{
+        .carousel{
+            width: 230px;
+            height: 250px;
+            margin-bottom: 0;
+
+            .carousel-inner{
+                li{
+                    a{position: relative;}
+                }
+                img{
+                    .square(230px);
+                }
+                div{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 5px;
+                    width: 220px;
+                    background: @black;
+                    .opacity(50);
+                    color: @white;
+                }
+            }
+            .carousel-control{
+                background: none;
+                text-indent: 0;
+                left: 0;
+                font-size: 50px;
+                font-weight: 100;
+                line-height: 30px;
+                color: #dedede;
+                text-align: center;
+                font-family: @yaHeiFontFamily;
+                .opacity(100);
+                
+                // Hover/focus state
+                &:hover,
+                &:focus {
+                  color: @gray;
+                  text-decoration: none;
+                }
+            }
+            .next {
+                left: auto;
+                right: 0px;
+            }
+            .carousel-indicators{
+                padding: 0;
+                background: none;
+                span{
+                  .square(8px);
+                  margin: 0 4px; 
+                  .border-radius(8px);
+                }
+            }
+        }
+    }
+}
+
+.content{
+    background: @contentBackground;
+
+    .feed-list{
+        margin-bottom: 20px;
+    }
+}

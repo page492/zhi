@@ -1,0 +1,98 @@
+//
+// Form
+// --------------------------------------------------
+
+
+.form-mod{
+    .control{
+        min-height: 40px;
+        _height: 40px;
+        margin-bottom: 8px;
+        .clearfix();
+        .label{
+            float: left;
+            width: 70px;
+            line-height: 30px;
+            text-align: right;
+        }
+        .focus{
+            margin-left: 75px;
+            input{
+                height: 22px;
+                display: inline;
+                vertical-align: middle;
+            }
+            .txt{
+                width: 180px;
+            }
+            .radio{
+                margin-bottom: 0;
+            }
+            img{
+                display: inline;
+                margin-left: 5px;
+                vertical-align: top;
+            }
+            p{
+                margin: 0;
+                line-height: 30px;
+            }
+            span{
+                display: inline;
+                padding: 3px 0;
+                margin-left: 5px;
+                vertical-align: middle;
+                font-size: @fontSizeSmall;
+                color: @grayLight*1.2;
+            }
+        }
+    }
+
+    .error{
+        .focus{
+            input{
+                border-color: #f00;
+            }
+            .tips{
+                color: #f00;
+                padding-left: 20px;
+                background: url('@{iconMsgPath}') 0 -48px no-repeat;
+            }
+        }
+    }
+    .success{
+        .focus{
+            input{
+                border-color: @green;
+            }
+            .tips{
+                color: @green;
+                padding-left: 20px;
+                background: url('@{iconMsgPath}') 0 -249px no-repeat;
+            }
+        }
+    }
+
+    .xieyi{
+        padding-left: 75px;
+        line-height: 24px;
+        font-size: @fontSizeSmall;
+        span{
+            display: inline;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+    }
+    .submit{
+        padding-left: 75px;
+        button, a{
+            display: inline;
+        }
+        a{
+            margin-left: 5px;
+            vertical-align: bottom;
+            font-size: @fontSizeSmall;
+            text-decoration: underline;
+        }
+    }
+}

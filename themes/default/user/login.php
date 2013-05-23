@@ -15,14 +15,14 @@
                         <div class="control">
                             <label class="label" for="username">登录名：</label>
                             <div class="focus">
-                                <input type="text" class="txt" id="username" name="username" datatype="/^\w{1,18}$/" nullmsg="请填写用户名" errormsg="昵称至少3个字符,最多18个字符！" />
+                                <input type="text" class="txt" id="username" name="username" datatype="*" nullmsg="请填写用户名" />
                                 <span class="tips"></span>
                             </div>
                         </div>
                         <div class="control">
                             <label class="label" for="password">登录密码：</label>
                             <div class="focus">
-                                <input type="password" class="txt" id="password" name="password" datatype="*6-18" nullmsg="请输入密码！" errormsg="密码至少6个字符,最多18个字符！" />
+                                <input type="password" class="txt" id="password" name="password" datatype="*" nullmsg="请输入密码！" />
                                 <span class="tips"></span>
                             </div>
                         </div>

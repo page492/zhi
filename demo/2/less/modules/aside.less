@@ -1,0 +1,246 @@
+//
+// Aside
+// --------------------------------------------------
+
+.aside-mod{
+    margin-bottom: 10px;
+    border: @border;
+    border-top-color: #eee;
+    border-bottom-color: #e5e5e5;
+    background: @white;
+
+    .text-list{
+        padding: 0 5px;
+        li{
+            margin-bottom: 5px;
+            padding: 0 0 5px;
+            border-bottom: 1px dashed #d8d8d8;
+            a{
+                color: @asideBdColor;
+                &:hover{
+                    color: @linkColorHover;
+                }
+            }
+            span{
+                display: block;
+                color: @grayLight;
+            }
+        }
+    }
+
+    .tag-list{
+        padding-top: 10px;
+        li{
+            display: inline-block;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            padding: 2px 7px;
+            color: @white;
+            background-color: @blueDark;
+            .border-radius(2px);
+            .opacity(60);
+            .ie7-inline-block();
+
+            a{
+                color: @white;
+                &:hover{
+                    color: @white;
+                }
+            }
+            &:hover{
+                .opacity(100);
+            }
+            &:nth-child(2n){
+                background-color: @pink;
+            }
+            &:nth-child(3n){
+                background-color: @green;
+            }
+            &:nth-child(4n){
+                background-color: @purple;
+            }
+        }
+    }
+
+    .pic-list{
+        width: 237px;
+        li{
+            float: left;
+            .square(79px);
+            a{
+                display: block;
+                .square(71px);
+                line-height: 69px;
+                text-align: center;
+                border: 1px solid #dcdcdc;
+                overflow: hidden;
+                img{
+                    .square(71px);
+                }
+                &:hover{
+                    text-decoration: none;
+                    border-color: @pink;
+                }
+            }
+        }
+    }
+
+    .pic-pop{
+        position: absolute;
+        left: 0;
+        top: 0;
+        .square(231px);
+        overflow: hidden;
+        z-index: 10;
+        a{
+            display: block;
+            .square(229px);
+            border: 1px solid @pink;
+            img{
+                .square(229px);
+            }
+            div{
+                position: absolute;
+                bottom: 1px;
+                left: 1px;
+                .size(219px, 56px);
+                padding: 0 5px;
+                line-height: 26px;
+                color: @white;
+                background: @grayDark;
+                background: rgba(0,0,0,.6);
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    
+
+    .logo-list{
+        background: @white;
+        li{
+            display: inline-block;
+            .ie7-inline-block();
+            margin: 5px 10px;
+            text-align: center;
+            .info{
+                width: 90px;
+                height: 17px;
+                margin-top: 7px;
+                overflow: hidden;
+
+                a{
+                    color: @grayLight;
+                    &:hover{
+                        color: @linkColorHover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aside-nav{
+    dl{
+        position: relative;
+        margin: 0;
+        background: @asideBackground;
+        a{
+            color: @grayDark;
+            text-decoration: none;
+            font-weight: 400;
+            overflow: hidden;
+            i{
+                position: absolute;
+                top: 14px;
+                left: 200px;
+                display: block;
+                width: 11px;
+                height: 10px;
+                background: url('@{iconSpritePath}') @asideBackground no-repeat -117px -43px;
+            }
+        }
+        dt{
+            border-bottom: @border;
+            a{
+                display: block;
+                padding-left: 30px;
+                height: 40px;
+                line-height: 40px;
+                &:hover{
+                    background: #f7f7f7;
+                    text-decoration: none;
+                    i{
+                        background-color: #f7f7f7;
+                        background-position: -117px -43px;
+                    }
+                }
+            }
+        }
+        dd{
+            display: none;
+            margin: 0;
+            padding: 5px 0;
+            border-bottom: @border;
+            background: #fbfbfb;
+            
+            li{
+                height: 24px;
+                line-height: 24px;
+                padding-bottom: 5px;
+            }
+            span{
+                padding-left: 40px;
+                font-family: "宋体";
+                color: @grayLight;
+            }
+            a{
+                padding-left: 5px;
+                font-size: @fontSizeSmall;
+                letter-spacing: 2px;
+                &:hover{
+                    color: @pink;
+                }
+            }
+        }
+        ol{
+            margin: 0;
+        }
+    }
+    dl.expand{
+        dt{
+            a{
+                background: @asideBackground;
+                i{
+                    background-position: -115px -14px;
+                }
+                &:hover{
+                    i{
+                        background-position: -115px -14px;
+                    }
+                }
+            }
+        }
+        dd{
+            display: block;
+            a{
+                color: @gray;
+                background: none;
+            }
+            .selected a{
+                color: @pink;
+            }
+        }
+    }
+    dl.selected{
+        a{
+            background: #f7f7f7;
+            text-decoration: none;
+            i{
+                background-color: #f7f7f7;
+                background-position: -117px -43px;
+            }
+        }
+    }
+}

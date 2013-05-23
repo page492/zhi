@@ -1,0 +1,85 @@
+//
+// User
+// --------------------------------------------------
+
+
+#user-page{
+
+    .main{
+        .inner-wrap{
+            padding-top: 20px;
+            border: none;
+            background: @mainBackground;
+        }
+    }
+
+    .uc-form{
+        min-height: 430px;
+        _height: 430px;
+        color: @gray;
+
+
+        .fl{
+            width: 55%;
+            padding-left: 5%;
+            border-right: @border;
+
+            .other-login{
+                margin-top: 40px;
+                margin-left: 75px;
+            }
+        }
+        .fr{
+            width: 35%;
+            .other-login{
+                margin-bottom: 40px;
+                a{
+                    margin-bottom: 10px;
+                    img{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .tit{
+            line-height: 30px;
+            margin-bottom: 30px;
+            color: @grayDark;
+            font-weight: 400;
+        }
+        .other-login{
+            .other-hd{
+                font-size: @baseFontSize;
+                font-weight: 400;
+            }
+            .other-bd{
+                a{
+                    margin-right: 5px;
+                }
+            }
+        }
+        .sub-btn{
+            margin-top: 5px;
+            .btn-green{
+                color: @white;
+                text-decoration: none;
+                font-weight: 400;
+            }
+        }
+
+        .inbox{
+            margin: 0 5%;
+            .avatar{
+                .square(90px);
+                padding: 3%;
+                border: none;
+                img{
+                    border: @border;
+                }
+            }
+            .improve{
+                width: 80%;
+            }
+        }
+    }
+}

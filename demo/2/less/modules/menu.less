@@ -1,0 +1,117 @@
+//
+// List Menu
+// --------------------------------------------------
+
+.menu-list{
+    background: @menuBackground;
+    margin: 0;
+    .menu-item{
+        position: relative;
+        _border-bottom: 1px solid @menuBackground;
+        p{
+            margin: 0;
+            a{
+                display: block;
+                line-height: 20px;
+                padding: 5px 20px;
+                color: @menuColor;
+                cursor: pointer;
+
+                img{
+                    .square(15px);
+                    .border-radius(2px);
+                    vertical-align: middle;
+                    margin-right: 7px;
+                    .transition(all .2s ease-in-out);
+                }
+
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    .ie7-inline-block();
+                    font-size: @fontSizeSmall;
+                }
+                &:hover{
+                    color: @menuOnColor;
+                    text-decoration: none;
+                }
+            }
+            .icon-play{
+                position: absolute;
+                left: 115px;
+                top: 13px;
+                display: none;
+            }
+        }
+
+        .sub-menu{
+            position: absolute;
+            left: 128px;
+            top: -15px;
+            width: auto;
+            height: auto;
+            padding: 5px 10px 5px;
+            border: 1px solid @menuBorderColor;
+            border-bottom-color: @grayLighter;
+            box-shadow: 1px 0 2px 0 #eee;
+            background: @white;
+
+            .sub-item{
+                width: 100px;
+                height: 26px;
+                line-height: 26px;
+                font-size: @fontSizeSmall;
+                span{
+                    font-family: "宋体";
+                    color: @grayLight;
+                }
+                a{
+                    color: @gray;
+                    padding-left: 6px;
+
+                    &:hover{
+                        color: #ff446c;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-on, .menu-cur{
+        margin-top: -1px;
+        border-top: 1px solid @menuBorderColor;
+        border-bottom: 1px solid @menuBorderColor;
+        p{
+            a{
+                color: @menuOnColor;
+                background: @menuOnBackground;
+                img{
+                    .rotate(30deg);
+                }
+                &:hover{
+                    color: @menuOnColor;
+                }
+            }
+        }
+    }
+    .menu-cur{
+        p{
+            .icon-play{
+                display: block;
+            }
+        }
+        .caret{
+            display: inline-block;
+            background: #fff;
+            width: 5px;
+            height: 32px;
+            _height: 31px;
+            position: absolute;
+            top: 0;
+            _top: 1px;
+            right: -2px;
+            z-index: 20;
+        }
+    }
+
+}

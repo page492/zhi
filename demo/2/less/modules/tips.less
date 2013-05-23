@@ -1,0 +1,60 @@
+//
+// Tips
+// --------------------------------------------------
+
+
+.tips-box{
+	margin: 50px auto;
+	text-align: center;
+	z-index: 10;
+
+	.attention, .error, .ok{
+		display: inline-block;
+		min-width: 130px;
+		padding: 10px;
+		line-height: 24px;
+		.border-radius(3px);
+		text-align: left;
+		font-size: @fontSizeSmall;
+		background: #f1f1f1;
+
+		.caret{
+			margin-right: 10px;
+			.square(16px);
+			display: inline-block;
+			vertical-align: text-top;
+			background-image: url('@{iconMsgPath}');
+			background-repeat: no-repeat;
+		}
+	}
+	.attention{
+		.caret{background-position: 0 -150px;}
+	}
+
+	.ok{
+		.caret{background-position: 0 -250px;}
+	}
+
+	.error{
+		.caret{background-position: 0 0;}
+	}
+	
+}
+
+
+.prompt{
+	.tips-box{
+		margin: 100px auto;
+		.attention, .error, .ok{
+			width: 500px;
+			min-height: 80px;
+			padding: 38px;
+			font-size: @baseFontSize;
+		}
+		p{
+			margin-top: 10px;
+			padding-left: 30px;
+		}
+	}
+}
+

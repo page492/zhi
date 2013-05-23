@@ -1,0 +1,43 @@
+//
+// Tips
+// --------------------------------------------------
+
+
+.tips-box{
+	margin: 50px auto;
+	text-align: center;
+	z-index: 10;
+
+	.attention, .error, .ok{
+		display: inline-block;
+		min-width: 130px;
+		padding: 10px;
+		line-height: 24px;
+		.border-radius(3px);
+		text-align: left;
+		font-size: @fontSizeSmall;
+		background: #f1f1f1;
+
+		.caret{
+			margin-right: 10px;
+			.square(16px);
+    		display: inline-block;
+    		vertical-align: middle;
+			background-image: url('@{iconMsgPath}');
+			background-repeat: no-repeat;
+		}
+	}
+	.attention{
+		.caret{background-position: 0 -150px;}
+	}
+
+	.ok{
+		.caret{background-position: 0 -250px;}
+	}
+
+	.error{
+		.caret{background-position: 0 0;}
+	}
+	
+}
+

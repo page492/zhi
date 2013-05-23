@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>什么值得买</title>   
+    <meta name="description" content="" />
+    <meta name="author" content="cssoul.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="holdphp.css" />
+    
+    <!-- <link rel="stylesheet" type="text/less" href="less/holdphp.less" /> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="suggest-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="quick-menu">
+                    <ul>
+                        <li><a href="">设为首页</a></li><span>|</span>
+                        <li><a href="">网站地图</a></li><span>|</span>
+                        <li><a href="">海淘助手</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <!--<ul>
+                        <li class="local">
+                            <a href="" class="btn-login">注册</a><a href="" class="btn-login">登录</a>
+                        </li>
+                        <li class="outside">
+                            <a href="" class="weibo"><img src="img/oauth/sina/icon.png">微博登陆</a>
+                            <a href="" class="tenx"><img src="img/oauth/qq/icon.png">QQ登录</a>
+                            <a href="" class="taobao"><img src="img/oauth/taobao/icon.png">淘宝登录</a>
+                        </li>
+                    </ul>-->
+                    <div class="hi">
+                        <span>黑幕困兽... 欢迎您！</span><span>|</span>
+                        <a href="">个人中心</a><span>|</span>
+                        <a href="">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>让您轻松构建高性能导购系统！</span>
+            </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="" method="get">
+                    <label for="mq">搜索 折扣商品</label>
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" />
+                    <input class="search-btn" type="submit" value="" class="button" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li>
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li>
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li>
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>海外资讯</span></a>
+                    </li>
+                    <li class="nav-on">
+                        <a href=""><span>我要爆料</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <div class="content">
+                <section class="crumb">
+                    <div>当前位置:</div>
+                    <div><a href="/">首页 </a>&gt;&gt;<a href="" title="">我要爆料</a></div>
+                </section>
+
+                <article class="suggest">
+                    <h3 class="tit">我要爆料</h3>
+                    <div class="info">
+                        <p>Welcome！什么值得买不仅是信息发布平台，也是一个大家帮助大家的信息分享平台。什么值得买发布的绝大部分信息来自热心网友的爆料。</p>
+                        <p>如果您发现了网购的特价信息，或者想要向本站投稿，亦或者提提意见，都可以通过本页面实现。您的信息越完整准确，将越容易被及时处理。编辑也会尽可能的回复爆料，给您以答复。</p>
+                        <p>如果您是在其他来源看到了该信息，请务必准确填写“信息来源”项目，并避免直接抄袭他人文字。请尊重他人的劳动成果，勿进行“伪原创”。爆料平台不接受商家“王婆卖瓜”，也不希望网友批量爆料某些例行特价（例如易迅早市等），这会对编辑审核带来困扰，还望您的理解。请注意，本站有可能会对推荐产品、推荐语、链接进行调整，而不进行另行通知。</p>
+                        <p>请尽量选择<span style="color:#bb3500;">好品牌、好质量、好价格</span>的产品进行爆料，推荐理由尽量做到言简意赅。根据爆料信息来源、及时程度、特价力度、推荐理由丰富程度的不同，被<span style="color:#bb3500;">成功采用</span>的爆料会获得5-100个金币的奖励，您可以通过什么值得买的<a href="">用户积分计划</a>，换取优惠券、礼品卡或其他实物礼品。</p>
+                    </div>
+                </article>
+
+                <section class="suggest-operate">
+                    <div class="tab-tit" id="J_Tab">
+                        <ul>
+                            <li class="active"><a href="#leaks">特价信息爆料</a></li>
+                            <li><a href="#contribute">我要投稿</a></li>
+                            <li><a href="#suggest">改进建议</a></li>
+                        </ul>
+                    </div>     
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="leaks">
+                            <form class="form-mod" action="" method="post">
+                                <div class="control">
+                                    <label class="label" for="username">标题：</label>
+                                    <div class="focus">
+                                        <input type="text" class="txt" id="username" tabindex="1" name="username" />
+                                        <span class="tips">请输入标题</span>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <label class="label" for="username">链接：</label>
+                                    <div class="focus">
+                                        <input type="text" class="txt" id="username" tabindex="2" name="username" />
+                                        <span class="tips">请输入链接</span>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <label class="label" for="origin">爆料信息来源：</label>
+                                    <div class="focus">
+                                        <input type="radio" class="radio" name="origin" tabindex="3" value="0" checked="checked" /> 
+                                        在其他网站、论坛等
+                                        <input type="radio" class="radio" name="origin" value="1" />
+                                        B2C商城网站
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <label class="label" for="originUrl">信息来源网址：</label>
+                                    <div class="focus">
+                                        <input type="text" class="txt" id="password" tabindex="4" name="password" />
+                                        <span class="tips">请填写信息来源网址</span>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <label class="label" for="reason">推荐理由：</label>
+                                    <div class="focus">
+                                        <textarea name="reason" cols="60" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <p class="submit">
+                                    <button class="btn btn-oran btn-max">提交爆料</button>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="contribute">
+                            <form class="form-mod" action="" method="post">
+                                <p>如果您准备向我们投稿（500字以上），请在此提交申请。</p>
+                                <div class="control">
+                                    <label class="label" for="username">投稿申请：</label>
+                                    <div class="focus">
+                                        <textarea name="reason" cols="60" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <p class="submit">
+                                    <button class="btn btn-oran btn-max">提交爆料</button>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="suggest">
+                            <form class="form-mod" action="" method="post">
+                                <div class="control">
+                                    <label class="label" for="username">改进建议</label>
+                                    <div class="focus">
+                                        <textarea name="reason" cols="60" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <p class="submit">
+                                    <button class="btn btn-oran btn-max">提交爆料</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $('#J_Tab a').mouseover(function (e) {
+                                e.preventDefault();
+                                $(this).tab('show');
+                            });
+                        });
+                    </script>
+
+                </section>
+            </div>
+
+            <div class="right-aside" id="J_Aside">
+                <section class="share-tool aside-mod">
+                    <div class="bd clearfix">
+                        <!-- Baidu Button BEGIN -->
+                        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+                            <a class="bds_tsina"></a>
+                            <a class="bds_douban"></a>
+                            <a class="bds_mogujie"></a>
+                            <a class="bds_taobao"></a>
+                            <span class="bds_more"></span>
+                        </div>
+                        <!-- Baidu Button END -->
+                    </div>
+                </section>
+
+                <section class="hot_post aside-mod">
+                    <h5 class="hd"><span>热门活动</span></h5>
+                    <div class="bd">
+                        <ul class="text-list clearfix">
+                            <li>
+                                <a href="" target="_blank">手机新春！5折起特惠</a>
+                                <span class="time">02月25日-03月03日</span>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">新春话费充值！即送集分宝</a>
+                                <span class="time">02月25日-03月04日</span>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">新春开学季！数码全场5折起！</a>
+                                <span class="time">02月25日-03月03日</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ft">
+                        <a href="" target="_blank">更多活动</a>
+                    </div>
+                </section>
+
+                <section class="hot-goods aside-mod">
+                    <h5 class="hd"><span>推荐宝贝</span></h5>
+                    <div class="bd" id="J_ShowPic">
+                        <ul class="pic-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-1.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-2.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-3.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-4.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-5.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-6.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-7.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-8.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-9.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class='pic-pop none'></div>    <!--展示大图-->
+                    </div>
+
+                    <script>
+                        $(function () {
+                            $('#J_ShowPic').popPic();
+                        });
+                    </script>
+                </section>
+
+                <section class="hot_seller aside-mod">
+                    <h5 class="hd"><span>热门商家</span></h5>
+                    <div class="bd">
+                        <ul class="logo-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/tmall.png" width="60" height="30" alt="天猫" />
+                                </a>
+                                <p class="info"><a href="">天猫商城</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/taobao.png" width="60" height="30" alt="淘宝网" />
+                                </a>
+                                <p class="info"><a href="">淘宝网</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/yihaodian.png" width="60" height="30" alt="1号店铺" />
+                                </a>
+                                <p class="info"><a href="">1号店铺</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/vipshop.png" width="60" height="30" alt="唯品会" />
+                                </a>
+                                <p class="info"><a href="">唯品会</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/lefeng.png" width="60" height="30" alt="乐蜂网" />
+                                </a>
+                                <p class="info"><a href="">乐蜂网</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/jumei.png" width="60" height="30" alt="聚美网" />
+                                </a>
+                                <p class="info"><a href="">聚美网</a></p>
+                            </li>                                   
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="banner aside-mod">
+                    <a target="_blank" href=""><img src="materials/apps/add.jpg" width="230" /></a>
+                </section>
+            </div>
+        </div>
+    </div>   <!--Main End-->
+   
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
+
+    <script src="js/plugins/tab.js"></script>
+    <script src="js/plugins/poppic.js"></script>
+    <script src="js/plugins/dialog.js"></script>
+    <script src="js/apps/holdphp.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=6620384" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+//
+// Mall
+// --------------------------------------------------
+
+
+#mall-page{
+	.main .inner-wrap{
+		border: none;
+		background: @mainBackground;
+		overflow: hidden;
+	}
+
+	.mall-nav, .mall-list, .mall-intro, .hot-sale{
+		margin: 0 20px; 
+		padding-bottom: 15px;
+		overflow: hidden;
+	}
+	
+	.mall-nav, .mall-intro{
+		padding: 20px 0;
+		background: url('@{bgLinePath}') 50% bottom no-repeat;
+	}
+
+	// Mall Nav
+	.mall-nav{
+		height:30px;
+		.nav-tit{
+			margin: 0;
+		}
+		.nav-cat{
+			
+			a{
+				padding: 0 5px;
+			}
+			span{
+				color: @grayLight;
+			}
+		}
+	}
+
+	// Mall Item
+	.mall-item{
+		border-bottom: @border;
+
+		.item-hd{
+			margin: 20px 0;
+			font-size: 18px;
+			color: @gray;
+			span{
+				margin-left: 5px;
+			}
+		}
+		.item-bd{
+			width: 104%;
+			li{
+				float: left;
+				.size(182px, 158px);
+				margin: 0 10px 15px 0;
+				border: @border;
+				font-size: @fontSizeSmall;
+				.border-radius(3px);
+
+				.item-pic{
+					.size(182px, 116px);
+					padding-top: 10px;
+					text-align: center;
+				}
+				.item-logo{
+					display: block;
+					.size(160px, 80px);
+					margin: 0 auto 0;
+				}
+				.item-name{
+					display: block;
+					height: 30px;
+					line-height: 30px;
+					color: @gray;
+				}
+				.item-bar{
+					.size(182px, 30px);
+					border-top: @border;
+
+					.detail, .shopping{
+						float: left;
+						.size(90px, 20px);
+						padding: 5px 0 5px;
+						_padding: 10px 0 0;
+						text-align: center;
+						color: #5183c0;
+						background-color: #f9f9f9;
+
+						i{
+							margin-right: 3px;
+						}
+						&:hover{
+							color: @pink;
+						}
+					}
+					.detail{
+						border-right: @border;
+					}
+					.shopping{
+						border-left: 1px solid @white;
+					}
+				}
+				&:hover{
+					border: 1px solid #e6e6e6;
+				}
+			}
+
+		}
+
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+	.mall-other{
+		background: none;
+	}
+
+	// Mall Intro 
+	.mall-intro{
+		min-height: 90px;
+		_height: 90px;
+		margin-bottom: 30px;
+
+		.fl{
+			width: 200px;
+		}
+		.fr{
+			width: @mainWidth - 240px;
+		}
+		.mall-logo{
+			display: block;
+			.size(184px, 92px);
+		}
+		.mall-name{
+			margin: 0;
+			color: @gray;
+			font-size: @baseFontSize;
+		}
+		.mall-url, .mall-desc{
+			margin-top: 3px;
+			color: @grayLight;
+			font-size: @fontSizeSmall;
+		}
+	}
+
+
+	// Hot Sale
+	.hot-sale{
+		.hd{
+			padding: 0 15px;
+			font-size: 18px;
+			font-weight: 400;
+			border-left: 5px solid @pink;
+			.more{
+				float: right;
+				font-size: @fontSizeSmall;
+				font-weight: 400;
+			}
+		}
+		.bd{
+			padding: 20px 0;
+
+			.recom-list li{
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

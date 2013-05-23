@@ -1,0 +1,137 @@
+//
+// Aside
+// --------------------------------------------------
+
+.aside-mod{
+    .text-list{
+        padding: 0 5px;
+        li{
+            margin-bottom: 5px;
+            padding: 0 0 5px;
+            border-bottom: 1px dashed #d8d8d8;
+            a{
+                color: @asideBdColor;
+                &:hover{
+                    color: @linkColorHover;
+                }
+            }
+            span{
+                display: block;
+                color: @grayLight;
+            }
+        }
+    }
+
+    .tag-list{
+        padding-top: 10px;
+        li{
+            display: inline-block;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            padding: 2px 7px;
+            color: @white;
+            background-color: @blueDark;
+            .border-radius(2px);
+            .opacity(60);
+            .ie7-inline-block();
+
+            a{
+                color: @white;
+                &:hover{
+                    color: @white;
+                }
+            }
+            &:hover{
+                .opacity(100);
+            }
+            &:nth-child(2n){
+                background-color: @orange;
+            }
+            &:nth-child(3n){
+                background-color: @green;
+            }
+            &:nth-child(4n){
+                background-color: @purple;
+            }
+        }
+    }
+
+    .pic-list{
+        width: 237px;
+        li{
+            float: left;
+            .square(79px);
+            a{
+                display: block;
+                .square(71px);
+                line-height: 69px;
+                text-align: center;
+                border: 1px solid #dcdcdc;
+                background: @white;
+                overflow: hidden;
+                img{
+                    .square(71px);
+                }
+                &:hover{
+                    text-decoration: none;
+                    border-color: @orange;
+                }
+            }
+        }
+    }
+
+    .pic-pop{
+        position: absolute;
+        left: 0;
+        top: 0;
+        .square(231px);
+        overflow: hidden;
+        z-index: 10;
+        a{
+            display: block;
+            .square(229px);
+            border: 1px solid @orange;
+            img{
+                .square(229px);
+            }
+            div{
+                position: absolute;
+                bottom: 1px;
+                left: 1px;
+                .size(219px, 56px);
+                padding: 0 5px;
+                line-height: 26px;
+                color: @white;
+                background: @grayDark;
+                background: rgba(0,0,0,.6);
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    
+
+    .logo-list{
+        background: @white;
+        li{
+            display: inline-block;
+            .ie7-inline-block();
+            margin: 5px 10px;
+            text-align: center;
+            .info{
+                width: 90px;
+                height: 17px;
+                margin-top: 7px;
+                overflow: hidden;
+
+                a{
+                    color: @grayLight;
+                    &:hover{
+                        color: @linkColorHover;
+                    }
+                }
+            }
+        }
+    }
+}

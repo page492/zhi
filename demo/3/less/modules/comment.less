@@ -1,0 +1,57 @@
+//
+// Comment
+// --------------------------------------------------
+
+
+.comment-item{
+	@w: @commentPicSize;
+
+	padding-bottom: 15px;
+	margin: -1px 0 15px;
+	border-bottom: @commentBorder;
+	color: @commentColor;
+	zoom: 1;
+	.clearfix();
+
+	.item-pic{
+		float: left;
+		display: inline;
+		width: @w;
+		padding: 3px 0 0;
+
+		.avatar{
+			.square(@w);
+		}
+	}
+
+	.item-intro{
+		margin: 0 0 0 @w + 10px;
+		line-height: 24px;
+		word-wrap: break-word;
+		zoom: 1;
+		vertical-align: text-bottom;
+	}
+	.item-reply{
+		margin-top: 5px;
+		text-align: right;
+		font-size: @fontSizeSmall;
+		span{
+			margin: 0 5px; 
+		}
+	}
+}
+
+
+.comment-form{
+	p{
+		.clearfix();
+	}
+	textarea{
+		width: @contentWidth - 12px;
+		_width: @contentWidth - 2px;
+		border: @commentBorder;
+	}
+	input, input[type="submit"]{
+		float: right;
+	}
+}

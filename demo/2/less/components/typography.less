@@ -1,0 +1,63 @@
+// Typography
+// -------------------------
+
+h1, h2, h3, h4, h5{
+  margin: (@baseLineHeight / 2) 0;
+  line-height: @baseLineHeight;
+}
+
+h1,
+h2{ line-height: @baseLineHeight * 2; }
+
+h1 { font-size: @baseFontSize * 2.75; } // ~38px
+h2 { font-size: @baseFontSize * 2.25; } // ~32px
+h3 { font-size: @baseFontSize * 1.75; } // ~24px
+h4 { font-size: @baseFontSize * 1.25; } // ~18px
+h5 { font-size: @baseFontSize; }
+
+p  {margin: 0 0 @baseLineHeight / 2;}
+
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul,
+ol,
+li{list-style: none;}
+ul, ol {
+  padding: 0;
+  margin: 0 0 @baseLineHeight / 2 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: @baseLineHeight;
+}
+
+// Description Lists
+dl {
+  margin-bottom: @baseLineHeight;
+}
+dt,
+dd {
+  line-height: @baseLineHeight;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: @baseLineHeight / 2;
+}
+
+
+// Body text
+// -------------------------
+
+small   { font-size: 85%; }
+strong  { font-weight: bold; }
+em      { font-style: italic; }

@@ -1,0 +1,176 @@
+//
+// Feeds
+// --------------------------------------------------
+
+@w: @feedPicSize;
+
+.feeds{
+    .list-item{
+        position: relative;
+        padding: 20px 0 30px;
+        border-bottom: @feedBorder;
+    }
+        
+    .item-pic{
+        float: left;
+        width: @w;
+        margin-top: 5px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: @feedPicBorder;
+
+        img{
+            max-width: @w;
+            max-height: @w;
+            _width: @w;
+            _height: @w;
+        }
+        .item-like{
+            height: 29px;
+            border-top: @feedPicBorder;
+            font-size: @fontSizeSmall;
+
+            .share, .collect{
+                float:left;
+                display: block;
+                height: 29px;
+                line-height: 29px;
+                text-decoration: none;
+                color: @gray;
+                background-image: url('@{iconSpritePath}');
+                background-repeat: no-repeat;
+                &:hover{
+                    color: @orange;
+                }
+            }
+            .share{
+                width: @w/2 - 10px;
+                padding-left: 10px;
+                background-position: 5px -152px;
+            }
+            .collect{
+                width: @w/2 - 10px;
+                padding-left: 10px;
+                background-position: 0 -190px;
+            }
+        }
+
+        &:hover{
+            border: @feedPicBorderHover;
+        }
+    }
+    .item-attr{
+        
+    }
+    .excerpt{
+        margin-left: @w + 15px;
+        height: 220px;
+        overflow: hidden;
+        img{
+            display: none;
+        }   
+    }
+    .total{
+        min-height: 220px;
+        img{
+            display: block;
+        }
+    }
+    .item-tit{
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-family: @yaHeiFontFamily;
+        a{
+            color: @feedTitleColor;
+        }
+    }
+    .item-price{
+        margin-left: 10px;
+        color: @feedPriceColor;
+    }
+    .item-info{
+        font-size: @fontSizeSmall;
+        color: @feedInfoColor;
+        line-height: 24px;
+        //border-bottom: @feedPicBorder;
+        a{
+            margin-right: 10px;
+        }
+        span{
+            margin-right: 10px;
+        }
+    }
+    .item-intro{
+        padding: 10px 0;
+        line-height: 28px;
+        color: @feedIntroColor;
+    }
+    .item-drawer{
+        margin-top: 10px;
+        height: 30px;
+        text-align: right;
+        font-size: @fontSizeSmall;
+        a{
+            display: inline-block;
+            .size(80px, 26px);
+            .border-radius(3px);
+            margin-right: 10px;
+            line-height: 26px;
+            text-align: center;
+            padding-right: 5px;
+        }
+        .drawer-down{
+            background: url('@{iconSpritePath}') right -130px no-repeat;
+        }
+        .drawer-up{
+            color: @white;
+            background: url('@{iconSpritePath}') right -242px no-repeat;
+        }
+        .none{
+            display: none;
+        }
+    }
+    .item-bar{
+        margin-top: 20px;
+        height: 24px;
+        line-height: 24px;
+        font-size: @fontSizeSmall;
+        color: @grayLight;
+        background: @feedBarBackground;
+    }
+
+    .item-time{
+        float: left;
+        margin-right: 12px;
+        padding-left: 28px;
+        background: url('@{iconSpritePath}') -175px -174px no-repeat;
+    }
+
+    .item-share{
+        float: left;
+        span{
+            float: left;
+        }
+    }
+
+    .item-buy{
+        float: right;        
+    }
+
+    .sign-hot, .sign-new{
+        position: absolute;
+        right: 0;
+        top: 20px;
+        display: block;
+        .square(41px);
+        background-image: url('@{iconSpritePath}');
+        background-repeat: no-repeat;
+    }
+    .sign-hot{
+        background-position: -48px -85px; 
+    }
+    .sign-new{
+        background-position: 0px -85px; 
+    }  
+}

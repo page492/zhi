@@ -1,0 +1,108 @@
+//
+// List
+// --------------------------------------------------
+
+
+
+// Recom List
+.recom-list{
+    width: 110%;
+    li{
+        float: left;
+        margin-right: 3.4%;
+        margin-bottom: 20px;
+        width: @recomPicSize + 2px;
+
+        .recom-pic{
+            display: block;
+            .square(@recomPicSize);
+            *height: @recomPicSize + 2px;
+            margin-bottom: 10px;
+            border: @recomPicBorder;
+
+            img{
+                .square(@recomPicSize);
+            }
+
+            &:hover{
+                border: @recomPicBorderHover;
+            }
+        }
+        .recom-name{
+            a{
+                color: @recomTitleColor;
+                &:hover{
+                    color: @orange;
+                }
+            }
+        }
+    }
+}
+
+
+//Mix List
+.mix-list{
+    li{
+        min-height: 40px;
+        _height: 40px;
+        padding: 10px 5px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: @fontSizeSmall;
+        .clearfix();
+
+        .pic, .txt{
+            float: left;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .pic{
+            width: 8%;
+            img{
+                .square(40px);
+                border: 1px solid #e6e6e6;
+            }
+        }
+        .txt{
+            width: 75%;
+        }
+        .handle{
+            float: right;
+            text-align: right;
+            line-height: 50px;
+            a{
+                color: @orange;
+            }
+        }
+        .gray{
+            color: @grayLight;
+        }
+    }
+}
+
+//Text List
+.text-list{
+    li{
+        min-height: 24px;
+        _height: 24px;
+        padding: 10px 5px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: @fontSizeSmall;
+        .clearfix();
+
+        .txt{
+            float: left;
+            width: 80%;
+        }
+        .handle{
+            float: right;
+            text-align: right;
+            a{
+                color: @orange;
+            }
+        }
+        .gray{
+            color: @grayLight;
+        }
+    }
+}

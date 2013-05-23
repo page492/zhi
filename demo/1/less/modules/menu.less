@@ -1,0 +1,113 @@
+//
+// List Menu
+// --------------------------------------------------
+
+.menu-list{
+    background: @menuBackground;
+    .menu-item{
+        position: relative;
+        _border-bottom: 1px solid @menuBackground;
+        p{
+            margin: 0;
+            a{
+                display: block;
+                line-height: 26px;
+                padding: 5px 20px;
+                color: @menuColor;
+                cursor: pointer;
+
+                img{
+                    .square(18px);
+                    .border-radius(2px);
+                    vertical-align: middle;
+                    margin-right: 7px;
+                    .transition(all .2s ease-in-out);
+                }
+
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: @fontSizeSmall;
+                    .ie7-inline-block();
+                }
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            .icon-play{
+                position: absolute;
+                left: 110px;
+                top: 17px;
+                display: none;
+            }
+        }
+
+        .sub-menu{
+            position: absolute;
+            left: 130px;
+            top: -15px;
+            width: auto;
+            height: auto;
+            padding: 5px 10px 5px;
+            border: 1px solid #d0d0d0;
+            box-shadow: 1px 0 2px 0 #d0d0d0;
+            background: @white;
+
+            .sub-item{
+                width: 100px;
+                height: 26px;
+                line-height: 26px;
+                font-size: @fontSizeSmall;
+                span{
+                    font-family: "宋体";
+                    color: @grayLight;
+                }
+                a{
+                    color: @menuColor;
+                    padding-left: 6px;
+
+                    &:hover{
+                        color: @orange;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-on, .menu-cur{
+        margin-top: -1px;
+        border-top: 1px solid @menuBorderColor;
+        border-bottom: 1px solid @menuBorderColor;
+        p{
+            a{
+                margin-left: -5px;
+                padding: 5px 20px 4px;
+                border-left: 5px solid @orange;
+                background: @menuOnBackground;
+                img{
+                    .rotate(30deg);
+                }
+            }
+        }
+    }
+    .menu-cur{
+        p{
+            .icon-play{
+                display: block;
+            }
+        }
+        .caret{
+            display: inline-block;
+            background: #fff;
+            width: 5px;
+            height: 36px;
+            _height: 35px;
+            position: absolute;
+            top: 0;
+            _top: 1px;
+            right: -2px;
+            z-index: 20;
+        }
+    }
+
+}

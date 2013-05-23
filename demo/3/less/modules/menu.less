@@ -1,0 +1,137 @@
+//
+// List Menu
+// --------------------------------------------------
+
+.left-menu{
+    padding-top: 120px;
+    background: url('@{bgMenuPath}') 0 0 no-repeat;
+    _background: url('@{bgMenuPath1}') 0 0 no-repeat;
+
+    .menu-hd{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .menu-ft{
+        margin-top: 30px;
+        *margin-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        a{
+            color: #777;
+            
+        }
+    }
+}
+
+.menu-list{
+    .menu-item{
+        position: relative;
+        margin:0 10px;
+        width: 86px;
+        border-bottom: 1px dashed @menuBorderColor;
+        p{
+            margin: 0;
+            a{
+                display: block;
+                line-height: 22px;
+                *line-height: 21px;
+                padding: 1px 0;
+                color: @menuColor;
+                cursor: pointer;
+
+                img{
+                    .square(15px);
+                    .border-radius(2px);
+                    vertical-align: middle;
+                    margin-right: 8px;
+                    margin-left: 5px;
+                    .transition(all .2s ease-in-out);
+                }
+
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: @fontSizeSmall;
+                    .ie7-inline-block();
+                }
+                &:hover{
+                    color: #5183c0;
+                    text-decoration: none;
+                }
+            }
+            .icon-play{
+                position: absolute;
+                left: 85px;
+                top: 10px;
+                display: none;
+            }
+        }
+
+        .sub-menu{
+            position: absolute;
+            left: 92px;
+            top: -15px;
+            width: auto;
+            height: auto;
+            padding: 5px 10px 5px;
+            border: 1px solid #d0d0d0;
+            box-shadow: 1px 0 2px 0 #d0d0d0;
+            background: #f1f1f1;
+
+            .sub-item{
+                width: 80px;
+                height: 26px;
+                line-height: 26px;
+                font-size: @fontSizeSmall;
+                span{
+                    font-family: "宋体";
+                    color: @grayLight;
+                }
+                a{
+                    color: @menuColor;
+                    padding-left: 6px;
+
+                    &:hover{
+                        color: #5183c0;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-on, .menu-cur{
+        p{
+            a{
+                img{
+                    .rotate(30deg);
+                }
+            }
+        }
+    }
+    .menu-cur{
+        p{
+            .icon-play{
+                display: block;
+            }
+        }
+        .caret{
+            display: inline-block;
+            background: #f1f1f1;
+            width: 4px;
+            height: 26px;
+            _height: 25px;
+            position: absolute;
+            top: 0;
+            _top: 1px;
+            right: -8px;
+            z-index: 20;
+        }
+    }
+
+    .no-border{
+        border-bottom: none;
+    }
+
+}

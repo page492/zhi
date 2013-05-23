@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>什么值得买</title>   
+    <meta name="description" content="" />
+    <meta name="author" content="cssoul.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="holdphp.css" />
+    
+    <!-- <link rel="stylesheet" type="text/less" href="less/holdphp.less" /> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="detail-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="quick-menu">
+                    <ul>
+                        <li><a href="">设为首页</a></li><span>|</span>
+                        <li><a href="">网站地图</a></li><span>|</span>
+                        <li><a href="">海淘助手</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <!--<ul>
+                        <li class="local">
+                            <a href="" class="btn-login">注册</a><a href="" class="btn-login">登录</a>
+                        </li>
+                        <li class="outside">
+                            <a href="" class="weibo"><img src="img/oauth/sina/icon.png">微博登陆</a>
+                            <a href="" class="tenx"><img src="img/oauth/qq/icon.png">QQ登录</a>
+                            <a href="" class="taobao"><img src="img/oauth/taobao/icon.png">淘宝登录</a>
+                        </li>
+                    </ul>-->
+                    <div class="hi">
+                        <span>黑幕困兽... 欢迎您！</span><span>|</span>
+                        <a href="">个人中心</a><span>|</span>
+                        <a href="">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>让您轻松构建高性能导购系统！</span>
+            </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="" method="get">
+                    <label for="mq">搜索 折扣商品</label>
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" />
+                    <input class="search-btn" type="submit" value="" class="button" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li>
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li class="nav-on">
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li>
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>海外资讯</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>我要爆料</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="left-menu" id="J_Menu">
+        <div class="menu-hd set"><a href="">大厅</a></div>
+        <div class="menu-bd">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-1.png" /><span>潮流女装</span><i class="icon-play"></i></a></p>
+                    <ul class="sub-menu" style="visibility: hidden;">
+                        <li class="sub-item"><span>·</span><a href="">办公设备</a></li>
+                        <li class="sub-item"><span>·</span><a href="">外设产品</a></li>
+                        <li class="sub-item"><span>·</span><a href="">大家电</a></li>
+                        <li class="sub-item"><span>·</span><a href="">小家电</a></li>
+                    </ul>
+                    <b class="caret"></b>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-2.png" /><span>品质男装</span><i class="icon-play"></i></a></p>
+                    <ul class="sub-menu" style="visibility: hidden;">
+                        <li class="sub-item"><span>·</span><a href="">办公设备</a></li>
+                        <li class="sub-item"><span>·</span><a href="">外设产品</a></li>
+                        <li class="sub-item"><span>·</span><a href="">大家电</a></li>
+                        <li class="sub-item"><span>·</span><a href="">小家电</a></li>
+                    </ul>
+                    <b class="caret"></b>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-3.png" /><span>家居生活</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-4.png" /><span>食品保健</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-5.png" /><span>图书音像</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-6.png" /><span>服饰鞋包</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-7.png" /><span>母婴玩具</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-8.png" /><span>钟表首饰</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-9.png" /><span>运动户外</span></a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href=""><img src="materials/icons/menu/cat-10.png" /><span>杂七杂八</span></a></p>
+                </li>
+            </ul>
+        </div>
+    </div>  <!--Menu End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <div class="content">
+                <section class="crumb">
+                    <div>当前位置:</div>
+                    <div><a href="/">首页 </a>&gt;&gt;<a href="" title="">国内促销</a>&gt;&gt;<span class="cur">日志详情</div>
+                </section>
+
+                <section class="feed-detail" id="J_Feeds">
+                    <div class="feed-item">
+                        <h3 class="item-tit">
+                            DELTA 台达 NX400 台式机电源（400W，主动式，铜牌）<span class="item-price">249元包邮</span>
+                        </h3>
+                        <div class="item-pic">
+                            <a href="" class="item-img"><img src="materials/apps/home/feeds-1.jpg" alt="图片" /></a>
+                            <div class="item-like">
+                                <a href="" class="worth"><i class="icon-heart"></i>物有所值</a>
+                                <a href="" class="collect"><i class="icon-star"></i>收藏该宝贝</a>
+                            </div>
+                        </div>
+                        <div class="item-buy">
+                            <a href="javascript:void(0);" class="btn-buy">点击直接购买</a>
+                            <ul>
+                                <li><a href="">天猫 DT235</a></li>
+                                <li><a href="">京东 DT235</a></li>
+                            </ul>
+                        </div>
+                        <div class="item-attr">
+                            <div class="item-info">
+                                <span class="item-cate">分类: <a href="">户外运动</a></span> 
+                                <span class="item-origin">商城: MYHABIT</span>
+                                <span class="item-referee">推荐人: 黑幕困兽</span>
+                            </div>
+                            <div class="item-intro">
+                                &nbsp;&nbsp;&nbsp;&nbsp;DELTA台达是知名的电源代工厂商。这款Gaming Series NX400台式机电源使用主动式PFC技术，通过了全球<span style="color: #BC0202;">80Plus铜牌</span>认证，在230V电压，50%典型负载下效率达到88%。额定功率400W，峰值功率500W，12cm静音温控风扇，三年质保。主打年轻时尚，价格平易近人许多。
+                                <p style="padding: 0px; margin: 20px 0px 0px; display: block;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">京东商城</a>目前特价至249元，历史低价，其他B2C渠道报价约在300元左右。虽然NX400没有采用DC-DC变换器，但这个价格确实是到位了。</p>
+                                <p style="padding: 0px; margin: 20px 0px 0px; display: block;">&nbsp;&nbsp;&nbsp;&nbsp;就这个东西而言，是居家旅行必备之物啊，前面的各位经验都比较丰富，也学习了几招。我也来说下，X360的手柄摇杆和按键发涩或者吱吱响，喷喷更健康。</p>
+                                <p style="padding: 0px; margin: 20px 0px 0px; display: block;">&nbsp;&nbsp;&nbsp;&nbsp;“当然了，村姑也有村姑的缺点，毕竟她内涵略低，WP7.5的死脑筋，智商堪忧；骁龙800MHZ的单核CPU，CUP略小，256MB RAM。 不过这都掩盖不了她那光灿灿的优点，<a href="">不到700米你就能娶回家啊娶回家！</a>京东商城报价699元包邮，是不是超值了？我想无论是娶回家当二奶，还是给年迈的父母整一个可以和你视频通话的入门机，都是超值的。”  </p>
+                                <p style="padding: 0px; margin: 20px 0px 0px; display: block;">
+                                    <img src="materials/apps/detail/detail-1.jpg" />
+                                </p>
+                                <p style="padding: 0px; margin: 20px 0px 0px; display: block;">
+                                    <img src="materials/apps/detail/detail-2.jpg" />
+                                </p>
+                                <p style="padding: 0px; margin: 20px 0px 0px; display: block;">
+                                    <img src="materials/apps/detail/detail-3.jpg" />
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item-bar">
+                            <div class="times"><i class="icon-time"></i>16分钟前</div>
+                            <div class="shares">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <span>分享到：</span>
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <a class="bds_tqq"></a>
+                                    <a class="bds_tsohu"></a>
+                                    <a class="bds_bdhome"></a>
+                                    <a class="bds_douban"></a>
+                                </div>
+                                <!-- Baidu Button END -->
+                            </div>
+                        </div>
+                      
+                        <div class="item-page">
+                            <p>上一篇： <a href="">Henkel 汉高 水晶固蜡　38元（限华北/华中/华南地区）</a><p/>
+                            <p>下一篇： <a href="">SONMUSE 声缪斯 GM-SE6NB 守护大师 防涌防雷六位插座（绿色、1.8米）</a><p/>
+                        </div>
+                    </div>
+                </section>
+
+                <script>
+                    $(function () {
+                        $('#J_Feeds .item-buy').dropdown({inner: 'ul'});
+                    });
+                </script>
+
+                <section class="recom-mod">
+                    <h5 class="hd"><span>你可能还喜欢</span></h5>
+                    <div class="bd">
+                        <ul class="recom-list clearfix">
+                            <li>
+                                <a href="" title="" class="recom-pic">
+                                    <img src="materials/apps/pic-1.jpg" alt="" />
+                                </a>
+                                <div class="recom-name">
+                                    <a href="">推荐-全能护肤神器，看看明星们都用什么！</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" title="" class="recom-pic">
+                                    <img src="materials/apps/pic-2.jpg" alt="" />
+                                </a>
+                                <div class="recom-name">
+                                    <a href="">居家必备 lock&lock 乐扣乐扣 奶锅 99元包邮</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" title="" class="recom-pic">
+                                    <img src="materials/apps/pic-3.jpg" alt="" />
+                                </a>
+                                <div class="recom-name">
+                                    <a href="">花漾美人节，嗨淘网100台Ipad 等你来拿！</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" title="" class="recom-pic">
+                                    <img src="materials/apps/pic-4.jpg" alt="" />
+                                </a>
+                                <div class="recom-name">
+                                    <a href="">消费提示：关于 SEPHORA 丝芙兰彩妆订单异常</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="comment-mod">
+                    <h5 class="hd"><span>你想说点什么...</span></h5>
+                    <div class="bd">
+                        <form class="comment-form" action="" method="post">
+                            <p>
+                                <textarea name="comment" cols="70" rows="4">写点啥...</textarea>
+                            </p>
+                            <p>
+                                <input name="submit" class="btn btn-oran" type="submit"  value="发布">
+                            </p>
+                        </form>
+                        <div class="comment-list">
+                            <dl class="comment-item">
+                                <dt class="item-pic">
+                                    <a href=""><img width="50" height="50" alt="泡泡龙kaka" src="materials/avatar/1.jpg" class="avatar" /></a>
+                                </dt>
+                                <dd class="item-intro">
+                                    <a href="">泡泡龙kaka</a>：回复<a href="">@小超子_</a>:我觉得iPhone将不再受欢迎 (10分钟前)
+                                    <div class="item-reply">
+                                        <a href="">举报</a>
+                                        <span>|</span>
+                                        <a href="" title="">回复</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="comment-item">
+                                <dt class="item-pic">
+                                    <a href=""><img width="50" height="50" alt="泡泡龙kaka" src="materials/avatar/2.jpg" class="avatar" /></a>
+                                </dt>
+                                <dd class="item-intro">
+                                    <a href="">黑幕困兽</a>：我还是会相信，星星会说话，石头会开花，穿过夏天的栅栏和冬天的风雪过后，你终会抵达。 (2分钟前)
+                                    <div class="item-reply">
+                                        <a href="">举报</a>
+                                        <span>|</span>
+                                        <a href="" title="">回复</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="comment-item">
+                                <dt class="item-pic">
+                                    <a href=""><img width="50" height="50" alt="泡泡龙kaka" src="materials/avatar/3.jpg" class="avatar" /></a>
+                                </dt>
+                                <dd class="item-intro">
+                                    <a href="">冷笑话精选</a>：有人发现了Anne Hathaway的丈夫Adam Shulman长得神似历史上的莎士比亚；而莎士比亚的妻子，名字恰好就叫做Anne Hathaway。  (2分钟前)
+                                    <div class="item-reply">
+                                        <a href="">举报</a>
+                                        <span>|</span>
+                                        <a href="" title="">回复</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="comment-item">
+                                <dt class="item-pic">
+                                    <a href=""><img width="50" height="50" alt="泡泡龙kaka" src="materials/avatar/4.jpg" class="avatar" /></a>
+                                </dt>
+                                <dd class="item-intro">
+                                    <a href="">音悦台</a>：每一次想你，我都得提醒我自己，如果你想和我聊天的话，你早就开口了。 (2分钟前)
+                                    <div class="item-reply">
+                                        <a href="">举报</a>
+                                        <span>|</span>
+                                        <a href="" title="">回复</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>    
+
+                <section class="login-mod">
+                    <div class="login-method">
+                        <a class="l-qq" href="" target="_blank" title="新浪微博登录"><img src="img/oauth/sina/login.png" alt="" /></a>
+                        <a class="l-sina" href="" target="_blank" title="QQ帐号登录"><img src="img/oauth/qq/login.png" alt="" /></a>
+                        <a class="l-tao" href="" target="_blank" title="淘宝帐号登录"><img src="img/oauth/taobao/login.png" alt="" /></a> 
+                    </div>
+                    <div class="login-desc">您需要登录后才可以留言，请用什么值得买帐号 <a href="">登录</a> 或 <a href="">免费注册</a></div>
+                </section>
+            </div>
+
+            <div class="right-aside" id="J_Aside">
+                <section class="share-tool aside-mod">
+                    <div class="bd clearfix">
+                        <!-- Baidu Button BEGIN -->
+                        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+                            <a class="bds_tsina"></a>
+                            <a class="bds_douban"></a>
+                            <a class="bds_mogujie"></a>
+                            <a class="bds_taobao"></a>
+                            <span class="bds_more"></span>
+                        </div>
+                        <!-- Baidu Button END -->
+                    </div>
+                </section>
+
+                <section class="hot_post aside-mod">
+                    <h5 class="hd"><span>热门活动</span></h5>
+                    <div class="bd">
+                        <ul class="text-list clearfix">
+                            <li>
+                                <a href="" target="_blank">手机新春！5折起特惠</a>
+                                <span class="time">02月25日-03月03日</span>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">新春话费充值！即送集分宝</a>
+                                <span class="time">02月25日-03月04日</span>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">新春开学季！数码全场5折起！</a>
+                                <span class="time">02月25日-03月03日</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ft">
+                        <a href="" target="_blank">更多活动</a>
+                    </div>
+                </section>
+
+                <section class="hot-tags aside-mod">
+                    <h5 class="hd"><span>热门搜索</span></h5>
+                    <div class="bd">
+                        <ul class="tag-list clearfix">
+                            <li><a href="" class="">京东商城</a></li>
+                            <li><a href="" class="">活动大促</a></li>
+                            <li><a href="" class="">洗发水</a></li>
+                            <li><a href="" class="">家居</a></li>
+                            <li><a href="" class="">进口食品</a></li>
+                            <li><a href="" class="">食用油</a></li>
+                            <li><a href="" class="">1号店</a></li>
+                            <li><a href="" class="">佳洁士</a></li>
+                            <li><a href="" class="">年货</a></li>
+                            <li><a href="" class="">纸巾</a></li>
+                            <li><a href="" class="">智趣小行星</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="hot-goods aside-mod">
+                    <h5 class="hd"><span>推荐宝贝</span></h5>
+                    <div class="bd" id="J_ShowPic">
+                        <ul class="pic-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-1.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-2.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-3.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-4.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-5.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-6.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-7.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-8.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/apps/pic-9.jpg" width="80" height="80" alt="" />
+                                    <div>AmazonBasics 亚马逊倍思 纹状硅胶套 灰色 适用于touch4   9元</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class='pic-pop none'></div>    <!--展示大图-->
+                    </div>
+
+                    <script>
+                        $(function () {
+                            $('#J_ShowPic').popPic();
+                        });
+                    </script>
+                </section>
+
+                <section class="hot_seller aside-mod">
+                    <h5 class="hd"><span>热门商家</span></h5>
+                    <div class="bd">
+                        <ul class="logo-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/tmall.png" width="60" height="30" alt="天猫" />
+                                </a>
+                                <p class="info"><a href="">天猫商城</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/taobao.png" width="60" height="30" alt="淘宝网" />
+                                </a>
+                                <p class="info"><a href="">淘宝网</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/yihaodian.png" width="60" height="30" alt="1号店铺" />
+                                </a>
+                                <p class="info"><a href="">1号店铺</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/vipshop.png" width="60" height="30" alt="唯品会" />
+                                </a>
+                                <p class="info"><a href="">唯品会</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/lefeng.png" width="60" height="30" alt="乐蜂网" />
+                                </a>
+                                <p class="info"><a href="">乐蜂网</a></p>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="materials/logos/jumei.png" width="60" height="30" alt="聚美网" />
+                                </a>
+                                <p class="info"><a href="">聚美网</a></p>
+                            </li>                                   
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="banner aside-mod">
+                    <a target="_blank" href=""><img src="materials/apps/add.jpg" width="230" /></a>
+                </section>
+            </div>
+        </div>
+    </div>   <!--Main End-->
+   
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
+
+    <script src="js/plugins/poppic.js"></script>
+    <script src="js/plugins/dialog.js"></script>
+    <script src="js/plugins/dropdown.js"></script>
+    <script src="js/apps/holdphp.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=6620384" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+</body>
+</html>

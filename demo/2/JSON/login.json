@@ -1,0 +1,10 @@
+{
+   "status":1,
+   "msg":"",
+   "data":"<div class=\"dialog-login clearfix\" id=\"J_DialogForm\"><div class=\"login-form\"><form class=\"form-mod\" action=\"\/login.html\" method=\"post\"><p id=\"J_LoginTips\" class=\"login-tips\">\u8bf7\u8f93\u5165\u7528\u6237\u540d<\/p><div class=\"control\"><label class=\"label\" for=\"username\">\u7528\u6237\u540d\uff1a<\/label><div class=\"focus\"><input type=\"text\" class=\"txt\" id=\"username\" name=\"username\" \/><\/div><\/div><div class=\"control\"><label class=\"label\" for=\"password\">\u5bc6\u7801\uff1a<\/label><div class=\"focus\"><input type=\"password\" class=\"txt\" id=\"password\" name=\"password\" \/><\/div><\/div><p class=\"xieyi\"><input type=\"checkbox\" name=\"cache\" value=\"1\"><span>两周内自动登录<\/span><\/p><p class=\"submit\"><button class=\"btn btn-oran\">\u767b\u5f55<\/button><a  href=\"\">\u5fd8\u8bb0\u5bc6\u7801\uff1f<\/a><\/p><\/form><\/div><div class=\"other-login\"><h4 class=\"other-hd\">使用合作账号登录<\/h4><div class=\"other-bd clearfix\"><p><a href=\"\" class=\"weibo\"><img src=\"img\/oauth\/sina\/icon.png\" \/>微博登陆<\/a><\/p><p><a href=\"\" class=\"tenx\"><img src=\"img\/oauth\/qq\/icon.png\" \/>QQ登录<\/a><\/p><p><a href=\"\" class=\"taobao\"><img src=\"img\/oauth\/taobao\/icon.png\" \/>淘宝登录<\/a><\/p><\/div><p><a href=\"\">轻松注册帐号<\/a><\/p><\/div><\/div>",
+   "dialog":""
+}
+
+
+
+			

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>什么值得买</title>   
+    <meta name="description" content="" />
+    <meta name="author" content="cssoul.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/less" href="less/holdphp.less" />
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="user-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="login">
+                <!-- <a href=>注册</a>|<a href=>登录</a>|<a href=>我要爆料</a> -->
+                <a href=>注销</a>|<a href=>个人中心</a>|<a href=>我要爆料</a>
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>让您轻松构建高性能导购系统！</span>
+            </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="search.html" method="get">
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" placeholder="搜索 折扣商品" />
+                    <input class="search-btn" type="submit" value="" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li class="nav-on">
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li>
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li>
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <div class="uc-form clearfix">
+                <div class="inbox">
+                    <h3 class="tit">完善信息</h3>
+
+                    <div class="avatar fl">
+                        <img width="85" height="85" alt="泡泡龙kaka" src="materials/avatar/7.jpg">
+                    </div><!--avatar End-->
+
+                    <div class="improve fr">
+                        <div class="tab-tit" id="J_Tab">
+                            <ul>
+                                <li class="active"><a href="#new">注册新帐号</a></li>
+                                <li><a href="#old">已有HoldPHP帐号</a></li>
+                            </ul>
+                        </div>     
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="new">
+                                <form class="form-mod" action="" method="post">
+                                    <div class="control error">
+                                        <label class="label" for="username">昵称：</label>
+                                        <div class="focus">
+                                            <input type="text" class="txt" id="username" tabindex="1" name="username" />
+                                            <span class="tips">请输入昵称</span>
+                                        </div>
+                                    </div>
+                                    <div class="control success">
+                                        <label class="label" for="username">电子邮箱：</label>
+                                        <div class="focus">
+                                            <input type="text" class="txt" id="username" tabindex="1" name="username" />
+                                            <span class="tips"></span>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <label class="label" for="password">密码：</label>
+                                        <div class="focus">
+                                            <input type="password" class="txt" id="password" tabindex="2" name="password" />
+                                            <span class="tips">请填写密码</span>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <label class="label" for="password">确认密码：</label>
+                                        <div class="focus">
+                                            <input type="password" class="txt" id="password" tabindex="2" name="password" />
+                                            <span class="tips">请填写确认密码</span>
+                                        </div>
+                                    </div>
+                                    <p class="submit">
+                                        <button class="btn btn-oran btn-max">免费注册</button>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="old">
+                                <form class="form-mod" action="" method="post">
+                                    <p>如果您准备向我们投稿（500字以上），请在此提交申请。</p>
+                                    <div class="control">
+                                        <label class="label" for="username">投稿申请：</label>
+                                        <div class="focus">
+                                            <textarea name="reason" cols="60" rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="submit">
+                                        <button class="btn btn-oran btn-max">提交爆料</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            $(function () {
+                                $('#J_Tab a').mouseover(function (e) {
+                                    e.preventDefault();
+                                    $(this).tab('show');
+                                });
+                            });
+                        </script>
+                    </div><!--improve End-->
+                </div>
+            </div>
+        </div>
+    </div>   <!--Main End-->
+   
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
+
+    <script src="js/plugins/dialog.js"></script>
+    <script src="js/plugins/tab.js"></script>
+    <script src="js/apps/holdphp.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=6620384" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+</body>
+</html>

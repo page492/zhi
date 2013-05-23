@@ -1,0 +1,143 @@
+//
+// iHome
+// --------------------------------------------------
+
+
+#iHome-page{
+    .main .inner-wrap{
+        border: none;
+    }
+
+    .i-right{
+    	min-height: 400px;
+    	_height: 400px;
+    }
+}
+
+.user-info{
+	height: 110px;
+	background: url('@{bgUserInfoPath}') 0 20px repeat-x;
+	.avatar{
+		position: relative;
+		float: left;
+		.square(85px);
+		margin-left: 15px;
+		padding: 6px 8px;
+		z-index: 10;
+		background: url('@{bgAvatarPath}') 0 0 no-repeat;
+		_background: none;
+
+		img{
+			.square(85px);
+		}
+	}
+	.avatar-bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src='@{bgAvatarPath}');
+		_background-image: none;
+	}
+	.intro{
+		margin-left: 130px;
+		h5{
+			margin: 0;
+			padding: 22px 0 4px;
+			color: @white;
+		}
+		p{
+			line-height: 16px;
+			color: @grayLight;
+			font-size: @fontSizeSmall;
+			span{
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+
+.i-box{
+	padding: 10px 20px;
+	background: @mainBackground;
+	
+	.tit{
+		padding-bottom: 5px;
+		font-size: @baseFontSize;
+		span{
+			padding-left: 10px;
+			border-left: 5px solid @pink;
+		}
+		border-bottom: @border;
+	}
+
+	.cont{
+		padding: 10px 0;
+		color: @gray;
+
+		.form-mod{
+			padding: 0 20px;
+		}
+	}
+
+	.table{
+		font-size: @fontSizeSmall;
+	}
+}
+
+.upload-avatar{
+	height: 260px;
+	.mold{
+		.square(240px);
+		text-align: center;
+		background:#e9e9e9;
+		margin-right:40px;
+		
+		p{
+			margin-top: 90px;
+			font-size: @fontSizeSmall;
+		}
+		.btn{
+			display: inline-block;
+			font-weight: 400;
+			color: @grayDark;
+			font-size: @fontSizeSmall;
+		}
+	}
+	.output{
+		div{
+			float: left;
+			margin-right:10px;
+			overflow: hidden;
+			img{
+				max-width: none;
+			}
+		}
+		p{
+			clear: left;
+			padding-top: 20px;
+			color: @green;
+			font-size: @fontSizeSmall;
+		}
+		.a180{
+			.square(180px);
+		}
+		.a80{
+			.square(80px);
+		}
+		.a40{
+			.square(40px);
+		}
+	}
+}
+.save-avatar{
+	height: 40px;
+	.btn{
+		float: left;
+		margin-right: 8px;
+	}
+}
+

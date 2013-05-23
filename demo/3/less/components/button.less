@@ -1,0 +1,85 @@
+//
+// Button
+// --------------------------------------------------
+
+// Btn
+.btn{
+    display: block;
+    padding: 4px 20px;
+    line-height: @baseLineHeight;
+    text-align: center;
+    letter-spacing: 1px;
+    background: @grayLighter;
+    .border-radius(3px);
+}
+.btn-oran{
+    color: @white;
+    border: none;
+    background: @orange;
+}
+
+.btn-blue{
+    color: @white;
+    border: none;
+    background: #5f96d9;
+}
+
+.btn-green{
+    color: @white;
+    border: none;
+    background: @green;
+}
+
+.btn-gray{
+    color: @gray;
+    border: 1px solid @grayLight*1.3;
+}
+
+.btn-max{
+    .size(100px, 36px);
+    line-height: 36px;
+    padding: 0;
+    font-weight: 700;
+}
+
+
+
+.btn-reg{
+    background-image: url('@{bgHeaderPath}');
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+    &:hover{
+        text-decoration: none;
+        background-position: 0 -137px;
+    }
+}
+
+.btn-login{
+    text-decoration: none;
+    background-image: url('@{bgHeaderPath}');
+    background-position: -64px -100px;
+    background-repeat: no-repeat;
+
+    &:hover{
+    	text-decoration: none;
+    	background-position: 0 -177px;
+    }
+}
+
+// Buy Btn
+.btn-buy{
+    .size(120px, 23px);
+    display: block;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: @btnBuyColor;
+    border-bottom: 1px solid @pink;
+    background: @btnBuyBackground;
+    &:hover{
+        color: @btnBuyColor;
+        text-decoration: none;
+        background: @btnBuyHoverBackground;
+    }
+}
+

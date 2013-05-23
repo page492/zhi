@@ -1,0 +1,54 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+form {
+  margin: 0 0 @baseLineHeight;
+}
+
+
+label,
+input,
+button,
+select,
+textarea {
+  font-size: @baseFontSize;
+  font-weight: normal;
+  line-height: @baseLineHeight;
+  font-family: @baseFontFamily;
+}
+
+
+label {
+  display: block;
+}
+
+// Form controls
+// -------------------------
+
+// Shared size and type resets
+input,
+select,
+textarea{
+  display: inline-block;
+  padding: 4px 5px;
+  vertical-align: middle;
+  color: @gray;
+  border: 1px solid @inputBorder;
+  background-color: @inputBackground;
+  .border-radius(2px);
+ 
+  // Focus state
+  &:focus {
+    border-color: @inputBorder*.9;
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    .box-shadow(~"0 0 5px @inputBorder");
+  }
+}
+
+
+textarea {
+  height: auto;
+}
