@@ -1,0 +1,157 @@
+/*!
+ * install.css v1.0
+ * holdphp安装程序
+ */
+body {
+    background: url(../img/bg.jpg);
+}
+.wrap {
+    width: 796px;
+    margin: 40px auto 0;
+}
+.header {
+    height: 30px;
+    padding: 15px 20px;
+    background: #0b3366;
+    border-radius: 5px 5px 0 0;
+}
+.logo {
+    margin: 0;
+    width: 120px;
+    height: 30px;
+    background: url(../img/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: -2000em;
+}
+.slogan {
+    background: url(../img/slogan.png) no-repeat;
+    width: 170px;
+    height: 14px;
+    text-indent: -2000em;
+    margin: 16px 0 0 20px;
+}
+.content {
+    background: #f8f8f8;
+    padding: 35px 40px 20px;
+}
+.help-link span {
+    color: #0088cc;
+    padding: 0 4px;
+}
+.help-link a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.act .btn {
+    padding: 4px 20px;
+    margin: 0 5px;
+}
+.footer {
+    height: 15px;
+    background: url(../img/bt.png) repeat-x;
+}
+.pact {
+    height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #fcfcfc;
+    box-shadow: 3px 3px 3px #f7f7f7 inset;
+    border: 1px solid #bdbcbc;
+}
+.step {
+    margin-top: -35px;
+}
+.step ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+.step ul li {
+    float: left;
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #515151;
+}
+.step ul li i {
+    margin-right: 10px;
+    width: 22px;
+    height: 23px;
+    line-height: 23px;
+    display: inline-block;
+    background: url(../img/step.png) no-repeat -22px 0;
+    text-align: center;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.step ul li.active {
+    color: #7fae32;
+}
+.step ul li.active i {
+    background: url(../img/step.png) no-repeat;
+}
+.icon-pass,
+.icon-failed {
+    float: left;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    background: url(../img/icon.png) no-repeat;
+}
+.icon-failed {
+    background-position: 0 -22px;
+}
+.main {
+    padding: 9.5px;
+    margin: 0 0 10px;
+    background: #fcfcfc;
+    border: 1px solid #e3e0e0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    min-height: 350px;
+}
+.main h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dddddd;
+    margin-bottom: 15px;
+}
+.check .table th, .check .table td {
+    border-top: none;
+}
+.check .table th {
+    color: #0b3366;
+}
+.check .table th, .check .table td {
+    padding: 6px;
+}
+.config .control-group {
+    margin-bottom: 10px;
+}
+.config .control-label {
+    width: 120px;
+}
+.config .controls {
+    margin-left: 140px;
+}
+.config .control-group .help-inline {
+    color: #999999;
+}
+.config .alert {
+    margin-bottom: 5px;
+}
+.install .pg-log {
+    display: block;
+    margin: 40px 100px 10px;
+}
+.install .progress {
+    margin: 0 100px;
+}
+.finish {
+    padding: 20px 50px;
+}
+.finish .btn {
+    margin-right: 10px;
+}
