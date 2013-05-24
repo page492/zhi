@@ -8,7 +8,7 @@
 	text-align: center;
 	z-index: 10;
 
-	.attention, .error, .ok{
+	.alert, .error, .success{
 		display: inline-block;
 		min-width: 130px;
 		padding: 10px;
@@ -21,17 +21,17 @@
 		.caret{
 			margin-right: 10px;
 			.square(16px);
-    		display: inline-block;
-    		vertical-align: middle;
+			display: inline-block;
+			vertical-align: text-top;
 			background-image: url('@{iconMsgPath}');
 			background-repeat: no-repeat;
 		}
 	}
-	.attention{
+	.alert{
 		.caret{background-position: 0 -150px;}
 	}
 
-	.ok{
+	.success{
 		.caret{background-position: 0 -250px;}
 	}
 
@@ -39,5 +39,22 @@
 		.caret{background-position: 0 0;}
 	}
 	
+}
+
+
+.prompt{
+	.tips-box{
+		margin: 100px auto;
+		.alert, .success, .error{
+			width: 500px;
+			min-height: 80px;
+			padding: 38px;
+			font-size: @baseFontSize;
+		}
+		p{
+			margin-top: 10px;
+			padding-left: 30px;
+		}
+	}
 }
 

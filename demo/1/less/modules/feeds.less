@@ -152,6 +152,23 @@
         }
     }
 
+    .item-tags{
+        clear: both;
+        margin-top: 20px;
+        font-size: @fontSizeSmall;
+        a{
+            margin: 0 2px;
+            padding: 4px 5px;
+            background: @feedBarBackground;
+            color: @grayLight;
+        }
+        a:hover{
+            color: @white;
+            text-decoration: none;
+            background: @orange;
+        }
+    }
+
     .item-buy{
         float: right;
         position: relative;
@@ -191,24 +208,30 @@
 // Sign
 .item-sign{
     .square(41px);
-    position: absolute;
-    right: 0;
-    _right: 10px;
-    top: 20px;
-    z-index: 5;
+    margin-right: 8px;
     display: none;
     background-image: url('@{iconSpritePath}');
     background-repeat: no-repeat;
 }
+.sign-hot, .sign-new{
+    .item-tit{
+        margin: 0;
+    }
+    .item-pic, .item-attr, .item-drawer, .item-bar{
+        display: none;
+    }
+}
 .sign-hot{
     .item-sign{
-        display: block;
+        display: inline-block;
+        vertical-align: text-top;
         background-position: 0 -36px; 
     }
 }
 .sign-new{
     .item-sign{
-        display: block;
+        display: inline-block;
+        vertical-align: text-top;
         background-position: -48px -36px; 
     }
 }

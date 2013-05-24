@@ -93,8 +93,8 @@
 
     <div class="main">
         <div class="inner-wrap">
-            <div class="iHome-info">
-                <div class="iHome-left">
+            <div class="i-info">
+                <div class="i-left">
                     <section class="user-info">
                         <div class="avatar">
                             <div class="avatar-bg"></div>
@@ -110,7 +110,7 @@
                         </div>
                     </section>
 
-                    <section class="iHome-nav" id="J_Collapse">
+                    <section class="aside-nav" id="J_Collapse">
                         <dl class="accordion">
                             <dt class="accordion-hd">
                                 <a href="">个人信息<i></i></a>
@@ -156,15 +156,15 @@
                             $('#J_Collapse').collapse({index: 0, multiple: false});
                         });
                     </script>
+                </div>   <!--i-left End-->
 
-                </div>
-                <div class="iHome-right">
+                <div class="i-right">
                     <section class="crumb">
                         <div>当前位置:</div>
                         <div><a href="/">首页 </a>&gt;&gt;<a href="" title="">个人中心</a>&gt;&gt;<span class="cur">个人资料</span></div>
                     </section>
                     
-                    <section class="user-operate">
+                    <section class="i-box">
                         <h4 class="tit"><span>个人资料</span></h4>
                         <div class="cont">
                             <form class="form-mod" action="" method="post">
@@ -191,8 +191,63 @@
                                 </p>
                             </form>
                         </div>
+
+                        <h4 class="tit"><span>联合登录绑定</span></h4>
+                        <div class="cont">
+                            <ul class="bind-list">
+                                <li>
+                                    <img src="img/oauth/qq/bind.png" />
+                                    <div>
+                                        <p>你还未绑定腾讯QQ</p>
+                                        <a href="">立即绑定</a>
+                                    </div>
+                                </li>
+                                <li class="ok">
+                                    <img src="img/oauth/sina/bind.png" />
+                                    <div>
+                                        <p>你已经绑定了新浪微博，可以直接微博帐号登录****</p>
+                                        <a href="">取消绑定</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/oauth/taobao/bind.png" />
+                                    <div>
+                                        <p>你还未绑定淘宝帐号</p>
+                                        <a href="">立即绑定</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="tit"><span>同步设置</span></h4>
+                        <div class="cont">
+                            <p>
+                                <input type="checkbox" value="1" id="" name="" /> 评论时转发到新浪微博</li>
+                            </p>
+                        </div>
+
+                        <h4 class="tit"><span>修改头像</span></h4>
+                        <div class="cont">
+                            <div class="upload-avatar">
+                                <div class="mold fl">
+                                    <p>请选择一张本地的图片编辑后上传为头像</p>
+                                    <button class="btn btn-gray"> 头像上传 </button>
+                                </div>
+                                <div class="output fl">
+                                    <div class="a180"><img src="img/avatar/180x180.jpg" /></div>
+                                    <div class="a80"><img src="img/avatar/80x80.jpg" /></div>
+                                    <div class="a40"><img src="img/avatar/40x40.jpg" /></div>
+                                    <p>您上传的头像会自动生成三种尺寸，请注意中小尺寸的头像是否清晰</p>
+                                </div>
+                            </div>
+                            <div class="save-avatar">
+                                <button class="btn btn-oran btn-max">保 存</button>
+                                <button class="btn btn-gray btn-max">取 消</button>
+                            </div>
+                        </div>
+                        
                     </section>
-                </div>
+                </div>   <!--i-right End-->
             </div>
         </div>
     </div>   <!--Main End-->

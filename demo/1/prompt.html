@@ -9,9 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="holdphp.css" />
-    
-    <!-- <link rel="stylesheet" type="text/less" href="less/holdphp.less" /> -->
+    <link rel="stylesheet" type="text/less" href="less/holdphp.less" />
 
     <!-- SCRIPTS -->
     <script src="js/libs/jquery.1.9.1.js"></script>
@@ -22,64 +20,73 @@
 </head>
 <body id="user-page">
     <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="login">
+                <!-- <a href=>注册</a>|<a href=>登录</a>|<a href=>我要爆料</a> -->
+                <a href=>注销</a>|<a href=>个人中心</a>|<a href=>我要爆料</a>
+                </div>
+            </div>
+        </div>
         <div class="hd-wrap">
             <h1 class="logo">
-                <a href="index.html" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
                 <span>让您轻松构建高性能导购系统！</span>
             </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="search.html" method="get">
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" placeholder="搜索 折扣商品" />
+                    <input class="search-btn" type="submit" value="" />
+                </form>
+                </div>
+            </div>
         </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li class="nav-on">
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li>
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li>
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>   <!--Header End-->
 
     <div class="main">
         <div class="inner-wrap">
-            <div class="uc-form clearfix">
-                <div class="fl">
-                    <h3 class="tit">用户登录</h3>
-                    <form class="form-mod" action="" method="post">
-                        <div class="control error">
-                            <label class="label" for="username">登录名：</label>
-                            <div class="focus">
-                                <input type="text" class="txt" id="username" tabindex="1" name="username" />
-                                <span class="tips">可输入手机号码、邮箱、用户名</span>
-                            </div>
-                        </div>
-                        <div class="control success">
-                            <label class="label" for="password">登录密码：</label>
-                            <div class="focus">
-                                <input type="password" class="txt" id="password" tabindex="2" name="password" />
-                                <span class="tips"></span>
-                            </div>
-                        </div>
-                        <div class="control">
-                            <label class="label" for="verific">验证码：</label>
-                            <div class="focus">
-                                <input type="text" id="verific" tabindex="3" name="verific" size="8" />
-                                <img src="materials/yzm.png" class="verific-image" />
-                                <span>看不清楚？<a href="javascript:void(0);" class="verific-refresh">换一张</a></span>
-                            </div>
-                        </div>
-                        <p class="xieyi">
-                            <input type="checkbox" name="cache" value="1" />
-                            <span>两周内自动登录</span>
-                        </p>
-                        <p class="submit">
-                            <button class="btn btn-oran btn-max">登 录</button>
-                            <a class="" href="forgot.html">忘记密码？</a>
-                        </p>
-                    </form>
-                    <div class="other-login">
-                        <h4 class="other-hd">使用合作账号登录</h4>
-                        <div class="other-bd clearfix">
-                            <a class="l-qq" href="" target="_blank" title="新浪微博登录"><img src="img/oauth/sina/login.png" alt="" /></a>
-                            <a class="l-sina" href="" target="_blank" title="QQ帐号登录"><img src="img/oauth/qq/login.png" alt="" /></a>
-                            <a class="l-tao" href="" target="_blank" title="淘宝帐号登录"><img src="img/oauth/taobao/login.png" alt="" /></a> 
-                        </div>
+            <div class="prompt">
+                <div class="tips-box">
+                    <div class="error">
+                        <i class="caret"></i>
+                        抱歉，指定板块不存在！
+                        <p><a href="">[ 点击这里返回上一页 ]</a></p>
                     </div>
                 </div>
-                <div class="fr">
-                    <h4 class="tit">注册</h4>
-                    <p class="no-key">还没有账号？</p>
-                    <p class="sub-btn"><a class="btn btn-green btn-max" href="register.html"><i></i>免费注册</a></p>
+
+                <div class="tips-box">
+                    <div class="ok">
+                        <i class="caret"></i>
+                        抱歉，指定板块不存在！
+                        <p><a href="">[ 点击这里返回上一页 ]</a></p>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <div class="attention">
+                        <i class="caret"></i>
+                        抱歉，指定板块不存在！
+                        <p><a href="">[ 点击这里返回上一页 ]</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,6 +139,7 @@
 
     <div id="J_GoTop" class="gotop"><a href="#">回顶部</a></div>
 
+    <script src="js/plugins/collapse.js"></script>
     <script src="js/plugins/dialog.js"></script>
     <script src="js/apps/holdphp.js"></script>
 
