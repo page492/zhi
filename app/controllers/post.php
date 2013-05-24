@@ -96,10 +96,8 @@ class Post extends Front_Controller
     {
         $this->load->model('post_model');
         $post = $this->post_model->find($id);
-        $post['categorys'] = $this->post_model->get_post_categorys($id);
-        $post['link_list'] = unserialize($post['links']);
+        $post = $this->post_model->arrange($post);
         $post['tag_list'] = unserialize($post['tag_cache']);
-        $post['img'] = $post['img'] ? base_url('data/upload/post/cover/'.$post['img']) : base_url('assets/img/no-pic.png');
         $this->data['post'] = $post;
         $this->data['context_nav'] = $this->post_model->get_context_nav($id); //上下文
 

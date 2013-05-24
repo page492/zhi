@@ -63,5 +63,7 @@
         });
     </script>
 
+    <?php $this->load->view('common/foot_js');?>
+
 </body>
 </html>

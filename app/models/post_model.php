@@ -138,11 +138,17 @@ class Post_model extends HP_Model
     public function arrange_list($post_list)
     {
         foreach ($post_list as $key => $val) {
-            $post_list[$key]['categorys'] = $this->get_post_categorys($val['id']);
-            $post_list[$key]['link_list'] = unserialize($val['links']);
-            $post_list[$key]['img'] = $post_list[$key]['img'] ? base_url('data/upload/post/cover/'.$val['img']) : base_url('assets/img/no-pic.png');
+            $post_list[$key] = $this->arrange($val);
         }
         return $post_list;
+    }
+
+    public function arrange($post){
+        $post['content'] = preg_replace('/<img (.*)src(.*) \/>/i', '<img \\1src="'.base_url('assets/img/dummy.png').'" data-original\\2 />', $post['content']);
+        $post['categorys'] = $this->get_post_categorys($post['id']);
+        $post['link_list'] = unserialize($post['links']);
+        $post['img'] = $post['img'] ? base_url('data/upload/post/cover/'.$post['img']) : base_url('assets/img/no-pic.png');
+        return $post;
     }
 
     /**

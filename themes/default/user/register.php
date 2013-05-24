@@ -81,5 +81,8 @@
             router.load('validform,pages/front/global,pages/front/register');
         });
     </script>
+
+    <?php $this->load->view('common/foot_js');?>
+
 </body>
 </html>

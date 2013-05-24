@@ -1,5 +1,7 @@
 define(function (require) {
 
+    require('lazyload');
+
     (function ($) {
         $.extend($.hold, {
 
@@ -107,6 +109,7 @@ define(function (require) {
                 this.leftMenu();
                 this.showAllFeed();
                 this.goTop();
+                this.lazyload();
             },
             //搜索
             search: function(){
@@ -167,7 +170,9 @@ define(function (require) {
                     e.preventDefault();
                     var attr = $(this).parents('.item-drawer').siblings('.item-attr');
                     attr.removeClass('excerpt').addClass('total');
-
+                    $(this).parents('.feed-item').find('img').each(function() {
+                        $(this).trigger("appear");
+                    });
                     $(this).addClass('none').siblings('.up').removeClass('none');
                 });
 
@@ -202,6 +207,13 @@ define(function (require) {
                     $('html,body').animate({
                         scrollTop: 0
                     }, 400);
+                });
+            },
+
+            //Lazyload
+            lazyload: function(){
+                $('img').lazyload({
+                    effect : "fadeIn"
                 });
             }
         }});

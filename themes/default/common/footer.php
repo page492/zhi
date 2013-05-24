@@ -66,7 +66,6 @@
                 <p class="fr">
                     Powered by <?php echo anchor('http://www.holdphp.com', 'HoldPHP', 'target="_blank"') . $hp_version;?> © 2013-2014
                     <?php echo anchor('http://www.miitbeian.gov.cn', $setting['site']['icp_info'], 'target="_blank"');?>
-                    <?php echo $setting['site']['stat_code'];?>
                 </p>
             </div>
         </div>
