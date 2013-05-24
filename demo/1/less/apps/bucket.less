@@ -3,22 +3,57 @@
 // --------------------------------------------------
 
 #bucket-page{
-    .main{ 
-        padding-top: 0;
+    // Model
+    .filter-mod, .recom-mod{
+		margin-bottom: 10px;
+        padding: 10px 20px;
+        background: @white;
+        border: @border;
+        border-top-color: #eee;
+        border-bottom-color: #e5e5e5;
+    }
+    .filter-mod{
+    	.filter-suggest{
+    		padding-top: 20px;
+    		border-top: @border;
+
+    		input{float: left;margin-left: 10px;}
+    		.search-text{width: 210px;}
+    	}
+    }
+    .recom-mod{
+        .hd{
+            border-bottom: 1px solid @pink;
+            line-height: 30px;
+            span{
+                font-size: @fontSizeLarge;
+                color: @pink;
+            }
+        }
+        .bd{
+            padding-top: 20px;
+            overflow: hidden;
+            .recom-list{
+                margin-bottom: 0;
+                li{
+                    margin-right: 2%;
+                }
+            }
+        }
     }
 }
 
+.sub-nav, .cat-nav{
+	margin-bottom: 20px;
+}
+//Sub Nav
 .sub-nav{
-	width: @mainWidth;
-	height: 100px;
-    .center-block();
-    .clearfix(); 
 	position:relative;
 }
 .sub-nav .sub-tit{
 	font-size: 21px;
 	font-family: @yaHeiFontFamily;
-	margin: 20px 0 0;
+	margin: 0;
 	color: @orange;
 }
 .sub-nav .sub-desc{
@@ -32,7 +67,7 @@
 	position:absolute;
 	height: 30;
 	background: @white; 
-	top: 35px;
+	top: 15px;
 	right: 0;
 	border-bottom: 1px solid #d6d6d6;
 	border-left: 1px solid #d6d6d6;
@@ -76,4 +111,33 @@
 }
 .sub-cate li.select i{
 	display:block
+}
+
+
+//Cat Nav
+.cat-nav{
+	.cat-name, .cat-item{
+		display: inline-block;
+		.ie7-inline-block();
+		margin-right: 8px;
+	}
+	.cat-name{
+		padding: 4px 0;
+	}
+	.cat-item{
+		padding: 3px 9px;
+		color: #888;
+		font-size: @fontSizeSmall;
+		border: @border;
+		background: #f7f7f7;
+		.border-radius(3px);
+
+		&:hover, &.cat-on{
+			padding: 4px 10px;
+			color: @white;
+			text-decoration: none;
+			border: none;
+			background: @blueDark;
+		}
+	}
 }
