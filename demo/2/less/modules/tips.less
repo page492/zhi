@@ -8,7 +8,7 @@
 	text-align: center;
 	z-index: 10;
 
-	.attention, .error, .ok{
+	.alert, .error, .success{
 		display: inline-block;
 		min-width: 130px;
 		padding: 10px;
@@ -27,11 +27,11 @@
 			background-repeat: no-repeat;
 		}
 	}
-	.attention{
+	.alert{
 		.caret{background-position: 0 -150px;}
 	}
 
-	.ok{
+	.success{
 		.caret{background-position: 0 -250px;}
 	}
 
@@ -45,7 +45,7 @@
 .prompt{
 	.tips-box{
 		margin: 100px auto;
-		.attention, .error, .ok{
+		.alert, .success, .error{
 			width: 500px;
 			min-height: 80px;
 			padding: 38px;
