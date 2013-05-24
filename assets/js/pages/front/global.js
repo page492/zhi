@@ -5,7 +5,7 @@ define(function (require) {
 
             tip: function(content, icon){
                 var icon = icon ? icon : 'success';
-                $.dialog({id:'tip', title:false, content:'<div class="d-tip"><div class="d-tip-'+icon+'"></div><div class="d-tip-c">'+content+'</div><div class="d-tip-r"></div></div>', fixed:true, padding:0, time:1000});
+                $.dialog({id:'tip', title:false, content:'<p class="tips-box"><span class="'+icon+'"><i class="caret"></i>'+content+'</span></p>', fixed:true, padding:0, time:1000});
             },
 
             checkLogin: function(){

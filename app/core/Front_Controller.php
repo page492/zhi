@@ -88,7 +88,7 @@ class Front_Controller extends HP_Controller
         $this->load->library('pagination');
         $default_config['base_url'] = site_url($this->uri->uri_string().'?');
         $default_config['total_rows'] = $total_rows;
-        $default_config['per_page'] = 1;
+        $default_config['per_page'] = 10;
         $default_config['num_links'] = 10;
         $default_config['use_page_numbers'] = TRUE;
         $default_config['first_tag_open'] = $default_config['last_tag_open'] = $default_config['next_tag_open'] = $default_config['prev_tag_open'] = $default_config['num_tag_open'] = ' ';
