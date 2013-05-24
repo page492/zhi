@@ -295,11 +295,45 @@ class User extends Front_Controller
         redirect('person/welcome/bind');
     }
 
+    /**
+     * 忘记密码
+     * @return bool
+     */
     public function lostpwd()
     {
-        $this->load->view($this->cm, $this->data);
+        if ($this->input->post()) {
+            $this->load->library('form_validation');
+            $this->form_validation->set_error_delimiters('', '');
+            $this->form_validation->set_rules('email', '电子邮箱', 'trim|required|valid_email');
+            $this->form_validation->set_rules('captcha', '验证码', 'callback_check_captcha');
+            if ($this->form_validation->run() == FALSE) {
+                return $this->show_message($this->form_validation->error_string(), 0);
+            } else {
+                $email = $this->input->post('email', TRUE);
+                $this->load->model('user_model');
+                $user = $this->user_model->where('email', $email)->find();
+                if (!$user) {
+                    return $this->show_message('用户不存在！', 0);
+                }
+                //发送邮件
+            }
+        } else {
+            $this->load->view($this->cm, $this->data);
+        }
     }
 
+    public function resetpwd()
+    {
+        if ($this->input->post()) {
+
+        } else {
+            $this->load->view($this->cm, $this->data);
+        }
+    }
+
+    /**
+     * 退出登陆
+     */
     public function logout()
     {
         $this->visitor->logout();

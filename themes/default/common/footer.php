@@ -39,7 +39,7 @@
                 </li>
             </ul>
             <div class="hold-logo">
-                <a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="<?php echo base_url('assets/img/logo-footer.png');?>" /></a>
+                <a href="<?php echo site_url();?>" title="Powered by HoldPHP"><img src="<?php echo base_url('assets/img/logo-footer.png');?>" /></a>
             </div>
         </div>
         <?php if (isset($flink_list)) :?>

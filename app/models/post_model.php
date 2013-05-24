@@ -99,7 +99,7 @@ class Post_model extends HP_Model
 
     public function get_list_by_mall($mid, $limit, $offset)
     {
-        $post_list = $this->db->join('post', 'post.id = post_mall.post_id')->where(array('mall_id' => $mid, 'post_time <= ' => time()))->order_by('orderid, id DESC')->limit($limit, $offset)->get('post_mall')->result_array();
+        $post_list = $this->db->join('post', 'post.id = post_mall.post_id')->where(array('mall_id' => $mid, 'post_time <= ' => time()))->order_by('topped DESC,orderid,id DESC')->limit($limit, $offset)->get('post_mall')->result_array();
         return $this->arrange_list($post_list);
     }
 

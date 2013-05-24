@@ -21,7 +21,7 @@
                                 <h5><?php echo $val?></h5>
                                 <ul class="clearfix">
                                     <?php foreach ($list[$key] as $_link) :?>
-                                    <li><?php echo anchor($_link['link'], $_link['title']);?></li>
+                                    <li><?php echo anchor($_link['link'], $_link['title'], 'target="_blank"');?></li>
                                     <?php endforeach;?>
                                 </ul>
                                 <?php endforeach;?>

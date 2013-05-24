@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <p class="submit">
-                                <button class="btn btn-green btn-max"> 获取新密码 </button>
+                                <button class="btn btn-green btn-max"> 找回密码 </button>
                             </p>
                         </form>
                     </div>
