@@ -11,7 +11,7 @@
             <div class="uc-form clearfix">
                 <div class="fl">
                     <h3 class="tit">用户登录</h3>
-                    <form id="J_loginform" class="form-mod" action="<?php echo site_url('user/login');?>" method="post">
+                    <form id="J_loginform" class="J_ValidForm form-mod" action="<?php echo site_url('user/login');?>" method="post">
                         <div class="control">
                             <label class="label" for="username">登录名：</label>
                             <div class="focus">
@@ -32,7 +32,7 @@
                         </p>
                         <p class="submit">
                             <button class="btn btn-oran btn-max">登 录</button>
-                            <a class="" href="">忘记密码？</a>
+                            <?php echo anchor('user/lostpwd', '忘记密码？');?>
                         </p>
                     </form>
                     <div class="other-login">

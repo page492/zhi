@@ -295,6 +295,11 @@ class User extends Front_Controller
         redirect('person/welcome/bind');
     }
 
+    public function lostpwd()
+    {
+        $this->load->view($this->cm, $this->data);
+    }
+
     public function logout()
     {
         $this->visitor->logout();

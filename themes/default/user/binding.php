@@ -25,7 +25,7 @@
                         </div>
                         <div class="tab-content">
                             <div class="tab-pane active" id="new">
-                                <form id="J_bindform" class="J_validform form-mod" action="<?php echo site_url('user/bind');?>" method="post">
+                                <form id="J_bindform" class="J_ValidForm form-mod" action="<?php echo site_url('user/bind');?>" method="post">
                                     <input type="hidden" name="type" value="0">
                                     <div class="control">
                                         <label class="label" for="username">用户名：</label>

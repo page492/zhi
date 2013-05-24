@@ -2,6 +2,7 @@ define(function (require) {
 
     require('dialog');
     require('ajaxForm');
+    require('validform');
 
     (function ($) {
         $.hold = $.hold || {version: "v1.0.0"};
@@ -11,6 +12,19 @@ define(function (require) {
             var target = $($(this).attr('data-target'));
             target.prop('checked', this.checked);
             $(this).prop('checked', this.checked);
+        });
+
+        //表单验证
+        $('.J_ValidForm').Validform({
+            tiptype:function(msg,o,cssctl){
+                if(o.type == 2){
+                    $(o.obj).parents('.control').removeClass('error').addClass('success');
+                    $(o.obj).siblings('.tips').html('');
+                }else if(o.type == 3){
+                    $(o.obj).parents('.control').removeClass('success').addClass('error');
+                    $(o.obj).siblings('.tips').html(msg);
+                }
+            }
         });
 
         //上传文件

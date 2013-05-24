@@ -11,7 +11,7 @@
             <div class="uc-form clearfix">
                 <div class="fl">
                     <h3 class="tit">新会员注册</h3>
-                    <form id="J_regform" class="form-mod" action="<?php echo site_url('user/register');?>" method="post">
+                    <form id="J_regform" class="J_ValidForm form-mod" action="<?php echo site_url('user/register');?>" method="post">
                         <div class="control">
                             <label class="label" for="username">用户名：</label>
                             <div class="focus">
@@ -43,7 +43,7 @@
                         <div class="control">
                             <label class="label" for="verific">验证码：</label>
                             <div class="focus">
-                                <input type="text" id="captcha" name="captcha" size="8" datatype="*" nullmsg="请填写验证码！" errormsg="请填写验证码！"/>
+                                <input type="text" id="captcha" name="captcha" size="8" datatype="*" nullmsg="请填写验证码！"/>
                                 <img id="J_captcha" src="<?php echo site_url('welcome/captcha');?>" />
                                 <span>看不清楚？<a href="javascript:void(0);" id="J_refresh_captcha">换一张</a></span>
                                 <span class="tips"></span>

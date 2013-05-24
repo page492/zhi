@@ -28,7 +28,7 @@
                     </div>     
                     <div class="tab-content">
                         <div class="tab-pane active" id="leaks">
-                            <form id="J_SubmitForm" class="form-mod" action="<?php echo site_url('baoliao');?>" method="post">
+                            <form id="J_SubmitForm" class="J_ValidForm form-mod" action="<?php echo site_url('baoliao');?>" method="post">
                                 <div class="control">
                                     <label class="label" for="title">标题：</label>
                                     <div class="focus">
