@@ -127,7 +127,7 @@ class Front_Controller extends HP_Controller
             ));
         } else {
             $this->data['message'] = $message;
-            $this->data['icon'] = $status ? 'ok' : 'error';
+            $this->data['icon'] = $status ? 'success' : 'error';
             $this->data['target_url'] = $target_url ? $target_url : $_SERVER["HTTP_REFERER"];
             $this->load->view('common/message', $this->data);
             return FALSE;

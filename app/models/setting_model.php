@@ -63,7 +63,7 @@ class Setting_model extends HP_Model
     /**
      * 读取站点配置写入缓存
      */
-    public function get_cache()
+    public function get_cache($namespace = '')
     {
         if (FALSE === $setting = $this->cache->get('setting')) {
             $setting = array();
@@ -73,7 +73,7 @@ class Setting_model extends HP_Model
             }
             $this->cache->save('setting', $setting);
         }
-        return $setting;
+        return $namespace ? $setting[$namespace] : $setting;
     }
 
     /**

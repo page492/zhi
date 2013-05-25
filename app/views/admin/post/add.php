@@ -111,7 +111,7 @@
             </div>
 
         </div>
-        <div class="form-actions form-actions-fixed">
+        <div class="form-actions" id="J_actbar">
             <button type="submit" class="btn btn-primary ml20" id="J_publish" data-toggle="ajaxfrom" data-loading-textdddd="发布中...">发布</button>
         </div>
     </form>

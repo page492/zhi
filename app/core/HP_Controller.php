@@ -155,6 +155,47 @@ class HP_Controller extends CI_Controller
     }
 
     /**
+     * 邮件队列
+     */
+    protected function _mailto($to, $subject, $body, $priority = 1) {
+        $to_emails = is_array($to) ? $to : array($to);
+        $mails = array();
+        $time = time();
+        foreach ($to_emails as $_email) {
+            $mails[] = array(
+                'mail_to' => $_email,
+                'mail_subject' => $subject,
+                'mail_body' => $body,
+                'priority' => $priority,
+                'add_time' => $time,
+                'lock_expiry' => $time,
+            );
+        }
+        $this->load->model('mail_queue_model');
+        $this->mail_queue_model->add($mails);
+
+        //异步发送邮件
+        $this->_sendmail();
+    }
+
+    /**
+     * 发送邮件
+     * @param bool $is_sync
+     * @return bool
+     */
+    public function _sendmail($is_sync = true) {
+        if (!$is_sync) {
+            //异步
+            $this->session->set_flashdata('async_sendmail', true);
+            return true;
+        } else {
+            //同步
+            $this->load->model('mail_queue_model');
+            return $this->mail_queue_model->send();
+        }
+    }
+
+    /**
      * _remap实现前置后置操作
      * @param $method
      * @param array $params

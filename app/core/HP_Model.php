@@ -113,7 +113,7 @@ class HP_Model extends CI_Model
     /**
      *  添加数据
      */
-    public function add($data)
+    public function add($data = array())
     {
         if (empty($data)) {
             // 没有传递数据，获取当前数据对象的值
@@ -156,7 +156,7 @@ class HP_Model extends CI_Model
     /**
      * 修改数据
      */
-    public function edit($data, $options = array(), $primary = '')
+    public function edit($data = array(), $options = array(), $primary = '')
     {
         if (empty($data)) {
             // 没有传递数据，获取当前数据对象的值

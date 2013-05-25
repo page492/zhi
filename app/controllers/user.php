@@ -315,7 +315,17 @@ class User extends Front_Controller
                 if (!$user) {
                     return $this->show_message('用户不存在！', 0);
                 }
-                //发送邮件
+                $activation = md5($user['password'] . $user['last_time']);
+                $uri = 'user/resetpwd/'.$user['id'].'/'.$activation;
+                //读取模板内容
+                $this->load->model('message_tpl_model');
+                $mail_info = $this->message_tpl_model->get_info('lostpwd', array(
+                    'user_name' => $user['username'],
+                    'reset_link' => anchor($uri, site_url($uri, 'target="_blank"')),
+                    'site_name' => $this->setting['site']['site_name']
+                ));
+                $this->_mailto($email, $mail_info['title'], $mail_info['message']);
+                return $this->show_message('重置密码的链接已经发送到您的邮箱，请查看邮件继续操作！');
             }
         } else {
             $this->load->view($this->cm, $this->data);
@@ -325,8 +335,38 @@ class User extends Front_Controller
     public function resetpwd()
     {
         if ($this->input->post()) {
-
+            $this->load->library('form_validation');
+            $this->form_validation->set_error_delimiters('', '');
+            $this->form_validation->set_rules('uid', '用户ID', 'intval|required');
+            $this->form_validation->set_rules('activation', '校验码', 'trim|required');
+            $this->form_validation->set_rules('password', '密码', 'trim|required|matches[passconf]');
+            $this->form_validation->set_rules('passconf', '确认密码', 'trim|required');
+            if ($this->form_validation->run() == FALSE) {
+                return $this->show_message($this->form_validation->error_string(), 0);
+            } else {
+                $uid = $this->input->post('uid', TRUE);
+                $activation = $this->input->post('activation', TRUE);
+                $password = $this->input->post('password', TRUE);
+                $this->load->model('user_model');
+                $user = $this->user_model->find($uid);
+                if ($activation != md5($user['password'] . $user['last_time'])) {
+                    return $this->show_message('链接地址不正确', 0);
+                }
+                $this->user_model->where('id', $uid)->edit(array(
+                    'password' => md5($password),
+                ));
+                return $this->show_message('密码重置成功，你现在可以使用新密码登陆网站了！', 1, site_url('user/login'));
+            }
         } else {
+            $uid = $this->uri->rsegment(3);
+            $activation = $this->uri->rsegment(4);
+            $this->load->model('user_model');
+            $user = $this->user_model->find($uid);
+            if ($activation != md5($user['password'] . $user['last_time'])) {
+                return $this->show_message('链接地址不正确', 0);
+            }
+            $this->data['uid'] = $uid;
+            $this->data['activation'] = $activation;
             $this->load->view($this->cm, $this->data);
         }
     }

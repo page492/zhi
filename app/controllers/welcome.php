@@ -62,4 +62,8 @@ class Welcome extends Front_Controller
         }
     }
 
+    public function show_404(){
+        $this->load->view($this->cm, $this->data);
+    }
+
 }

@@ -17,7 +17,7 @@
                     </div><!--avatar End-->
 
                     <div class="improve fr">
-                        <form class="J_ValidForm form-mod" action="" method="post">
+                        <form class="J_ValidForm form-mod" action="<?php echo current_url();?>" method="post">
                             <div class="control">
                                 请输入您的登录/注册邮箱地址，帮助您找回密码！
                             </div>
