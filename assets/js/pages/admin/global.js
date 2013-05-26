@@ -1,6 +1,7 @@
 define(function (require) {
 
     require('bootstrap');
+    require('tablehold');
 
     (function ($) {
 

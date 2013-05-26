@@ -7,6 +7,10 @@ html, body {
     font-size: 12px;
 }
 
+a {
+    color: #277ada;
+}
+
 a, a:hover, a:active, a:visited {
     cursor: pointer;
 }
@@ -152,6 +156,18 @@ input[type="checkbox"] {
     margin-top: 0;
 }
 
+.toggle-on, .toggle-off {
+    background-image: url(../img/toggle.png);
+    width: 43px;
+    height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.toggle-off {
+    background-position: 0 -26px;
+}
+
 /* datetimepicker
 -------------------------------------------------- */
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
@@ -263,8 +279,8 @@ input[type="checkbox"] {
 /* 模块
 -------------------------------------------------- */
 .block-title {
-    padding: 4px 8px;
-    background-color: #e5e0e0;
+    padding: 6px 8px;
+    background-color: #eee;
     font-weight: 700;
     color: #666666;
 }
@@ -279,19 +295,24 @@ input[type="checkbox"] {
 }
 
 .table-list thead tr {
-    background-color: #e5e0e0;
+    background-color: #eee;
     color: #666666;
 }
 
 .table-list thead th {
-    padding: 8px 4px;
+    padding: 6px 4px;
 }
 
 .table-list th,
 .table-list td {
     text-align: center;
-    padding: 8px 4px;
+    padding: 8px 6px;
     vertical-align: middle;
+}
+
+.table-list td span.modify {
+    display: inline-block;
+    padding: 3px 5px;
 }
 
 .table-list th.tl,
@@ -302,6 +323,27 @@ input[type="checkbox"] {
 .table-list th.tr,
 .table-list td.tr {
     text-align: right;
+}
+
+.table-list select,
+.table-list textarea,
+.table-list input[type="text"],
+.table-list input[type="password"],
+.table-list input[type="datetime"],
+.table-list input[type="datetime-local"],
+.table-list input[type="date"],
+.table-list input[type="month"],
+.table-list input[type="time"],
+.table-list input[type="week"],
+.table-list input[type="number"],
+.table-list input[type="email"],
+.table-list input[type="url"],
+.table-list input[type="search"],
+.table-list input[type="tel"],
+.table-list input[type="color"],
+.table-list .uneditable-input {
+    margin-bottom: 0px;
+    padding: 2px 4px;
 }
 
 /* 分页

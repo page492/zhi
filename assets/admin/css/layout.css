@@ -3,57 +3,68 @@
  */
 
 html, body {
-  background-color: #FAFAFA;
-  overflow: hidden;
-  font-size: 12px;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    font-size: 12px;
 }
+
 a {
-  color: #333333;
+    color: #333333;
 }
- /* 头部
+
+/* 头部
 -------------------------------------------------- */
 .head {
-  background-color: #0c3366;
+    background-color: #00499e;
 }
+
 .logo {
-  display: block;
-  width: 170px;
-  height: 40px;
-  overflow: hidden;
-  text-indent: -2000em;
-  background: url(../img/logo-mini.png) center center no-repeat;
+    display: block;
+    width: 170px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -2000em;
+    background: url(../img/logo-mini.png) center center no-repeat;
 }
+
 .head .navbar {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .head .navbar-inner {
-  border: none;
-  border-radius: 0;
-  background: #0c3366;
-  padding: 0;
+    border: none;
+    border-radius: 0;
+    background: #00499e;
+    padding: 0;
 }
+
 .head .nav > li > a {
-  font-size: 14px;
-  text-shadow: 0 0 0;
-  color: #ffffff;
+    font-size: 14px;
+    text-shadow: 0 0 0;
+    color: #ffffff;
 }
+
 .head .nav > li > a:hover {
-  background-color: #133f79;
-  color: #DDD;
+    background-color: #133f79;
+    color: #DDD;
 }
+
 .head .nav > .active > a {
-  font-weight: 700;
+    font-weight: 700;
 }
+
 .head .admin-info {
     height: 40px;
     line-height: 40px;
     padding-right: 20px;
     color: #FFFFFF;
 }
+
 .head .admin-info a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .head .admin-info .go-home {
     background: rgb(45, 91, 151);
     border-radius: 2px;
@@ -64,178 +75,212 @@ a {
     color: #FFFFFF;
     opacity: .7;
 }
+
 .head .admin-info .go-home:hover {
     background: rgb(35, 85, 151);
     opacity: 1;
 }
+
 .head .admin-info span {
     color: rgb(207, 210, 221);
     margin-right: 10px;
 }
+
 .head .admin-info .logout {
     opacity: .7;
 }
+
 .head .admin-info .logout:hover {
     opacity: 1;
 }
- /* 标签栏
+
+/* 标签栏
 -------------------------------------------------- */
 .tab {
-  padding: 15px 0 5px 0;
-}
-.custom {
-  width: 160px;
-  margin: 0 10px;
-}
-.custom > .btn-small {
-  padding: 2px 10px 2px 15px;
-  width: 160px;
-}
-.custom .caret {
-  margin-left: 5px;
-}
-.custom > .dropdown-menu {
-  font-size: 12px;
-}
-.tab-nav {
-  overflow: hidden;
-  border-bottom: 1px #08c solid;
-}
-.tab-nav-pre,
-.tab-nav-next {
-  display: block;
-  margin: 6px 5px;
-  text-indent: -2000em;
-  cursor: pointer;
-  opacity: .8;
-}
-.tab-nav-disabled {
-  opacity: .3;
-}
-.tab-nav-box {
-  margin: 0 24px;
-}
-.tab-nav-list {
-  height: 26px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.tab-nav-list > ul {
-  list-style: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  margin: 0;
-}
-.tab-nav-list > ul > li {
-  cursor: pointer;
-  display: block;
-  float: left;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 10px 0 15px;
-  white-space: nowrap;
-  margin-right: 3px;
-  background-color: #dfdfdf;
-  -webkit-border-radius: 3px 3px 0 0;
-     -moz-border-radius: 3px 3px 0 0;
-          border-radius: 3px 3px 0 0;
-}
-.tab-nav-list > ul > .active {
-  background-color: #0088cc;
-}
-.tab-nav-list > ul > li > a {
-  float: left;
-  text-decoration: none;
-  padding-right: 6px;
-}
-.tab-nav-list > ul > li > .icon-remove {
-  margin: 6px 0 0;
-  padding: 0;
-  text-indent: -2000em;
-  opacity: .2;
-}
-.tab-nav-list > ul > li > .icon-remove:hover {
-  opacity: .5;
-}
-.tab-nav-list > ul > .active > .icon-remove {
-  background-image: url("../../img/glyphicons-halflings-white.png");
-  opacity: 1;
-}
-.tab-nav-list > ul > .active > a {
-  color: #FFFFFF;
-}
- /* 菜单
--------------------------------------------------- */
-.left-sidebar {
-  width: 160px;
-  margin: 0 10px;
-}
-.side-nav {
-  padding: 0;
-  background-color: #fff;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
-     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
-          box-shadow: 0 1px 4px rgba(0,0,0,.065);
-}
-.side-nav > li > a {
-  display: block;
-  width: 160px \9;
-  margin: 0 0 -1px;
-  padding: 6px 14px;
-  border: 1px solid #e5e5e5;
-  color: #333333;
-}
-.side-nav > li:first-child > a {
-  -webkit-border-radius: 4px 4px 0 0;
-     -moz-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
-}
-.side-nav > li:last-child > a {
-  -webkit-border-radius: 0 0 4px 4px;
-     -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-}
-.side-nav > .active > a,
-.side-nav > .active > a:hover {
-  position: relative;
-  z-index: 2;
-  padding: 6px 15px;
-  border: 0;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-}
-/* Chevrons */
-.side-nav .icon-chevron-right {
-  float: right;
-  margin-top: 2px;
-  margin-right: -6px;
-  opacity: .25;
-}
-.side-nav > li > a:hover {
-  background-color: #f5f5f5;
-}
-.side-nav a:hover .icon-chevron-right {
-  opacity: .5;
-}
-.side-nav .active .icon-chevron-right,
-.side-nav .active a:hover .icon-chevron-right {
-  opacity: 1;
+    padding: 15px 0 5px 0;
 }
 
- /* 主体
+.custom {
+    width: 160px;
+    margin: 0 10px;
+}
+
+.custom > .btn-small {
+    padding: 2px 10px 2px 15px;
+    width: 160px;
+}
+
+.custom .caret {
+    margin-left: 5px;
+}
+
+.custom > .dropdown-menu {
+    font-size: 12px;
+}
+
+.tab-nav {
+    overflow: hidden;
+    border-bottom: 1px #08c solid;
+}
+
+.tab-nav-pre,
+.tab-nav-next {
+    display: block;
+    margin: 6px 5px;
+    text-indent: -2000em;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.tab-nav-disabled {
+    opacity: .3;
+}
+
+.tab-nav-box {
+    margin: 0 24px;
+}
+
+.tab-nav-list {
+    height: 26px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.tab-nav-list > ul {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.tab-nav-list > ul > li {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px 0 15px;
+    white-space: nowrap;
+    margin-right: 3px;
+    background-color: #f4f4f4;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.tab-nav-list > ul > .active {
+    background-color: #1383d9;
+}
+
+.tab-nav-list > ul > li > a {
+    float: left;
+    text-decoration: none;
+    padding-right: 6px;
+}
+
+.tab-nav-list > ul > li > .icon-remove {
+    margin: 6px 0 0;
+    padding: 0;
+    text-indent: -2000em;
+    opacity: .2;
+}
+
+.tab-nav-list > ul > li > .icon-remove:hover {
+    opacity: .5;
+}
+
+.tab-nav-list > ul > .active > .icon-remove {
+    background-image: url("../../img/glyphicons-halflings-white.png");
+    opacity: 1;
+}
+
+.tab-nav-list > ul > .active > a {
+    color: #FFFFFF;
+}
+
+/* 菜单
+-------------------------------------------------- */
+.left-sidebar {
+    width: 160px;
+    margin: 0 10px;
+}
+
+.side-nav {
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+}
+
+.side-nav > li > a {
+    display: block;
+    width: 160px  \9;
+    margin: 0 0 -1px;
+    padding: 6px 14px;
+    border: 1px solid #e5e5e5;
+    color: #333333;
+}
+
+.side-nav > li:first-child > a {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.side-nav > li:last-child > a {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.side-nav > .active > a,
+.side-nav > .active > a:hover {
+    position: relative;
+    z-index: 2;
+    padding: 6px 15px;
+    border: 0;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+    background-color: #dd4b39;
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+/* Chevrons */
+.side-nav .icon-chevron-right {
+    float: right;
+    margin-top: 2px;
+    margin-right: -6px;
+    opacity: .25;
+}
+
+.side-nav > li > a:hover {
+    background-color: #f5f5f5;
+}
+
+.side-nav a:hover .icon-chevron-right {
+    opacity: .5;
+}
+
+.side-nav .active .icon-chevron-right,
+.side-nav .active a:hover .icon-chevron-right {
+    opacity: 1;
+}
+
+/* 主体
 -------------------------------------------------- */
 .right-main {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 .right-main iframe {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }

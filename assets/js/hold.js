@@ -6,6 +6,7 @@
             'bootstrap': 'lib/bootstrap.min.js',
             'dialog': 'lib/jquery.artDialog.js',
             'ajaxForm': 'lib/jquery.form.js',
+            'tablehold': 'lib/jquery.tablehold.js',
             'lazyload': 'lib/jquery.lazyload.min.js',
             'uploader': 'lib/fileuploader.js',
             'datetimepicker': 'lib/datetimepicker.min.js',
