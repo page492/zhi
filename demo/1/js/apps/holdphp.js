@@ -15,7 +15,7 @@
             this.leftMenu();
             this.showAllFeed();
             this.goTop();
-            //this.login();
+            this.login();
         },
 
 
@@ -24,8 +24,18 @@
                 if(result.status == 0){
                     alert(1);
                 }else{
+                    $.dialog({
+                        id:'tip', 
+                        title:false, 
+                        content:'<p class="tips-box">'+
+                                '<span class="error"><i class="caret"></i>您暂时没有消息!</span>'+
+                            '</p>', 
+                        fixed:true, 
+                        padding:0,
+                        time:1000
+                    });
                     //$.dialog('artDialog: 加载数据失败！', function () {alert('Thank you!')});
-                    $.dialog({id:'login', title:"用户登录", content:result.data, padding:'', fixed:true, lock:true});
+                    //$.dialog({id:'login', title:"用户登录", content:result.data, padding:'', fixed:true, lock:true});
                     //$.dialog({ title:"用户登录", content:'<div class="loading">加载数据失败！</div>', fixed:true, lock:true}).time(2000);
                 }
             });
@@ -33,19 +43,14 @@
 
         //搜索
         search: function(){
-            var $el = $('#J_Search'),
-                $label = $el.find('label');
+            var $el = $('#J_Search');
 
             $el.on('focus', '.search-text', function(e){
                 $el.addClass('active');
-                $label.addClass('hidden');
             });
 
             $el.on('blur', '.search-text', function(e){
                 $el.removeClass('active');
-                if($(this).val() ==''){
-                    $label.removeClass('hidden');
-                }
             });
         },
 
