@@ -8,23 +8,146 @@
     <meta name="author" content="cssoul.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="holdphp.css" />
-    <style type="text/css">
-    body{background: #fff;background-image: none;}
-    .box-center{width:420px;margin: 180px auto;}
-    .box-center p{
-        margin-top: -30px;
-        padding-left: 175px;
-        color: #999;
-        font: 12px Arial,sans-serif;
-    }
-    </style>
+    <!-- CSS 
+    <link rel="stylesheet" type="text/css" href="holdphp.css" />-->
+    
+    <link rel="stylesheet" type="text/less" href="less/holdphp.less" />
+
+    <!-- SCRIPTS -->
+    <script src="js/libs/jquery.1.9.1.js"></script>
+    <script src="js/libs/less.1.3.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
 </head>
-<body>
-    <div class="box-center">
-        <img src="img/404.png" />
-        <p>你可以尝试 <a href="" title="">返回首页</a> 或者 <a href="" title="">帮助中心</a> ...</p>
+<body id="guide-page">
+    <header>
+        <div class="hd-bar">
+            <div class="inner-wrap">
+                <div class="quick-menu">
+                    <ul>
+                        <li><a href="">设为首页</a></li><span>|</span>
+                        <li><a href="">网站地图</a></li><span>|</span>
+                        <li><a href="">海淘助手</a></li>
+                    </ul>
+                </div>
+
+                <div class="login">
+                    <ul>
+                        <li class="local">
+                            <a href="register.html" class="btn-login">注册</a><a href="login.html" class="btn-login">登录</a>
+                        </li>
+                        <li class="outside">
+                            <a href="" class="weibo"><img src="img/oauth/sina/icon.png">微博登陆</a>
+                            <a href="" class="tenx"><img src="img/oauth/qq/icon.png">QQ登录</a>
+                            <a href="" class="taobao"><img src="img/oauth/taobao/icon.png">淘宝登录</a>
+                        </li>
+                    </ul>
+                    <!--<div class="hi">
+                        <span>黑幕困兽... 欢迎您！</span><span>|</span>
+                        <a href="">个人中心</a><span>|</span>
+                        <a href="">注销</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="hd-wrap">
+            <h1 class="logo">
+                <a href="" title=""><img src="img/logo.png" alt="holdPHP.com" /></a>
+                <span>让您轻松构建高性能导购系统！</span>
+            </h1>
+            <div class="search">
+                <div class="search-bd" id="J_Search">
+                <form action="" method="get">
+                    <input class="search-text" type="text" name="" id="mq" accesskey="s" autocomplete="off" autofocus="true" placeholder="搜索 折扣商品" />
+                    <input class="search-btn" type="submit" value="" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <nav class="hd-nav">
+            <div class="nav-bd">
+                <ul>
+                    <li class="nav-on">
+                        <a href="index.html"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="cuxiao.html"><span>促销活动</span></a>
+                    </li>
+                    <li>
+                        <a href="detail.html"><span>发现频道</span></a>
+                    </li>
+                    <li>
+                        <a href="mall.html"><span>商家导航</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>海外资讯</span></a>
+                    </li>
+                    <li>
+                        <a href="baoliao.html"><span>我要爆料</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <!--Header End-->
+
+    <div class="main">
+        <div class="inner-wrap">
+            <div class="box-404">
+                <p>你可以尝试 <a href="" title="">返回首页</a> 或者进入 <a href="" title="">帮助中心</a></p>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-about">
+                <ul class="clearfix">
+                    <li>
+                        <p class="tit">网站导航</p>
+                        <p><a href="">什么值得买</a></p>
+                        <p><a href="">海外淘购</a></p>
+                        <p><a href="">返利商家</a></p>
+                    </li>
+                    <li>
+                        <p class="tit">新手入门</p>
+                        <p><a href="about.html">帮助中心</a></p>
+                        <p><a href="">规则中心</a></p>
+                        <p><a href="">了解猪八戒</a></p>
+                    </li>
+                    <li class="about-us">
+                        <p class="tit">关注我们</p>
+                        <p><a class="sina" target="_blank" href="http://weibo.com/holdphp">新浪微博</a></p>
+                        <p><a class="tenx" target="_blank" href="http://t.qq.com/holdphp">腾讯微博</a></p>
+                        <p><a class="sohu" target="_blank" href="http://t.sohu.com/u/108262596">搜狐微博</a></p>
+                        <!--<p><a class="renren" target="_blank" href="http://weibo.com/holdphp">人人网</a></p>
+                        <p><a class="diandian" target="_blank" href="http://t.qq.com/holdphp">点点网</a></p>
+                        <p><a class="lofter" target="_blank" href="http://t.sohu.com/u/108262596">LOFTER</a></p>
+                        <p><a class="douban" target="_blank" href="http://t.sohu.com/u/108262596">豆瓣网</a></p>-->
+                    </li>
+                    <li class="weix">
+                        <p class="tit">微信二维码</p>
+                        <p><img src="http://t5.zbjimg.com/r/page/ma.gif"></p>
+                    </li>
+                </ul>
+                <div class="hold-logo"><a href="http://www.holdphp.com" title="Powered by HoldPHP"><img src="img/logo-footer.png" /></a></div>
+            </div>
+            <div class="f-botm clearfix">
+                <div class="clearfix">
+                    <p class="fl">
+                        <a href="">关于我们</a><span>|</span>
+                        <a href="">联系方式</a><span>|</span>
+                        <a href="">网站地图</a><span>|</span>
+                        <a href="">支付方式</a>
+                    </p>
+                    <p class="fr">
+                        Copyright 2005-2013 <a href="http://www.holdphp.com" title="Powered by HoldPHP">holdphp.com</a>  版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备10202542号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>   <!--Footer End-->
+
+    <script src="js/apps/holdphp.js"></script>
 </body>
 </html>
