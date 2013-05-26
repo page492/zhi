@@ -6,11 +6,6 @@
     // Model
     .filter-mod, .recom-mod{
 		margin-bottom: 10px;
-        padding: 10px 20px;
-        background: @white;
-        border: @border;
-        border-top-color: #eee;
-        border-bottom-color: #e5e5e5;
     }
     .filter-mod{
     	.filter-suggest{
@@ -21,23 +16,22 @@
     		.search-text{width: 210px;}
     	}
     }
+
     .recom-mod{
         .hd{
-            border-bottom: 1px solid @pink;
+            border-bottom: 1px solid @orange;
             line-height: 30px;
             span{
                 font-size: @fontSizeLarge;
-                color: @pink;
+                color: #f84600;
             }
         }
         .bd{
             padding-top: 20px;
             overflow: hidden;
+
             .recom-list{
                 margin-bottom: 0;
-                li{
-                    margin-right: 2%;
-                }
             }
         }
     }
@@ -126,10 +120,10 @@
 	}
 	.cat-item{
 		padding: 3px 9px;
-		color: #888;
+		color: #666;
 		font-size: @fontSizeSmall;
-		border: @border;
-		background: #f7f7f7;
+		border: 1px solid #e6e6e6;
+		background: @grayLighter;
 		.border-radius(3px);
 
 		&:hover, &.cat-on{
