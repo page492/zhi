@@ -4,7 +4,7 @@
 <div class="page-wrap">
 
     <form action="<?php echo site_url('admin/submit/delete'); ?>" method="post">
-    <table class="table table-hover table-list" data-tbh="tablehold" data-uri="<?php echo site_url('admin/submit/edit');?>">
+    <table class="table table-hover table-list" data-tbh="tablehold" data-uri="<?php echo site_url('admin/submit/ajax_edit');?>">
         <thead>
         <tr>
             <th class="span1"><input type="checkbox" data-toggle='chackall' data-target=".J_checkitem"></th>

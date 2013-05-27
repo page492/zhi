@@ -134,6 +134,19 @@ class Admin_Controller extends HP_Controller
         }
     }
 
+    public function ajax_edit()
+    {
+        if ($data = $this->input->post()) {
+            $pk_val = $data[$this->model->get_primary()];
+            unset($data[$this->model->get_primary()]);
+            if ($this->model->set_field($data, array('where'=>array($this->model->get_primary(), $pk_val)))) {
+                return $this->show_message('操作成功');
+            } else {
+                return $this->show_message('操作失败');
+            }
+        }
+    }
+
     /**
      * 删除数据
      */

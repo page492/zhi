@@ -11,7 +11,7 @@
     </form>
 
     <form action="<?php echo site_url('admin/post/delete'); ?>" method="post">
-    <table class="table table-hover table-list">
+    <table class="table table-hover table-list" data-tbh="tablehold" data-uri="<?php echo site_url('admin/post/ajax_edit');?>">
         <thead>
         <tr>
             <th class="span1"><input type="checkbox" data-toggle='chackall' data-target=".J_checkitem"></th>
@@ -49,7 +49,7 @@
                 <td><?php echo $val['comments']?></td>
                 <td><?php echo $val['favorites']?></td>
                 <td><?php echo $val['likes']?></td>
-                <td><?php echo $val['orderid']?></td>
+                <td><span class="modify" data-action="modify" data-find="{id:'<?php echo $val['id'];?>'}" data-field="orderid"><?php echo $val['orderid'];?></span></td>
                 <td><?php echo date('Y-m-d H:i', $val['post_time']);?></td>
                 <td>
                     <a href="<?php echo site_url('admin/post/edit/'.$val['id']);?>" class="mr5"><i class="icon-edit"></i>编辑</a>

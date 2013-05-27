@@ -54,7 +54,7 @@ class HP_Model extends CI_Model
         }
     }
 
-    private function _parse_options($options)
+    protected function _parse_options($options)
     {
         if (!empty($options)) {
             foreach ($options as $key => $val) {
@@ -189,6 +189,16 @@ class HP_Model extends CI_Model
     protected function _before_update(&$data, $options) {}
 
     protected function _after_update($data, $options) {}
+
+    public function set_field($data, $options = array())
+    {
+        $this->_parse_options($options);
+        $result = $this->db->update($this->table, $data);
+        if (false !== $result) {
+            //TODO
+        }
+        return $result;
+    }
 
     /**
      * 删除数据
