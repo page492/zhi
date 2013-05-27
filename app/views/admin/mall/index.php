@@ -8,7 +8,7 @@
     </div>
 
     <form action="<?php echo site_url('admin/mall/delete'); ?>" method="post">
-    <table class="table table-hover table-list">
+    <table class="table table-hover table-list" data-tbh="tablehold" data-uri="<?php echo site_url('admin/mall/ajax_edit');?>">
         <thead>
         <tr>
             <th class="span1"><input type="checkbox" data-toggle='chackall' data-target=".J_checkitem"></th>
@@ -27,10 +27,10 @@
                 <td><input type="checkbox" class="J_checkitem" name="id[]" value="<?php echo $val['id'];?>"></td>
                 <td><?php echo $val['id'];?></td>
                 <td><?php if (!empty($val['logo'])) :?><img src="<?php echo base_url('data/upload/mall/'.$val['logo']);?>" width="100" /><?php endif;?></td>
-                <td><?php echo $val['name'];?></td>
-                <td><?php echo $val['alias'];?></td>
-                <td class="tl"><?php echo $val['link'];?></td>
-                <td><?php echo $val['orderid']?></td>
+                <td><span class="modify" data-action="modify" data-find="{id:'<?php echo $val['id'];?>'}" data-field="name"><?php echo $val['name'];?></span></td>
+                <td><span class="modify" data-action="modify" data-find="{id:'<?php echo $val['id'];?>'}" data-field="alias"><?php echo $val['alias'];?></span></td>
+                <td class="tl"><span class="modify" data-action="modify" data-find="{id:'<?php echo $val['id'];?>'}" data-field="link"><?php echo $val['link'];?></span></td>
+                <td><span class="modify" data-action="modify" data-find="{id:'<?php echo $val['id'];?>'}" data-field="orderid"><?php echo $val['orderid'];?></span></td>
                 <td>
                     <a class="mr5" href="<?php echo site_url('admin/mall/edit/'.$val['id']);?>" data-toggle="dialog" data-title="编辑商城" data-id="edit"><i class="icon-edit"></i>编辑</a>
                     <a href="<?php echo site_url('admin/mall/delete/'.$val['id']);?>" data-toggle="confirmurl" data-acttype="ajax" data-msg="确认要删除？"><i class="icon-trash"></i>删除</a>

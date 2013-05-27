@@ -29,6 +29,11 @@
                 var $input = $(e.target)
                     , nv = $input.val()
                     , psave = '{"'+pfield+'" : "'+nv+'"}';
+                if (ov == nv) {
+                    $input.remove();
+                    $el.show();
+                    return false;
+                }
                 $.extend(true, pdata, eval("("+psave+")"));
                 $.post(self.uri, pdata, function (result) {
                     if (result.status == 1) {
