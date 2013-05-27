@@ -21,7 +21,7 @@
 })();
 
 define(function(require, exports) {
-    require('jquery');
+    require.async('jquery');
     require('pages/global');
     exports.load = function(filename) {
         $.each(filename.split(','), function(key, file) {
