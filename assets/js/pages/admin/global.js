@@ -1,5 +1,5 @@
 define(function (require) {
-
+    require('pages/global');
     require('bootstrap');
     require('tablehold');
 

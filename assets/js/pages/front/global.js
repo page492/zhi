@@ -1,5 +1,5 @@
 define(function (require) {
-
+    require('pages/global');
     require('lazyload');
 
     (function ($) {
@@ -110,6 +110,7 @@ define(function (require) {
                 this.showAllFeed();
                 this.goTop();
                 this.lazyload();
+                this.bdshare();
             },
             //搜索
             search: function(){
@@ -215,6 +216,11 @@ define(function (require) {
                 $('img').lazyload({
                     effect : "fadeIn"
                 });
+            },
+
+            //bdshare
+            bdshare: function () {
+                $('#bdshell_js').attr('src', "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000));
             }
         }});
         $.hold.ui.init();
